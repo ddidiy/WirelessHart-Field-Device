@@ -1,0 +1,5 @@
+execUserFlashExit()
+{
+__hwReset(3000); // Wait 3 s after the reset, the halt the CPU
+__message("Target reset, wait until bootloader finishes !");
+}

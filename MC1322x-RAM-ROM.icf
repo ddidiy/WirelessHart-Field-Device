@@ -1,0 +1,46 @@
+/* special symbols used by the data init procedure. To be removed when using the ROM image */
+
+//define exported symbol Region_ROM_Table_ROM_Base  = 0x00000000;
+//define exported symbol Region_ROM_Table_ROM_Limit = 0x00000000;
+
+/*-Memory Regions-*/
+
+define symbol VECT_START  = 0x00400000;
+define symbol VECT_END    = 0x0040001F;
+
+// rp_vector_thumb
+define symbol RPTV_0_START = 0x00400020;
+define symbol RPTV_0_END   = 0x0040005F;
+define symbol RPTV_1_START = 0x00400060;
+define symbol RPTV_1_END   = 0x0040009F;
+define symbol RPTV_2_START = 0x004000A0;
+define symbol RPTV_2_END   = 0x004000DF;
+define symbol RPTV_3_START = 0x004000E0;
+define symbol RPTV_3_END   = 0x0040011F;
+
+/* RAM area between 0x00400120 - 0x004007FF is reserved for variables declared in ROM */
+
+define symbol RAM_START   = 0x00400800;
+define symbol RAM_END     = 0x00417FFF;
+
+define memory Mem with size = 4G;
+
+define region VECT_region = Mem:[from VECT_START to VECT_END];
+define region RAM_region  = Mem:[from RAM_START  to RAM_END];
+
+define region RPTV_0_region = Mem:[from RPTV_0_START  to RPTV_0_END];
+define region RPTV_1_region = Mem:[from RPTV_1_START  to RPTV_1_END];
+define region RPTV_2_region = Mem:[from RPTV_2_START  to RPTV_2_END];
+define region RPTV_3_region = Mem:[from RPTV_3_START  to RPTV_3_END];
+
+do not initialize     { readwrite section .stack};
+initialize by copy    { readwrite };
+
+place in VECT_region  { readonly section .vect };
+place in RAM_region   { readonly };
+place in RAM_region   { readwrite };
+
+place in RPTV_0_region  { section rp_vector_thumb_0 };
+place in RPTV_1_region  { section rp_vector_thumb_1 };
+place in RPTV_2_region  { section rp_vector_thumb_2 };
+place in RPTV_3_region  { section rp_vector_thumb_3 };

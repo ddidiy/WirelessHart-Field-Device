@@ -1,0 +1,1686 @@
+;----------------------------------------------------------------------------
+;         			FREESCALE CORPORATION
+;----------------------------------------------------------------------------
+; DISCLAIMER:  THIS SOFTWARE IS PROVIDED BY FREESCALE "AS IS" AND ANY EXPRESS OR
+; IMPLIED WARRANTIES, INCLUDING, BUT NOT LIMITED TO, THE IMPLIED WARRANTIES OF
+; MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND NON-INFRINGEMENT ARE
+; DISCLAIMED. IN NO EVENT SHALL FREESCALE BE LIABLE FOR ANY DIRECT, INDIRECT,
+; INCIDENTAL, SPECIAL, EXEMPLARY, OR CONSEQUENTIAL DAMAGES (INCLUDING, BUT NOT
+; LIMITED TO, PROCUREMENT OF SUBSTITUTE GOODS OR SERVICES;LOSS OF USE, DATA,
+; OR PROFITS;OR BUSINESS INTERRUPTION) HOWEVER CAUSED AND ON ANY THEORY OF
+; LIABILITY, WHETHER IN CONTRACT, STRICT LIABILITY, OR TORT (INCLUDING
+; NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE OF THIS SOFTWARE,
+; EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
+;----------------------------------------------------------------------------
+;File Name           : MC1322x.ddf
+
+[Sfr]
+
+sfr = "PAD_DIR       31-00 [00]", 				"Memory",	0x80000000,	4,	base=16 ;
+sfr = "PAD_DIR       31-00 [00].GPIO_0 <0>", 			"Memory",	0x80000000,	4,	base=16,	bitRange=0	;1 
+sfr = "PAD_DIR       31-00 [00].GPIO_1 <1>", 			"Memory",	0x80000000,	4,	base=16,	bitRange=1	;1 
+sfr = "PAD_DIR       31-00 [00].GPIO_2 <2>", 			"Memory",	0x80000000,	4,	base=16,	bitRange=2	;1 
+sfr = "PAD_DIR       31-00 [00].GPIO_3 <3>", 			"Memory",	0x80000000,	4,	base=16,	bitRange=3	;1 
+sfr = "PAD_DIR       31-00 [00].GPIO_4 <4>", 			"Memory",	0x80000000,	4,	base=16,	bitRange=4	;1 
+sfr = "PAD_DIR       31-00 [00].GPIO_5 <5>", 			"Memory",	0x80000000,	4,	base=16,	bitRange=5	;1 
+sfr = "PAD_DIR       31-00 [00].GPIO_6 <6>", 			"Memory",	0x80000000,	4,	base=16,	bitRange=6	;1 
+sfr = "PAD_DIR       31-00 [00].GPIO_7 <7>", 			"Memory",	0x80000000,	4,	base=16,	bitRange=7	;1 
+sfr = "PAD_DIR       31-00 [00].GPIO_8 <8>", 			"Memory",	0x80000000,	4,	base=16,	bitRange=8	;1 
+sfr = "PAD_DIR       31-00 [00].GPIO_9 <9>", 			"Memory",	0x80000000,	4,	base=16,	bitRange=9	;1 
+sfr = "PAD_DIR       31-00 [00].GPIO_10 <10>", 			"Memory",	0x80000000,	4,	base=16,	bitRange=10	;1 
+sfr = "PAD_DIR       31-00 [00].GPIO_11 <11>", 			"Memory",	0x80000000,	4,	base=16,	bitRange=11	;1 
+sfr = "PAD_DIR       31-00 [00].GPIO_12 <12>", 			"Memory",	0x80000000,	4,	base=16,	bitRange=12	;1 
+sfr = "PAD_DIR       31-00 [00].GPIO_13 <13>", 			"Memory",	0x80000000,	4,	base=16,	bitRange=13	;1 
+sfr = "PAD_DIR       31-00 [00].GPIO_14 <14>", 			"Memory",	0x80000000,	4,	base=16,	bitRange=14	;1 
+sfr = "PAD_DIR       31-00 [00].GPIO_15 <15>", 			"Memory",	0x80000000,	4,	base=16,	bitRange=15	;1 
+sfr = "PAD_DIR       31-00 [00].GPIO_16 <16>", 			"Memory",	0x80000000,	4,	base=16,	bitRange=16	;1 
+sfr = "PAD_DIR       31-00 [00].GPIO_17 <17>", 			"Memory",	0x80000000,	4,	base=16,	bitRange=17	;1 
+sfr = "PAD_DIR       31-00 [00].GPIO_18 <18>", 			"Memory",	0x80000000,	4,	base=16,	bitRange=18	;1 
+sfr = "PAD_DIR       31-00 [00].GPIO_19 <19>", 			"Memory",	0x80000000,	4,	base=16,	bitRange=19	;1 
+sfr = "PAD_DIR       31-00 [00].GPIO_20 <20>", 			"Memory",	0x80000000,	4,	base=16,	bitRange=20	;1 
+sfr = "PAD_DIR       31-00 [00].GPIO_21 <21>", 			"Memory",	0x80000000,	4,	base=16,	bitRange=21	;1 
+sfr = "PAD_DIR       31-00 [00].GPIO_22 <22>", 			"Memory",	0x80000000,	4,	base=16,	bitRange=22	;1 
+sfr = "PAD_DIR       31-00 [00].GPIO_23 <23>", 			"Memory",	0x80000000,	4,	base=16,	bitRange=23	;1 
+sfr = "PAD_DIR       31-00 [00].GPIO_24 <24>", 			"Memory",	0x80000000,	4,	base=16,	bitRange=24	;1 
+sfr = "PAD_DIR       31-00 [00].GPIO_25 <25>", 			"Memory",	0x80000000,	4,	base=16,	bitRange=25	;1 
+sfr = "PAD_DIR       31-00 [00].GPIO_26 <26>", 			"Memory",	0x80000000,	4,	base=16,	bitRange=26	;1 
+sfr = "PAD_DIR       31-00 [00].GPIO_27 <27>", 			"Memory",	0x80000000,	4,	base=16,	bitRange=27	;1 
+sfr = "PAD_DIR       31-00 [00].GPIO_28 <28>", 			"Memory",	0x80000000,	4,	base=16,	bitRange=28	;1 
+sfr = "PAD_DIR       31-00 [00].GPIO_29 <29>", 			"Memory",	0x80000000,	4,	base=16,	bitRange=29	;1 
+sfr = "PAD_DIR       31-00 [00].GPIO_30 <30>", 			"Memory",	0x80000000,	4,	base=16,	bitRange=30	;1 
+sfr = "PAD_DIR       31-00 [00].GPIO_31 <31>", 			"Memory",	0x80000000,	4,	base=16,	bitRange=31	;1 
+sfr = "PAD_DIR       63-32 [04]", 				"Memory",	0x80000004,	4,	base=16 ;
+sfr = "PAD_DIR       63-32 [04].GPIO_32 <0>", 			"Memory",	0x80000004,	4,	base=16,	bitRange=0	;1 
+sfr = "PAD_DIR       63-32 [04].GPIO_33 <1>", 			"Memory",	0x80000004,	4,	base=16,	bitRange=1	;1 
+sfr = "PAD_DIR       63-32 [04].GPIO_34 <2>", 			"Memory",	0x80000004,	4,	base=16,	bitRange=2	;1 
+sfr = "PAD_DIR       63-32 [04].GPIO_35 <3>", 			"Memory",	0x80000004,	4,	base=16,	bitRange=3	;1 
+sfr = "PAD_DIR       63-32 [04].GPIO_36 <4>", 			"Memory",	0x80000004,	4,	base=16,	bitRange=4	;1 
+sfr = "PAD_DIR       63-32 [04].GPIO_37 <5>", 			"Memory",	0x80000004,	4,	base=16,	bitRange=5	;1 
+sfr = "PAD_DIR       63-32 [04].GPIO_38 <6>", 			"Memory",	0x80000004,	4,	base=16,	bitRange=6	;1 
+sfr = "PAD_DIR       63-32 [04].GPIO_39 <7>", 			"Memory",	0x80000004,	4,	base=16,	bitRange=7	;1 
+sfr = "PAD_DIR       63-32 [04].GPIO_40 <8>", 			"Memory",	0x80000004,	4,	base=16,	bitRange=8	;1 
+sfr = "PAD_DIR       63-32 [04].GPIO_41 <9>", 			"Memory",	0x80000004,	4,	base=16,	bitRange=9	;1 
+sfr = "PAD_DIR       63-32 [04].GPIO_42 <10>", 			"Memory",	0x80000004,	4,	base=16,	bitRange=10	;1 
+sfr = "PAD_DIR       63-32 [04].GPIO_43 <11>", 			"Memory",	0x80000004,	4,	base=16,	bitRange=11	;1 
+sfr = "PAD_DIR       63-32 [04].GPIO_44 <12>", 			"Memory",	0x80000004,	4,	base=16,	bitRange=12	;1 
+sfr = "PAD_DIR       63-32 [04].GPIO_45 <13>", 			"Memory",	0x80000004,	4,	base=16,	bitRange=13	;1 
+sfr = "PAD_DIR       63-32 [04].GPIO_46 <14>", 			"Memory",	0x80000004,	4,	base=16,	bitRange=14	;1 
+sfr = "PAD_DIR       63-32 [04].GPIO_47 <15>", 			"Memory",	0x80000004,	4,	base=16,	bitRange=15	;1 
+sfr = "PAD_DIR       63-32 [04].GPIO_48 <16>", 			"Memory",	0x80000004,	4,	base=16,	bitRange=16	;1 
+sfr = "PAD_DIR       63-32 [04].GPIO_49 <17>", 			"Memory",	0x80000004,	4,	base=16,	bitRange=17	;1 
+sfr = "PAD_DIR       63-32 [04].GPIO_50 <18>", 			"Memory",	0x80000004,	4,	base=16,	bitRange=18	;1 
+sfr = "PAD_DIR       63-32 [04].GPIO_51 <19>", 			"Memory",	0x80000004,	4,	base=16,	bitRange=19	;1 
+sfr = "PAD_DIR       63-32 [04].GPIO_52 <20>", 			"Memory",	0x80000004,	4,	base=16,	bitRange=20	;1 
+sfr = "PAD_DIR       63-32 [04].GPIO_53 <21>", 			"Memory",	0x80000004,	4,	base=16,	bitRange=21	;1 
+sfr = "PAD_DIR       63-32 [04].GPIO_54 <22>", 			"Memory",	0x80000004,	4,	base=16,	bitRange=22	;1 
+sfr = "PAD_DIR       63-32 [04].GPIO_55 <23>", 			"Memory",	0x80000004,	4,	base=16,	bitRange=23	;1 
+sfr = "PAD_DIR       63-32 [04].GPIO_56 <24>", 			"Memory",	0x80000004,	4,	base=16,	bitRange=24	;1 
+sfr = "PAD_DIR       63-32 [04].GPIO_57 <25>", 			"Memory",	0x80000004,	4,	base=16,	bitRange=25	;1 
+sfr = "PAD_DIR       63-32 [04].GPIO_58 <26>", 			"Memory",	0x80000004,	4,	base=16,	bitRange=26	;1 
+sfr = "PAD_DIR       63-32 [04].GPIO_59 <27>", 			"Memory",	0x80000004,	4,	base=16,	bitRange=27	;1 
+sfr = "PAD_DIR       63-32 [04].GPIO_60 <28>", 			"Memory",	0x80000004,	4,	base=16,	bitRange=28	;1 
+sfr = "PAD_DIR       63-32 [04].GPIO_61 <29>", 			"Memory",	0x80000004,	4,	base=16,	bitRange=29	;1 
+sfr = "PAD_DIR       63-32 [04].GPIO_62 <30>", 			"Memory",	0x80000004,	4,	base=16,	bitRange=30	;1 
+sfr = "PAD_DIR       63-32 [04].GPIO_63 <31>", 			"Memory",	0x80000004,	4,	base=16,	bitRange=31	;1 
+sfr = "DATA          31-00 [08]", 				"Memory",	0x80000008,	4,	base=16 ;
+sfr = "DATA          31-00 [08].GPIO_0 <0>", 			"Memory",	0x80000008,	4,	base=16,	bitRange=0	;1 
+sfr = "DATA          31-00 [08].GPIO_1 <1>", 			"Memory",	0x80000008,	4,	base=16,	bitRange=1	;1 
+sfr = "DATA          31-00 [08].GPIO_2 <2>", 			"Memory",	0x80000008,	4,	base=16,	bitRange=2	;1 
+sfr = "DATA          31-00 [08].GPIO_3 <3>", 			"Memory",	0x80000008,	4,	base=16,	bitRange=3	;1 
+sfr = "DATA          31-00 [08].GPIO_4 <4>", 			"Memory",	0x80000008,	4,	base=16,	bitRange=4	;1 
+sfr = "DATA          31-00 [08].GPIO_5 <5>", 			"Memory",	0x80000008,	4,	base=16,	bitRange=5	;1 
+sfr = "DATA          31-00 [08].GPIO_6 <6>", 			"Memory",	0x80000008,	4,	base=16,	bitRange=6	;1 
+sfr = "DATA          31-00 [08].GPIO_7 <7>", 			"Memory",	0x80000008,	4,	base=16,	bitRange=7	;1 
+sfr = "DATA          31-00 [08].GPIO_8 <8>", 			"Memory",	0x80000008,	4,	base=16,	bitRange=8	;1 
+sfr = "DATA          31-00 [08].GPIO_9 <9>", 			"Memory",	0x80000008,	4,	base=16,	bitRange=9	;1 
+sfr = "DATA          31-00 [08].GPIO_10 <10>", 			"Memory",	0x80000008,	4,	base=16,	bitRange=10	;1 
+sfr = "DATA          31-00 [08].GPIO_11 <11>", 			"Memory",	0x80000008,	4,	base=16,	bitRange=11	;1 
+sfr = "DATA          31-00 [08].GPIO_12 <12>", 			"Memory",	0x80000008,	4,	base=16,	bitRange=12	;1 
+sfr = "DATA          31-00 [08].GPIO_13 <13>", 			"Memory",	0x80000008,	4,	base=16,	bitRange=13	;1 
+sfr = "DATA          31-00 [08].GPIO_14 <14>", 			"Memory",	0x80000008,	4,	base=16,	bitRange=14	;1 
+sfr = "DATA          31-00 [08].GPIO_15 <15>", 			"Memory",	0x80000008,	4,	base=16,	bitRange=15	;1 
+sfr = "DATA          31-00 [08].GPIO_16 <16>", 			"Memory",	0x80000008,	4,	base=16,	bitRange=16	;1 
+sfr = "DATA          31-00 [08].GPIO_17 <17>", 			"Memory",	0x80000008,	4,	base=16,	bitRange=17	;1 
+sfr = "DATA          31-00 [08].GPIO_18 <18>", 			"Memory",	0x80000008,	4,	base=16,	bitRange=18	;1 
+sfr = "DATA          31-00 [08].GPIO_19 <19>", 			"Memory",	0x80000008,	4,	base=16,	bitRange=19	;1 
+sfr = "DATA          31-00 [08].GPIO_20 <20>", 			"Memory",	0x80000008,	4,	base=16,	bitRange=20	;1 
+sfr = "DATA          31-00 [08].GPIO_21 <21>", 			"Memory",	0x80000008,	4,	base=16,	bitRange=21	;1 
+sfr = "DATA          31-00 [08].GPIO_22 <22>", 			"Memory",	0x80000008,	4,	base=16,	bitRange=22	;1 
+sfr = "DATA          31-00 [08].GPIO_23 <23>", 			"Memory",	0x80000008,	4,	base=16,	bitRange=23	;1 
+sfr = "DATA          31-00 [08].GPIO_24 <24>", 			"Memory",	0x80000008,	4,	base=16,	bitRange=24	;1 
+sfr = "DATA          31-00 [08].GPIO_25 <25>", 			"Memory",	0x80000008,	4,	base=16,	bitRange=25	;1 
+sfr = "DATA          31-00 [08].GPIO_26 <26>", 			"Memory",	0x80000008,	4,	base=16,	bitRange=26	;1 
+sfr = "DATA          31-00 [08].GPIO_27 <27>", 			"Memory",	0x80000008,	4,	base=16,	bitRange=27	;1 
+sfr = "DATA          31-00 [08].GPIO_28 <28>", 			"Memory",	0x80000008,	4,	base=16,	bitRange=28	;1 
+sfr = "DATA          31-00 [08].GPIO_29 <29>", 			"Memory",	0x80000008,	4,	base=16,	bitRange=29	;1 
+sfr = "DATA          31-00 [08].GPIO_30 <30>", 			"Memory",	0x80000008,	4,	base=16,	bitRange=30	;1 
+sfr = "DATA          31-00 [08].GPIO_31 <31>", 			"Memory",	0x80000008,	4,	base=16,	bitRange=31	;1 
+sfr = "DATA          63-32 [0C]", 				"Memory",	0x8000000C,	4,	base=16 ;
+sfr = "DATA          63-32 [0C].GPIO_32 <0>", 			"Memory",	0x8000000C,	4,	base=16,	bitRange=0	;1 
+sfr = "DATA          63-32 [0C].GPIO_33 <1>", 			"Memory",	0x8000000C,	4,	base=16,	bitRange=1	;1 
+sfr = "DATA          63-32 [0C].GPIO_34 <2>", 			"Memory",	0x8000000C,	4,	base=16,	bitRange=2	;1 
+sfr = "DATA          63-32 [0C].GPIO_35 <3>", 			"Memory",	0x8000000C,	4,	base=16,	bitRange=3	;1 
+sfr = "DATA          63-32 [0C].GPIO_36 <4>", 			"Memory",	0x8000000C,	4,	base=16,	bitRange=4	;1 
+sfr = "DATA          63-32 [0C].GPIO_37 <5>", 			"Memory",	0x8000000C,	4,	base=16,	bitRange=5	;1 
+sfr = "DATA          63-32 [0C].GPIO_38 <6>", 			"Memory",	0x8000000C,	4,	base=16,	bitRange=6	;1 
+sfr = "DATA          63-32 [0C].GPIO_39 <7>", 			"Memory",	0x8000000C,	4,	base=16,	bitRange=7	;1 
+sfr = "DATA          63-32 [0C].GPIO_40 <8>", 			"Memory",	0x8000000C,	4,	base=16,	bitRange=8	;1 
+sfr = "DATA          63-32 [0C].GPIO_41 <9>", 			"Memory",	0x8000000C,	4,	base=16,	bitRange=9	;1 
+sfr = "DATA          63-32 [0C].GPIO_42 <10>", 			"Memory",	0x8000000C,	4,	base=16,	bitRange=10	;1 
+sfr = "DATA          63-32 [0C].GPIO_43 <11>", 			"Memory",	0x8000000C,	4,	base=16,	bitRange=11	;1 
+sfr = "DATA          63-32 [0C].GPIO_44 <12>", 			"Memory",	0x8000000C,	4,	base=16,	bitRange=12	;1 
+sfr = "DATA          63-32 [0C].GPIO_45 <13>", 			"Memory",	0x8000000C,	4,	base=16,	bitRange=13	;1 
+sfr = "DATA          63-32 [0C].GPIO_46 <14>", 			"Memory",	0x8000000C,	4,	base=16,	bitRange=14	;1 
+sfr = "DATA          63-32 [0C].GPIO_47 <15>", 			"Memory",	0x8000000C,	4,	base=16,	bitRange=15	;1 
+sfr = "DATA          63-32 [0C].GPIO_48 <16>", 			"Memory",	0x8000000C,	4,	base=16,	bitRange=16	;1 
+sfr = "DATA          63-32 [0C].GPIO_49 <17>", 			"Memory",	0x8000000C,	4,	base=16,	bitRange=17	;1 
+sfr = "DATA          63-32 [0C].GPIO_50 <18>", 			"Memory",	0x8000000C,	4,	base=16,	bitRange=18	;1 
+sfr = "DATA          63-32 [0C].GPIO_51 <19>", 			"Memory",	0x8000000C,	4,	base=16,	bitRange=19	;1 
+sfr = "DATA          63-32 [0C].GPIO_52 <20>", 			"Memory",	0x8000000C,	4,	base=16,	bitRange=20	;1 
+sfr = "DATA          63-32 [0C].GPIO_53 <21>", 			"Memory",	0x8000000C,	4,	base=16,	bitRange=21	;1 
+sfr = "DATA          63-32 [0C].GPIO_54 <22>", 			"Memory",	0x8000000C,	4,	base=16,	bitRange=22	;1 
+sfr = "DATA          63-32 [0C].GPIO_55 <23>", 			"Memory",	0x8000000C,	4,	base=16,	bitRange=23	;1 
+sfr = "DATA          63-32 [0C].GPIO_56 <24>", 			"Memory",	0x8000000C,	4,	base=16,	bitRange=24	;1 
+sfr = "DATA          63-32 [0C].GPIO_57 <25>", 			"Memory",	0x8000000C,	4,	base=16,	bitRange=25	;1 
+sfr = "DATA          63-32 [0C].GPIO_58 <26>", 			"Memory",	0x8000000C,	4,	base=16,	bitRange=26	;1 
+sfr = "DATA          63-32 [0C].GPIO_59 <27>", 			"Memory",	0x8000000C,	4,	base=16,	bitRange=27	;1 
+sfr = "DATA          63-32 [0C].GPIO_60 <28>", 			"Memory",	0x8000000C,	4,	base=16,	bitRange=28	;1 
+sfr = "DATA          63-32 [0C].GPIO_61 <29>", 			"Memory",	0x8000000C,	4,	base=16,	bitRange=29	;1 
+sfr = "DATA          63-32 [0C].GPIO_62 <30>", 			"Memory",	0x8000000C,	4,	base=16,	bitRange=30	;1 
+sfr = "DATA          63-32 [0C].GPIO_63 <31>", 			"Memory",	0x8000000C,	4,	base=16,	bitRange=31	;1 
+sfr = "PAD_PU_EN     31-00 [10]", 				"Memory",	0x80000010,	4,	base=16 ;
+sfr = "PAD_PU_EN     31-00 [10].GPIO_0 <0>", 			"Memory",	0x80000010,	4,	base=16,	bitRange=0	;1 
+sfr = "PAD_PU_EN     31-00 [10].GPIO_1 <1>", 			"Memory",	0x80000010,	4,	base=16,	bitRange=1	;1 
+sfr = "PAD_PU_EN     31-00 [10].GPIO_2 <2>", 			"Memory",	0x80000010,	4,	base=16,	bitRange=2	;1 
+sfr = "PAD_PU_EN     31-00 [10].GPIO_3 <3>", 			"Memory",	0x80000010,	4,	base=16,	bitRange=3	;1 
+sfr = "PAD_PU_EN     31-00 [10].GPIO_4 <4>", 			"Memory",	0x80000010,	4,	base=16,	bitRange=4	;1 
+sfr = "PAD_PU_EN     31-00 [10].GPIO_5 <5>", 			"Memory",	0x80000010,	4,	base=16,	bitRange=5	;1 
+sfr = "PAD_PU_EN     31-00 [10].GPIO_6 <6>", 			"Memory",	0x80000010,	4,	base=16,	bitRange=6	;1 
+sfr = "PAD_PU_EN     31-00 [10].GPIO_7 <7>", 			"Memory",	0x80000010,	4,	base=16,	bitRange=7	;1 
+sfr = "PAD_PU_EN     31-00 [10].GPIO_8 <8>", 			"Memory",	0x80000010,	4,	base=16,	bitRange=8	;1 
+sfr = "PAD_PU_EN     31-00 [10].GPIO_9 <9>", 			"Memory",	0x80000010,	4,	base=16,	bitRange=9	;1 
+sfr = "PAD_PU_EN     31-00 [10].GPIO_10 <10>", 			"Memory",	0x80000010,	4,	base=16,	bitRange=10	;1 
+sfr = "PAD_PU_EN     31-00 [10].GPIO_11 <11>", 			"Memory",	0x80000010,	4,	base=16,	bitRange=11	;1 
+sfr = "PAD_PU_EN     31-00 [10].GPIO_12 <12>", 			"Memory",	0x80000010,	4,	base=16,	bitRange=12	;1 
+sfr = "PAD_PU_EN     31-00 [10].GPIO_13 <13>", 			"Memory",	0x80000010,	4,	base=16,	bitRange=13	;1 
+sfr = "PAD_PU_EN     31-00 [10].GPIO_14 <14>", 			"Memory",	0x80000010,	4,	base=16,	bitRange=14	;1 
+sfr = "PAD_PU_EN     31-00 [10].GPIO_15 <15>", 			"Memory",	0x80000010,	4,	base=16,	bitRange=15	;1 
+sfr = "PAD_PU_EN     31-00 [10].GPIO_16 <16>", 			"Memory",	0x80000010,	4,	base=16,	bitRange=16	;1 
+sfr = "PAD_PU_EN     31-00 [10].GPIO_17 <17>", 			"Memory",	0x80000010,	4,	base=16,	bitRange=17	;1 
+sfr = "PAD_PU_EN     31-00 [10].GPIO_18 <18>", 			"Memory",	0x80000010,	4,	base=16,	bitRange=18	;1 
+sfr = "PAD_PU_EN     31-00 [10].GPIO_19 <19>", 			"Memory",	0x80000010,	4,	base=16,	bitRange=19	;1 
+sfr = "PAD_PU_EN     31-00 [10].GPIO_20 <20>", 			"Memory",	0x80000010,	4,	base=16,	bitRange=20	;1 
+sfr = "PAD_PU_EN     31-00 [10].GPIO_21 <21>", 			"Memory",	0x80000010,	4,	base=16,	bitRange=21	;1 
+sfr = "PAD_PU_EN     31-00 [10].GPIO_22 <22>", 			"Memory",	0x80000010,	4,	base=16,	bitRange=22	;1 
+sfr = "PAD_PU_EN     31-00 [10].GPIO_23 <23>", 			"Memory",	0x80000010,	4,	base=16,	bitRange=23	;1 
+sfr = "PAD_PU_EN     31-00 [10].GPIO_24 <24>", 			"Memory",	0x80000010,	4,	base=16,	bitRange=24	;1 
+sfr = "PAD_PU_EN     31-00 [10].GPIO_25 <25>", 			"Memory",	0x80000010,	4,	base=16,	bitRange=25	;1 
+sfr = "PAD_PU_EN     31-00 [10].GPIO_26 <26>", 			"Memory",	0x80000010,	4,	base=16,	bitRange=26	;1 
+sfr = "PAD_PU_EN     31-00 [10].GPIO_27 <27>", 			"Memory",	0x80000010,	4,	base=16,	bitRange=27	;1 
+sfr = "PAD_PU_EN     31-00 [10].GPIO_28 <28>", 			"Memory",	0x80000010,	4,	base=16,	bitRange=28	;1 
+sfr = "PAD_PU_EN     31-00 [10].GPIO_29 <29>", 			"Memory",	0x80000010,	4,	base=16,	bitRange=29	;1 
+sfr = "PAD_PU_EN     31-00 [10].GPIO_30 <30>", 			"Memory",	0x80000010,	4,	base=16,	bitRange=30	;1 
+sfr = "PAD_PU_EN     31-00 [10].GPIO_31 <31>", 			"Memory",	0x80000010,	4,	base=16,	bitRange=31	;1 
+sfr = "PAD_PU_EN     63-32 [14]", 				"Memory",	0x80000014,	4,	base=16 ;
+sfr = "PAD_PU_EN     63-32 [14].GPIO_32 <0>", 			"Memory",	0x80000014,	4,	base=16,	bitRange=0	;1 
+sfr = "PAD_PU_EN     63-32 [14].GPIO_33 <1>", 			"Memory",	0x80000014,	4,	base=16,	bitRange=1	;1 
+sfr = "PAD_PU_EN     63-32 [14].GPIO_34 <2>", 			"Memory",	0x80000014,	4,	base=16,	bitRange=2	;1 
+sfr = "PAD_PU_EN     63-32 [14].GPIO_35 <3>", 			"Memory",	0x80000014,	4,	base=16,	bitRange=3	;1 
+sfr = "PAD_PU_EN     63-32 [14].GPIO_36 <4>", 			"Memory",	0x80000014,	4,	base=16,	bitRange=4	;1 
+sfr = "PAD_PU_EN     63-32 [14].GPIO_37 <5>", 			"Memory",	0x80000014,	4,	base=16,	bitRange=5	;1 
+sfr = "PAD_PU_EN     63-32 [14].GPIO_38 <6>", 			"Memory",	0x80000014,	4,	base=16,	bitRange=6	;1 
+sfr = "PAD_PU_EN     63-32 [14].GPIO_39 <7>", 			"Memory",	0x80000014,	4,	base=16,	bitRange=7	;1 
+sfr = "PAD_PU_EN     63-32 [14].GPIO_40 <8>", 			"Memory",	0x80000014,	4,	base=16,	bitRange=8	;1 
+sfr = "PAD_PU_EN     63-32 [14].GPIO_41 <9>", 			"Memory",	0x80000014,	4,	base=16,	bitRange=9	;1 
+sfr = "PAD_PU_EN     63-32 [14].GPIO_42 <10>", 			"Memory",	0x80000014,	4,	base=16,	bitRange=10	;1 
+sfr = "PAD_PU_EN     63-32 [14].GPIO_43 <11>", 			"Memory",	0x80000014,	4,	base=16,	bitRange=11	;1 
+sfr = "PAD_PU_EN     63-32 [14].GPIO_44 <12>", 			"Memory",	0x80000014,	4,	base=16,	bitRange=12	;1 
+sfr = "PAD_PU_EN     63-32 [14].GPIO_45 <13>", 			"Memory",	0x80000014,	4,	base=16,	bitRange=13	;1 
+sfr = "PAD_PU_EN     63-32 [14].GPIO_46 <14>", 			"Memory",	0x80000014,	4,	base=16,	bitRange=14	;1 
+sfr = "PAD_PU_EN     63-32 [14].GPIO_47 <15>", 			"Memory",	0x80000014,	4,	base=16,	bitRange=15	;1 
+sfr = "PAD_PU_EN     63-32 [14].GPIO_48 <16>", 			"Memory",	0x80000014,	4,	base=16,	bitRange=16	;1 
+sfr = "PAD_PU_EN     63-32 [14].GPIO_49 <17>", 			"Memory",	0x80000014,	4,	base=16,	bitRange=17	;1 
+sfr = "PAD_PU_EN     63-32 [14].GPIO_50 <18>", 			"Memory",	0x80000014,	4,	base=16,	bitRange=18	;1 
+sfr = "PAD_PU_EN     63-32 [14].GPIO_51 <19>", 			"Memory",	0x80000014,	4,	base=16,	bitRange=19	;1 
+sfr = "PAD_PU_EN     63-32 [14].GPIO_52 <20>", 			"Memory",	0x80000014,	4,	base=16,	bitRange=20	;1 
+sfr = "PAD_PU_EN     63-32 [14].GPIO_53 <21>", 			"Memory",	0x80000014,	4,	base=16,	bitRange=21	;1 
+sfr = "PAD_PU_EN     63-32 [14].GPIO_54 <22>", 			"Memory",	0x80000014,	4,	base=16,	bitRange=22	;1 
+sfr = "PAD_PU_EN     63-32 [14].GPIO_55 <23>", 			"Memory",	0x80000014,	4,	base=16,	bitRange=23	;1 
+sfr = "PAD_PU_EN     63-32 [14].GPIO_56 <24>", 			"Memory",	0x80000014,	4,	base=16,	bitRange=24	;1 
+sfr = "PAD_PU_EN     63-32 [14].GPIO_57 <25>", 			"Memory",	0x80000014,	4,	base=16,	bitRange=25	;1 
+sfr = "PAD_PU_EN     63-32 [14].GPIO_58 <26>", 			"Memory",	0x80000014,	4,	base=16,	bitRange=26	;1 
+sfr = "PAD_PU_EN     63-32 [14].GPIO_59 <27>", 			"Memory",	0x80000014,	4,	base=16,	bitRange=27	;1 
+sfr = "PAD_PU_EN     63-32 [14].GPIO_60 <28>", 			"Memory",	0x80000014,	4,	base=16,	bitRange=28	;1 
+sfr = "PAD_PU_EN     63-32 [14].GPIO_61 <29>", 			"Memory",	0x80000014,	4,	base=16,	bitRange=29	;1 
+sfr = "PAD_PU_EN     63-32 [14].GPIO_62 <30>", 			"Memory",	0x80000014,	4,	base=16,	bitRange=30	;1 
+sfr = "PAD_PU_EN     63-32 [14].GPIO_63 <31>", 			"Memory",	0x80000014,	4,	base=16,	bitRange=31	;1 
+sfr = "FUNC_SEL      15-00 [18]", 				"Memory",	0x80000018,	4,	base=16 ;
+sfr = "FUNC_SEL      15-00 [18].GPIO_0 <1:0>", 			"Memory",	0x80000018,	4,	base=16,	bitRange=0-1	;2 
+sfr = "FUNC_SEL      15-00 [18].GPIO_1 <3:2>", 			"Memory",	0x80000018,	4,	base=16,	bitRange=2-3	;2 
+sfr = "FUNC_SEL      15-00 [18].GPIO_2 <5:4>", 			"Memory",	0x80000018,	4,	base=16,	bitRange=4-5	;2 
+sfr = "FUNC_SEL      15-00 [18].GPIO_3 <7:6>", 			"Memory",	0x80000018,	4,	base=16,	bitRange=6-7	;2 
+sfr = "FUNC_SEL      15-00 [18].GPIO_4 <9:8>", 			"Memory",	0x80000018,	4,	base=16,	bitRange=8-9	;2 
+sfr = "FUNC_SEL      15-00 [18].GPIO_5 <11:10>", 		"Memory",	0x80000018,	4,	base=16,	bitRange=10-11	;2 
+sfr = "FUNC_SEL      15-00 [18].GPIO_6 <13:12>", 		"Memory",	0x80000018,	4,	base=16,	bitRange=12-13	;2 
+sfr = "FUNC_SEL      15-00 [18].GPIO_7 <15:14>", 		"Memory",	0x80000018,	4,	base=16,	bitRange=14-15	;2 
+sfr = "FUNC_SEL      15-00 [18].GPIO_8 <17:16>", 		"Memory",	0x80000018,	4,	base=16,	bitRange=16-17	;2 
+sfr = "FUNC_SEL      15-00 [18].GPIO_9 <19:18>", 		"Memory",	0x80000018,	4,	base=16,	bitRange=18-19	;2 
+sfr = "FUNC_SEL      15-00 [18].GPIO_10 <21:20>", 		"Memory",	0x80000018,	4,	base=16,	bitRange=20-21	;2 
+sfr = "FUNC_SEL      15-00 [18].GPIO_11 <23:22>", 		"Memory",	0x80000018,	4,	base=16,	bitRange=22-23	;2 
+sfr = "FUNC_SEL      15-00 [18].GPIO_12 <25:24>", 		"Memory",	0x80000018,	4,	base=16,	bitRange=24-25	;2 
+sfr = "FUNC_SEL      15-00 [18].GPIO_13 <27:26>", 		"Memory",	0x80000018,	4,	base=16,	bitRange=26-27	;2 
+sfr = "FUNC_SEL      15-00 [18].GPIO_14 <29:28>", 		"Memory",	0x80000018,	4,	base=16,	bitRange=28-29	;2 
+sfr = "FUNC_SEL      15-00 [18].GPIO_15 <31:30>", 		"Memory",	0x80000018,	4,	base=16,	bitRange=30-31	;2 
+sfr = "FUNC_SEL      31-16 [1C]", 				"Memory",	0x8000001C,	4,	base=16 ;
+sfr = "FUNC_SEL      31-16 [1C].GPIO_16 <1:0>", 		"Memory",	0x8000001C,	4,	base=16,	bitRange=0-1	;2 
+sfr = "FUNC_SEL      31-16 [1C].GPIO_17 <3:2>", 		"Memory",	0x8000001C,	4,	base=16,	bitRange=2-3	;2 
+sfr = "FUNC_SEL      31-16 [1C].GPIO_18 <5:4>", 		"Memory",	0x8000001C,	4,	base=16,	bitRange=4-5	;2 
+sfr = "FUNC_SEL      31-16 [1C].GPIO_19 <7:6>", 		"Memory",	0x8000001C,	4,	base=16,	bitRange=6-7	;2 
+sfr = "FUNC_SEL      31-16 [1C].GPIO_20 <9:8>", 		"Memory",	0x8000001C,	4,	base=16,	bitRange=8-9	;2 
+sfr = "FUNC_SEL      31-16 [1C].GPIO_21 <11:10>", 		"Memory",	0x8000001C,	4,	base=16,	bitRange=10-11	;2 
+sfr = "FUNC_SEL      31-16 [1C].GPIO_22 <13:12>", 		"Memory",	0x8000001C,	4,	base=16,	bitRange=12-13	;2 
+sfr = "FUNC_SEL      31-16 [1C].GPIO_23 <15:14>", 		"Memory",	0x8000001C,	4,	base=16,	bitRange=14-15	;2 
+sfr = "FUNC_SEL      31-16 [1C].GPIO_24 <17:16>", 		"Memory",	0x8000001C,	4,	base=16,	bitRange=16-17	;2 
+sfr = "FUNC_SEL      31-16 [1C].GPIO_25 <19:18>", 		"Memory",	0x8000001C,	4,	base=16,	bitRange=18-19	;2 
+sfr = "FUNC_SEL      31-16 [1C].GPIO_26 <21:20>", 		"Memory",	0x8000001C,	4,	base=16,	bitRange=20-21	;2 
+sfr = "FUNC_SEL      31-16 [1C].GPIO_27 <23:22>", 		"Memory",	0x8000001C,	4,	base=16,	bitRange=22-23	;2 
+sfr = "FUNC_SEL      31-16 [1C].GPIO_28 <25:24>", 		"Memory",	0x8000001C,	4,	base=16,	bitRange=24-25	;2 
+sfr = "FUNC_SEL      31-16 [1C].GPIO_29 <27:26>", 		"Memory",	0x8000001C,	4,	base=16,	bitRange=26-27	;2 
+sfr = "FUNC_SEL      31-16 [1C].GPIO_30 <29:28>", 		"Memory",	0x8000001C,	4,	base=16,	bitRange=28-29	;2 
+sfr = "FUNC_SEL      31-16 [1C].GPIO_31 <31:30>", 		"Memory",	0x8000001C,	4,	base=16,	bitRange=30-31	;2 
+sfr = "FUNC_SEL      32-47 [20]", 				"Memory",	0x80000020,	4,	base=16 ;
+sfr = "FUNC_SEL      32-47 [20].GPIO_32 <1:0>", 		"Memory",	0x80000020,	4,	base=16,	bitRange=0-1	;2 
+sfr = "FUNC_SEL      32-47 [20].GPIO_33 <3:2>", 		"Memory",	0x80000020,	4,	base=16,	bitRange=2-3	;2 
+sfr = "FUNC_SEL      32-47 [20].GPIO_34 <5:4>", 		"Memory",	0x80000020,	4,	base=16,	bitRange=4-5	;2 
+sfr = "FUNC_SEL      32-47 [20].GPIO_35 <7:6>", 		"Memory",	0x80000020,	4,	base=16,	bitRange=6-7	;2 
+sfr = "FUNC_SEL      32-47 [20].GPIO_36 <9:8>", 		"Memory",	0x80000020,	4,	base=16,	bitRange=8-9	;2 
+sfr = "FUNC_SEL      32-47 [20].GPIO_37 <11:10>", 		"Memory",	0x80000020,	4,	base=16,	bitRange=10-11	;2 
+sfr = "FUNC_SEL      32-47 [20].GPIO_38 <13:12>", 		"Memory",	0x80000020,	4,	base=16,	bitRange=12-13	;2 
+sfr = "FUNC_SEL      32-47 [20].GPIO_39 <15:14>", 		"Memory",	0x80000020,	4,	base=16,	bitRange=14-15	;2 
+sfr = "FUNC_SEL      32-47 [20].GPIO_40 <17:16>", 		"Memory",	0x80000020,	4,	base=16,	bitRange=16-17	;2 
+sfr = "FUNC_SEL      32-47 [20].GPIO_41 <19:18>", 		"Memory",	0x80000020,	4,	base=16,	bitRange=18-19	;2 
+sfr = "FUNC_SEL      32-47 [20].GPIO_42 <21:20>", 		"Memory",	0x80000020,	4,	base=16,	bitRange=20-21	;2 
+sfr = "FUNC_SEL      32-47 [20].GPIO_43 <23:22>", 		"Memory",	0x80000020,	4,	base=16,	bitRange=22-23	;2 
+sfr = "FUNC_SEL      32-47 [20].GPIO_44 <25:24>", 		"Memory",	0x80000020,	4,	base=16,	bitRange=24-25	;2 
+sfr = "FUNC_SEL      32-47 [20].GPIO_45 <27:26>", 		"Memory",	0x80000020,	4,	base=16,	bitRange=26-27	;2 
+sfr = "FUNC_SEL      32-47 [20].GPIO_46 <29:28>", 		"Memory",	0x80000020,	4,	base=16,	bitRange=28-29	;2 
+sfr = "FUNC_SEL      32-47 [20].GPIO_47 <31:30>", 		"Memory",	0x80000020,	4,	base=16,	bitRange=30-31	;2 
+sfr = "FUNC_SEL      48-63 [24]", 				"Memory",	0x80000024,	4,	base=16 ;
+sfr = "FUNC_SEL      48-63 [24].GPIO_48 <1:0>", 		"Memory",	0x80000024,	4,	base=16,	bitRange=0-1	;2 
+sfr = "FUNC_SEL      48-63 [24].GPIO_49 <3:2>", 		"Memory",	0x80000024,	4,	base=16,	bitRange=2-3	;2 
+sfr = "FUNC_SEL      48-63 [24].GPIO_50 <5:4>", 		"Memory",	0x80000024,	4,	base=16,	bitRange=4-5	;2 
+sfr = "FUNC_SEL      48-63 [24].GPIO_51 <7:6>", 		"Memory",	0x80000024,	4,	base=16,	bitRange=6-7	;2 
+sfr = "FUNC_SEL      48-63 [24].GPIO_52 <9:8>", 		"Memory",	0x80000024,	4,	base=16,	bitRange=8-9	;2 
+sfr = "FUNC_SEL      48-63 [24].GPIO_53 <11:10>", 		"Memory",	0x80000024,	4,	base=16,	bitRange=10-11	;2 
+sfr = "FUNC_SEL      48-63 [24].GPIO_54 <13:12>", 		"Memory",	0x80000024,	4,	base=16,	bitRange=12-13	;2 
+sfr = "FUNC_SEL      48-63 [24].GPIO_55 <15:14>", 		"Memory",	0x80000024,	4,	base=16,	bitRange=14-15	;2 
+sfr = "FUNC_SEL      48-63 [24].GPIO_56 <17:16>", 		"Memory",	0x80000024,	4,	base=16,	bitRange=16-17	;2 
+sfr = "FUNC_SEL      48-63 [24].GPIO_57 <19:18>", 		"Memory",	0x80000024,	4,	base=16,	bitRange=18-19	;2 
+sfr = "FUNC_SEL      48-63 [24].GPIO_58 <21:20>", 		"Memory",	0x80000024,	4,	base=16,	bitRange=20-21	;2 
+sfr = "FUNC_SEL      48-63 [24].GPIO_59 <23:22>", 		"Memory",	0x80000024,	4,	base=16,	bitRange=22-23	;2 
+sfr = "FUNC_SEL      48-63 [24].GPIO_60 <25:24>", 		"Memory",	0x80000024,	4,	base=16,	bitRange=24-25	;2 
+sfr = "FUNC_SEL      48-63 [24].GPIO_61 <27:26>", 		"Memory",	0x80000024,	4,	base=16,	bitRange=26-27	;2 
+sfr = "FUNC_SEL      48-63 [24].GPIO_62 <29:28>", 		"Memory",	0x80000024,	4,	base=16,	bitRange=28-29	;2 
+sfr = "FUNC_SEL      48-63 [24].GPIO_63 <31:30>", 		"Memory",	0x80000024,	4,	base=16,	bitRange=30-31	;2 
+sfr = "IP_DATA_SEL   31-00 [28]", 				"Memory",	0x80000028,	4,	base=16 ;
+sfr = "IP_DATA_SEL   31-00 [28].GPIO_0 <0>", 			"Memory",	0x80000028,	4,	base=16,	bitRange=0	;1 
+sfr = "IP_DATA_SEL   31-00 [28].GPIO_1 <1>", 			"Memory",	0x80000028,	4,	base=16,	bitRange=1	;1 
+sfr = "IP_DATA_SEL   31-00 [28].GPIO_2 <2>", 			"Memory",	0x80000028,	4,	base=16,	bitRange=2	;1 
+sfr = "IP_DATA_SEL   31-00 [28].GPIO_3 <3>", 			"Memory",	0x80000028,	4,	base=16,	bitRange=3	;1 
+sfr = "IP_DATA_SEL   31-00 [28].GPIO_4 <4>", 			"Memory",	0x80000028,	4,	base=16,	bitRange=4	;1 
+sfr = "IP_DATA_SEL   31-00 [28].GPIO_5 <5>", 			"Memory",	0x80000028,	4,	base=16,	bitRange=5	;1 
+sfr = "IP_DATA_SEL   31-00 [28].GPIO_6 <6>", 			"Memory",	0x80000028,	4,	base=16,	bitRange=6	;1 
+sfr = "IP_DATA_SEL   31-00 [28].GPIO_7 <7>", 			"Memory",	0x80000028,	4,	base=16,	bitRange=7	;1 
+sfr = "IP_DATA_SEL   31-00 [28].GPIO_8 <8>", 			"Memory",	0x80000028,	4,	base=16,	bitRange=8	;1 
+sfr = "IP_DATA_SEL   31-00 [28].GPIO_9 <9>", 			"Memory",	0x80000028,	4,	base=16,	bitRange=9	;1 
+sfr = "IP_DATA_SEL   31-00 [28].GPIO_10 <10>", 			"Memory",	0x80000028,	4,	base=16,	bitRange=10	;1 
+sfr = "IP_DATA_SEL   31-00 [28].GPIO_11 <11>", 			"Memory",	0x80000028,	4,	base=16,	bitRange=11	;1 
+sfr = "IP_DATA_SEL   31-00 [28].GPIO_12 <12>", 			"Memory",	0x80000028,	4,	base=16,	bitRange=12	;1 
+sfr = "IP_DATA_SEL   31-00 [28].GPIO_13 <13>", 			"Memory",	0x80000028,	4,	base=16,	bitRange=13	;1 
+sfr = "IP_DATA_SEL   31-00 [28].GPIO_14 <14>", 			"Memory",	0x80000028,	4,	base=16,	bitRange=14	;1 
+sfr = "IP_DATA_SEL   31-00 [28].GPIO_15 <15>", 			"Memory",	0x80000028,	4,	base=16,	bitRange=15	;1 
+sfr = "IP_DATA_SEL   31-00 [28].GPIO_16 <16>", 			"Memory",	0x80000028,	4,	base=16,	bitRange=16	;1 
+sfr = "IP_DATA_SEL   31-00 [28].GPIO_17 <17>", 			"Memory",	0x80000028,	4,	base=16,	bitRange=17	;1 
+sfr = "IP_DATA_SEL   31-00 [28].GPIO_18 <18>", 			"Memory",	0x80000028,	4,	base=16,	bitRange=18	;1 
+sfr = "IP_DATA_SEL   31-00 [28].GPIO_19 <19>", 			"Memory",	0x80000028,	4,	base=16,	bitRange=19	;1 
+sfr = "IP_DATA_SEL   31-00 [28].GPIO_20 <20>", 			"Memory",	0x80000028,	4,	base=16,	bitRange=20	;1 
+sfr = "IP_DATA_SEL   31-00 [28].GPIO_21 <21>", 			"Memory",	0x80000028,	4,	base=16,	bitRange=21	;1 
+sfr = "IP_DATA_SEL   31-00 [28].GPIO_22 <22>", 			"Memory",	0x80000028,	4,	base=16,	bitRange=22	;1 
+sfr = "IP_DATA_SEL   31-00 [28].GPIO_23 <23>", 			"Memory",	0x80000028,	4,	base=16,	bitRange=23	;1 
+sfr = "IP_DATA_SEL   31-00 [28].GPIO_24 <24>", 			"Memory",	0x80000028,	4,	base=16,	bitRange=24	;1 
+sfr = "IP_DATA_SEL   31-00 [28].GPIO_25 <25>", 			"Memory",	0x80000028,	4,	base=16,	bitRange=25	;1 
+sfr = "IP_DATA_SEL   31-00 [28].GPIO_26 <26>", 			"Memory",	0x80000028,	4,	base=16,	bitRange=26	;1 
+sfr = "IP_DATA_SEL   31-00 [28].GPIO_27 <27>", 			"Memory",	0x80000028,	4,	base=16,	bitRange=27	;1 
+sfr = "IP_DATA_SEL   31-00 [28].GPIO_28 <28>", 			"Memory",	0x80000028,	4,	base=16,	bitRange=28	;1 
+sfr = "IP_DATA_SEL   31-00 [28].GPIO_29 <29>", 			"Memory",	0x80000028,	4,	base=16,	bitRange=29	;1 
+sfr = "IP_DATA_SEL   31-00 [28].GPIO_30 <30>", 			"Memory",	0x80000028,	4,	base=16,	bitRange=30	;1 
+sfr = "IP_DATA_SEL   31-00 [28].GPIO_31 <31>", 			"Memory",	0x80000028,	4,	base=16,	bitRange=31	;1 
+sfr = "IP_DATA_SEL   63-32 [2C]", 				"Memory",	0x8000002C,	4,	base=16 ;
+sfr = "IP_DATA_SEL   63-32 [2C].GPIO_32 <0>", 			"Memory",	0x8000002C,	4,	base=16,	bitRange=0	;1 
+sfr = "IP_DATA_SEL   63-32 [2C].GPIO_33 <1>", 			"Memory",	0x8000002C,	4,	base=16,	bitRange=1	;1 
+sfr = "IP_DATA_SEL   63-32 [2C].GPIO_34 <2>", 			"Memory",	0x8000002C,	4,	base=16,	bitRange=2	;1 
+sfr = "IP_DATA_SEL   63-32 [2C].GPIO_35 <3>", 			"Memory",	0x8000002C,	4,	base=16,	bitRange=3	;1 
+sfr = "IP_DATA_SEL   63-32 [2C].GPIO_36 <4>", 			"Memory",	0x8000002C,	4,	base=16,	bitRange=4	;1 
+sfr = "IP_DATA_SEL   63-32 [2C].GPIO_37 <5>", 			"Memory",	0x8000002C,	4,	base=16,	bitRange=5	;1 
+sfr = "IP_DATA_SEL   63-32 [2C].GPIO_38 <6>", 			"Memory",	0x8000002C,	4,	base=16,	bitRange=6	;1 
+sfr = "IP_DATA_SEL   63-32 [2C].GPIO_39 <7>", 			"Memory",	0x8000002C,	4,	base=16,	bitRange=7	;1 
+sfr = "IP_DATA_SEL   63-32 [2C].GPIO_40 <8>", 			"Memory",	0x8000002C,	4,	base=16,	bitRange=8	;1 
+sfr = "IP_DATA_SEL   63-32 [2C].GPIO_41 <9>", 			"Memory",	0x8000002C,	4,	base=16,	bitRange=9	;1 
+sfr = "IP_DATA_SEL   63-32 [2C].GPIO_42 <10>", 			"Memory",	0x8000002C,	4,	base=16,	bitRange=10	;1 
+sfr = "IP_DATA_SEL   63-32 [2C].GPIO_43 <11>", 			"Memory",	0x8000002C,	4,	base=16,	bitRange=11	;1 
+sfr = "IP_DATA_SEL   63-32 [2C].GPIO_44 <12>", 			"Memory",	0x8000002C,	4,	base=16,	bitRange=12	;1 
+sfr = "IP_DATA_SEL   63-32 [2C].GPIO_45 <13>", 			"Memory",	0x8000002C,	4,	base=16,	bitRange=13	;1 
+sfr = "IP_DATA_SEL   63-32 [2C].GPIO_46 <14>", 			"Memory",	0x8000002C,	4,	base=16,	bitRange=14	;1 
+sfr = "IP_DATA_SEL   63-32 [2C].GPIO_47 <15>", 			"Memory",	0x8000002C,	4,	base=16,	bitRange=15	;1 
+sfr = "IP_DATA_SEL   63-32 [2C].GPIO_48 <16>", 			"Memory",	0x8000002C,	4,	base=16,	bitRange=16	;1 
+sfr = "IP_DATA_SEL   63-32 [2C].GPIO_49 <17>", 			"Memory",	0x8000002C,	4,	base=16,	bitRange=17	;1 
+sfr = "IP_DATA_SEL   63-32 [2C].GPIO_50 <18>", 			"Memory",	0x8000002C,	4,	base=16,	bitRange=18	;1 
+sfr = "IP_DATA_SEL   63-32 [2C].GPIO_51 <19>", 			"Memory",	0x8000002C,	4,	base=16,	bitRange=19	;1 
+sfr = "IP_DATA_SEL   63-32 [2C].GPIO_52 <20>", 			"Memory",	0x8000002C,	4,	base=16,	bitRange=20	;1 
+sfr = "IP_DATA_SEL   63-32 [2C].GPIO_53 <21>", 			"Memory",	0x8000002C,	4,	base=16,	bitRange=21	;1 
+sfr = "IP_DATA_SEL   63-32 [2C].GPIO_54 <22>", 			"Memory",	0x8000002C,	4,	base=16,	bitRange=22	;1 
+sfr = "IP_DATA_SEL   63-32 [2C].GPIO_55 <23>", 			"Memory",	0x8000002C,	4,	base=16,	bitRange=23	;1 
+sfr = "IP_DATA_SEL   63-32 [2C].GPIO_56 <24>", 			"Memory",	0x8000002C,	4,	base=16,	bitRange=24	;1 
+sfr = "IP_DATA_SEL   63-32 [2C].GPIO_57 <25>", 			"Memory",	0x8000002C,	4,	base=16,	bitRange=25	;1 
+sfr = "IP_DATA_SEL   63-32 [2C].GPIO_58 <26>", 			"Memory",	0x8000002C,	4,	base=16,	bitRange=26	;1 
+sfr = "IP_DATA_SEL   63-32 [2C].GPIO_59 <27>", 			"Memory",	0x8000002C,	4,	base=16,	bitRange=27	;1 
+sfr = "IP_DATA_SEL   63-32 [2C].GPIO_60 <28>", 			"Memory",	0x8000002C,	4,	base=16,	bitRange=28	;1 
+sfr = "IP_DATA_SEL   63-32 [2C].GPIO_61 <29>", 			"Memory",	0x8000002C,	4,	base=16,	bitRange=29	;1 
+sfr = "IP_DATA_SEL   63-32 [2C].GPIO_62 <30>", 			"Memory",	0x8000002C,	4,	base=16,	bitRange=30	;1 
+sfr = "IP_DATA_SEL   63-32 [2C].GPIO_63 <31>", 			"Memory",	0x8000002C,	4,	base=16,	bitRange=31	;1 
+sfr = "PAD_PULUP_SEL 31-00 [30]", 				"Memory",	0x80000030,	4,	base=16 ;
+sfr = "PAD_PULUP_SEL 31-00 [30].GPIO_0 <0>", 			"Memory",	0x80000030,	4,	base=16,	bitRange=0	;1 
+sfr = "PAD_PULUP_SEL 31-00 [30].GPIO_1 <1>", 			"Memory",	0x80000030,	4,	base=16,	bitRange=1	;1 
+sfr = "PAD_PULUP_SEL 31-00 [30].GPIO_2 <2>", 			"Memory",	0x80000030,	4,	base=16,	bitRange=2	;1 
+sfr = "PAD_PULUP_SEL 31-00 [30].GPIO_3 <3>", 			"Memory",	0x80000030,	4,	base=16,	bitRange=3	;1 
+sfr = "PAD_PULUP_SEL 31-00 [30].GPIO_4 <4>", 			"Memory",	0x80000030,	4,	base=16,	bitRange=4	;1 
+sfr = "PAD_PULUP_SEL 31-00 [30].GPIO_5 <5>", 			"Memory",	0x80000030,	4,	base=16,	bitRange=5	;1 
+sfr = "PAD_PULUP_SEL 31-00 [30].GPIO_6 <6>", 			"Memory",	0x80000030,	4,	base=16,	bitRange=6	;1 
+sfr = "PAD_PULUP_SEL 31-00 [30].GPIO_7 <7>", 			"Memory",	0x80000030,	4,	base=16,	bitRange=7	;1 
+sfr = "PAD_PULUP_SEL 31-00 [30].GPIO_8 <8>", 			"Memory",	0x80000030,	4,	base=16,	bitRange=8	;1 
+sfr = "PAD_PULUP_SEL 31-00 [30].GPIO_9 <9>", 			"Memory",	0x80000030,	4,	base=16,	bitRange=9	;1 
+sfr = "PAD_PULUP_SEL 31-00 [30].GPIO_10 <10>", 			"Memory",	0x80000030,	4,	base=16,	bitRange=10	;1 
+sfr = "PAD_PULUP_SEL 31-00 [30].GPIO_11 <11>", 			"Memory",	0x80000030,	4,	base=16,	bitRange=11	;1 
+sfr = "PAD_PULUP_SEL 31-00 [30].GPIO_12 <12>", 			"Memory",	0x80000030,	4,	base=16,	bitRange=12	;1 
+sfr = "PAD_PULUP_SEL 31-00 [30].GPIO_13 <13>", 			"Memory",	0x80000030,	4,	base=16,	bitRange=13	;1 
+sfr = "PAD_PULUP_SEL 31-00 [30].GPIO_14 <14>", 			"Memory",	0x80000030,	4,	base=16,	bitRange=14	;1 
+sfr = "PAD_PULUP_SEL 31-00 [30].GPIO_15 <15>", 			"Memory",	0x80000030,	4,	base=16,	bitRange=15	;1 
+sfr = "PAD_PULUP_SEL 31-00 [30].GPIO_16 <16>", 			"Memory",	0x80000030,	4,	base=16,	bitRange=16	;1 
+sfr = "PAD_PULUP_SEL 31-00 [30].GPIO_17 <17>", 			"Memory",	0x80000030,	4,	base=16,	bitRange=17	;1 
+sfr = "PAD_PULUP_SEL 31-00 [30].GPIO_18 <18>", 			"Memory",	0x80000030,	4,	base=16,	bitRange=18	;1 
+sfr = "PAD_PULUP_SEL 31-00 [30].GPIO_19 <19>", 			"Memory",	0x80000030,	4,	base=16,	bitRange=19	;1 
+sfr = "PAD_PULUP_SEL 31-00 [30].GPIO_20 <20>", 			"Memory",	0x80000030,	4,	base=16,	bitRange=20	;1 
+sfr = "PAD_PULUP_SEL 31-00 [30].GPIO_21 <21>", 			"Memory",	0x80000030,	4,	base=16,	bitRange=21	;1 
+sfr = "PAD_PULUP_SEL 31-00 [30].GPIO_22 <22>", 			"Memory",	0x80000030,	4,	base=16,	bitRange=22	;1 
+sfr = "PAD_PULUP_SEL 31-00 [30].GPIO_23 <23>", 			"Memory",	0x80000030,	4,	base=16,	bitRange=23	;1 
+sfr = "PAD_PULUP_SEL 31-00 [30].GPIO_24 <24>", 			"Memory",	0x80000030,	4,	base=16,	bitRange=24	;1 
+sfr = "PAD_PULUP_SEL 31-00 [30].GPIO_25 <25>", 			"Memory",	0x80000030,	4,	base=16,	bitRange=25	;1 
+sfr = "PAD_PULUP_SEL 31-00 [30].GPIO_26 <26>", 			"Memory",	0x80000030,	4,	base=16,	bitRange=26	;1 
+sfr = "PAD_PULUP_SEL 31-00 [30].GPIO_27 <27>", 			"Memory",	0x80000030,	4,	base=16,	bitRange=27	;1 
+sfr = "PAD_PULUP_SEL 31-00 [30].GPIO_28 <28>", 			"Memory",	0x80000030,	4,	base=16,	bitRange=28	;1 
+sfr = "PAD_PULUP_SEL 31-00 [30].GPIO_29 <29>", 			"Memory",	0x80000030,	4,	base=16,	bitRange=29	;1 
+sfr = "PAD_PULUP_SEL 31-00 [30].GPIO_30 <30>", 			"Memory",	0x80000030,	4,	base=16,	bitRange=30	;1 
+sfr = "PAD_PULUP_SEL 31-00 [30].GPIO_31 <31>", 			"Memory",	0x80000030,	4,	base=16,	bitRange=31	;1 
+sfr = "PAD_PULUP_SEL 63-32 [34]", 				"Memory",	0x80000034,	4,	base=16 ;
+sfr = "PAD_PULUP_SEL 63-32 [34].GPIO_32 <0>", 			"Memory",	0x80000034,	4,	base=16,	bitRange=0	;1 
+sfr = "PAD_PULUP_SEL 63-32 [34].GPIO_33 <1>", 			"Memory",	0x80000034,	4,	base=16,	bitRange=1	;1 
+sfr = "PAD_PULUP_SEL 63-32 [34].GPIO_34 <2>", 			"Memory",	0x80000034,	4,	base=16,	bitRange=2	;1 
+sfr = "PAD_PULUP_SEL 63-32 [34].GPIO_35 <3>", 			"Memory",	0x80000034,	4,	base=16,	bitRange=3	;1 
+sfr = "PAD_PULUP_SEL 63-32 [34].GPIO_36 <4>", 			"Memory",	0x80000034,	4,	base=16,	bitRange=4	;1 
+sfr = "PAD_PULUP_SEL 63-32 [34].GPIO_37 <5>", 			"Memory",	0x80000034,	4,	base=16,	bitRange=5	;1 
+sfr = "PAD_PULUP_SEL 63-32 [34].GPIO_38 <6>", 			"Memory",	0x80000034,	4,	base=16,	bitRange=6	;1 
+sfr = "PAD_PULUP_SEL 63-32 [34].GPIO_39 <7>", 			"Memory",	0x80000034,	4,	base=16,	bitRange=7	;1 
+sfr = "PAD_PULUP_SEL 63-32 [34].GPIO_40 <8>", 			"Memory",	0x80000034,	4,	base=16,	bitRange=8	;1 
+sfr = "PAD_PULUP_SEL 63-32 [34].GPIO_41 <9>", 			"Memory",	0x80000034,	4,	base=16,	bitRange=9	;1 
+sfr = "PAD_PULUP_SEL 63-32 [34].GPIO_42 <10>", 			"Memory",	0x80000034,	4,	base=16,	bitRange=10	;1 
+sfr = "PAD_PULUP_SEL 63-32 [34].GPIO_43 <11>", 			"Memory",	0x80000034,	4,	base=16,	bitRange=11	;1 
+sfr = "PAD_PULUP_SEL 63-32 [34].GPIO_44 <12>", 			"Memory",	0x80000034,	4,	base=16,	bitRange=12	;1 
+sfr = "PAD_PULUP_SEL 63-32 [34].GPIO_45 <13>", 			"Memory",	0x80000034,	4,	base=16,	bitRange=13	;1 
+sfr = "PAD_PULUP_SEL 63-32 [34].GPIO_46 <14>", 			"Memory",	0x80000034,	4,	base=16,	bitRange=14	;1 
+sfr = "PAD_PULUP_SEL 63-32 [34].GPIO_47 <15>", 			"Memory",	0x80000034,	4,	base=16,	bitRange=15	;1 
+sfr = "PAD_PULUP_SEL 63-32 [34].GPIO_48 <16>", 			"Memory",	0x80000034,	4,	base=16,	bitRange=16	;1 
+sfr = "PAD_PULUP_SEL 63-32 [34].GPIO_49 <17>", 			"Memory",	0x80000034,	4,	base=16,	bitRange=17	;1 
+sfr = "PAD_PULUP_SEL 63-32 [34].GPIO_50 <18>", 			"Memory",	0x80000034,	4,	base=16,	bitRange=18	;1 
+sfr = "PAD_PULUP_SEL 63-32 [34].GPIO_51 <19>", 			"Memory",	0x80000034,	4,	base=16,	bitRange=19	;1 
+sfr = "PAD_PULUP_SEL 63-32 [34].GPIO_52 <20>", 			"Memory",	0x80000034,	4,	base=16,	bitRange=20	;1 
+sfr = "PAD_PULUP_SEL 63-32 [34].GPIO_53 <21>", 			"Memory",	0x80000034,	4,	base=16,	bitRange=21	;1 
+sfr = "PAD_PULUP_SEL 63-32 [34].GPIO_54 <22>", 			"Memory",	0x80000034,	4,	base=16,	bitRange=22	;1 
+sfr = "PAD_PULUP_SEL 63-32 [34].GPIO_55 <23>", 			"Memory",	0x80000034,	4,	base=16,	bitRange=23	;1 
+sfr = "PAD_PULUP_SEL 63-32 [34].GPIO_56 <24>", 			"Memory",	0x80000034,	4,	base=16,	bitRange=24	;1 
+sfr = "PAD_PULUP_SEL 63-32 [34].GPIO_57 <25>", 			"Memory",	0x80000034,	4,	base=16,	bitRange=25	;1 
+sfr = "PAD_PULUP_SEL 63-32 [34].GPIO_58 <26>", 			"Memory",	0x80000034,	4,	base=16,	bitRange=26	;1 
+sfr = "PAD_PULUP_SEL 63-32 [34].GPIO_59 <27>", 			"Memory",	0x80000034,	4,	base=16,	bitRange=27	;1 
+sfr = "PAD_PULUP_SEL 63-32 [34].GPIO_60 <28>", 			"Memory",	0x80000034,	4,	base=16,	bitRange=28	;1 
+sfr = "PAD_PULUP_SEL 63-32 [34].GPIO_61 <29>", 			"Memory",	0x80000034,	4,	base=16,	bitRange=29	;1 
+sfr = "PAD_PULUP_SEL 63-32 [34].GPIO_62 <30>", 			"Memory",	0x80000034,	4,	base=16,	bitRange=30	;1 
+sfr = "PAD_PULUP_SEL 63-32 [34].GPIO_63 <31>", 			"Memory",	0x80000034,	4,	base=16,	bitRange=31	;1 
+sfr = "PAD_HYST_EN   31-00 [38]", 				"Memory",	0x80000038,	4,	base=16 ;
+sfr = "PAD_HYST_EN   31-00 [38].GPIO_0 <0>", 			"Memory",	0x80000038,	4,	base=16,	bitRange=0	;1 
+sfr = "PAD_HYST_EN   31-00 [38].GPIO_1 <1>", 			"Memory",	0x80000038,	4,	base=16,	bitRange=1	;1 
+sfr = "PAD_HYST_EN   31-00 [38].GPIO_2 <2>", 			"Memory",	0x80000038,	4,	base=16,	bitRange=2	;1 
+sfr = "PAD_HYST_EN   31-00 [38].GPIO_3 <3>", 			"Memory",	0x80000038,	4,	base=16,	bitRange=3	;1 
+sfr = "PAD_HYST_EN   31-00 [38].GPIO_4 <4>", 			"Memory",	0x80000038,	4,	base=16,	bitRange=4	;1 
+sfr = "PAD_HYST_EN   31-00 [38].GPIO_5 <5>", 			"Memory",	0x80000038,	4,	base=16,	bitRange=5	;1 
+sfr = "PAD_HYST_EN   31-00 [38].GPIO_6 <6>", 			"Memory",	0x80000038,	4,	base=16,	bitRange=6	;1 
+sfr = "PAD_HYST_EN   31-00 [38].GPIO_7 <7>", 			"Memory",	0x80000038,	4,	base=16,	bitRange=7	;1 
+sfr = "PAD_HYST_EN   31-00 [38].GPIO_8 <8>", 			"Memory",	0x80000038,	4,	base=16,	bitRange=8	;1 
+sfr = "PAD_HYST_EN   31-00 [38].GPIO_9 <9>", 			"Memory",	0x80000038,	4,	base=16,	bitRange=9	;1 
+sfr = "PAD_HYST_EN   31-00 [38].GPIO_10 <10>", 			"Memory",	0x80000038,	4,	base=16,	bitRange=10	;1 
+sfr = "PAD_HYST_EN   31-00 [38].GPIO_11 <11>", 			"Memory",	0x80000038,	4,	base=16,	bitRange=11	;1 
+sfr = "PAD_HYST_EN   31-00 [38].GPIO_12 <12>", 			"Memory",	0x80000038,	4,	base=16,	bitRange=12	;1 
+sfr = "PAD_HYST_EN   31-00 [38].GPIO_13 <13>", 			"Memory",	0x80000038,	4,	base=16,	bitRange=13	;1 
+sfr = "PAD_HYST_EN   31-00 [38].GPIO_14 <14>", 			"Memory",	0x80000038,	4,	base=16,	bitRange=14	;1 
+sfr = "PAD_HYST_EN   31-00 [38].GPIO_15 <15>", 			"Memory",	0x80000038,	4,	base=16,	bitRange=15	;1 
+sfr = "PAD_HYST_EN   31-00 [38].GPIO_16 <16>", 			"Memory",	0x80000038,	4,	base=16,	bitRange=16	;1 
+sfr = "PAD_HYST_EN   31-00 [38].GPIO_17 <17>", 			"Memory",	0x80000038,	4,	base=16,	bitRange=17	;1 
+sfr = "PAD_HYST_EN   31-00 [38].GPIO_18 <18>", 			"Memory",	0x80000038,	4,	base=16,	bitRange=18	;1 
+sfr = "PAD_HYST_EN   31-00 [38].GPIO_19 <19>", 			"Memory",	0x80000038,	4,	base=16,	bitRange=19	;1 
+sfr = "PAD_HYST_EN   31-00 [38].GPIO_20 <20>", 			"Memory",	0x80000038,	4,	base=16,	bitRange=20	;1 
+sfr = "PAD_HYST_EN   31-00 [38].GPIO_21 <21>", 			"Memory",	0x80000038,	4,	base=16,	bitRange=21	;1 
+sfr = "PAD_HYST_EN   31-00 [38].GPIO_22 <22>", 			"Memory",	0x80000038,	4,	base=16,	bitRange=22	;1 
+sfr = "PAD_HYST_EN   31-00 [38].GPIO_23 <23>", 			"Memory",	0x80000038,	4,	base=16,	bitRange=23	;1 
+sfr = "PAD_HYST_EN   31-00 [38].GPIO_24 <24>", 			"Memory",	0x80000038,	4,	base=16,	bitRange=24	;1 
+sfr = "PAD_HYST_EN   31-00 [38].GPIO_25 <25>", 			"Memory",	0x80000038,	4,	base=16,	bitRange=25	;1 
+sfr = "PAD_HYST_EN   31-00 [38].GPIO_26 <26>", 			"Memory",	0x80000038,	4,	base=16,	bitRange=26	;1 
+sfr = "PAD_HYST_EN   31-00 [38].GPIO_27 <27>", 			"Memory",	0x80000038,	4,	base=16,	bitRange=27	;1 
+sfr = "PAD_HYST_EN   31-00 [38].GPIO_28 <28>", 			"Memory",	0x80000038,	4,	base=16,	bitRange=28	;1 
+sfr = "PAD_HYST_EN   31-00 [38].GPIO_29 <29>", 			"Memory",	0x80000038,	4,	base=16,	bitRange=29	;1 
+sfr = "PAD_HYST_EN   31-00 [38].GPIO_30 <30>", 			"Memory",	0x80000038,	4,	base=16,	bitRange=30	;1 
+sfr = "PAD_HYST_EN   31-00 [38].GPIO_31 <31>", 			"Memory",	0x80000038,	4,	base=16,	bitRange=31	;1 
+sfr = "PAD_HYST_EN   63-32 [3C]", 				"Memory",	0x8000003C,	4,	base=16 ;
+sfr = "PAD_HYST_EN   63-32 [3C].GPIO_32 <0>", 			"Memory",	0x8000003C,	4,	base=16,	bitRange=0	;1 
+sfr = "PAD_HYST_EN   63-32 [3C].GPIO_33 <1>", 			"Memory",	0x8000003C,	4,	base=16,	bitRange=1	;1 
+sfr = "PAD_HYST_EN   63-32 [3C].GPIO_34 <2>", 			"Memory",	0x8000003C,	4,	base=16,	bitRange=2	;1 
+sfr = "PAD_HYST_EN   63-32 [3C].GPIO_35 <3>", 			"Memory",	0x8000003C,	4,	base=16,	bitRange=3	;1 
+sfr = "PAD_HYST_EN   63-32 [3C].GPIO_36 <4>", 			"Memory",	0x8000003C,	4,	base=16,	bitRange=4	;1 
+sfr = "PAD_HYST_EN   63-32 [3C].GPIO_37 <5>", 			"Memory",	0x8000003C,	4,	base=16,	bitRange=5	;1 
+sfr = "PAD_HYST_EN   63-32 [3C].GPIO_38 <6>", 			"Memory",	0x8000003C,	4,	base=16,	bitRange=6	;1 
+sfr = "PAD_HYST_EN   63-32 [3C].GPIO_39 <7>", 			"Memory",	0x8000003C,	4,	base=16,	bitRange=7	;1 
+sfr = "PAD_HYST_EN   63-32 [3C].GPIO_40 <8>", 			"Memory",	0x8000003C,	4,	base=16,	bitRange=8	;1 
+sfr = "PAD_HYST_EN   63-32 [3C].GPIO_41 <9>", 			"Memory",	0x8000003C,	4,	base=16,	bitRange=9	;1 
+sfr = "PAD_HYST_EN   63-32 [3C].GPIO_42 <10>", 			"Memory",	0x8000003C,	4,	base=16,	bitRange=10	;1 
+sfr = "PAD_HYST_EN   63-32 [3C].GPIO_43 <11>", 			"Memory",	0x8000003C,	4,	base=16,	bitRange=11	;1 
+sfr = "PAD_HYST_EN   63-32 [3C].GPIO_44 <12>", 			"Memory",	0x8000003C,	4,	base=16,	bitRange=12	;1 
+sfr = "PAD_HYST_EN   63-32 [3C].GPIO_45 <13>", 			"Memory",	0x8000003C,	4,	base=16,	bitRange=13	;1 
+sfr = "PAD_HYST_EN   63-32 [3C].GPIO_46 <14>", 			"Memory",	0x8000003C,	4,	base=16,	bitRange=14	;1 
+sfr = "PAD_HYST_EN   63-32 [3C].GPIO_47 <15>", 			"Memory",	0x8000003C,	4,	base=16,	bitRange=15	;1 
+sfr = "PAD_HYST_EN   63-32 [3C].GPIO_48 <16>", 			"Memory",	0x8000003C,	4,	base=16,	bitRange=16	;1 
+sfr = "PAD_HYST_EN   63-32 [3C].GPIO_49 <17>", 			"Memory",	0x8000003C,	4,	base=16,	bitRange=17	;1 
+sfr = "PAD_HYST_EN   63-32 [3C].GPIO_50 <18>", 			"Memory",	0x8000003C,	4,	base=16,	bitRange=18	;1 
+sfr = "PAD_HYST_EN   63-32 [3C].GPIO_51 <19>", 			"Memory",	0x8000003C,	4,	base=16,	bitRange=19	;1 
+sfr = "PAD_HYST_EN   63-32 [3C].GPIO_52 <20>", 			"Memory",	0x8000003C,	4,	base=16,	bitRange=20	;1 
+sfr = "PAD_HYST_EN   63-32 [3C].GPIO_53 <21>", 			"Memory",	0x8000003C,	4,	base=16,	bitRange=21	;1 
+sfr = "PAD_HYST_EN   63-32 [3C].GPIO_54 <22>", 			"Memory",	0x8000003C,	4,	base=16,	bitRange=22	;1 
+sfr = "PAD_HYST_EN   63-32 [3C].GPIO_55 <23>", 			"Memory",	0x8000003C,	4,	base=16,	bitRange=23	;1 
+sfr = "PAD_HYST_EN   63-32 [3C].GPIO_56 <24>", 			"Memory",	0x8000003C,	4,	base=16,	bitRange=24	;1 
+sfr = "PAD_HYST_EN   63-32 [3C].GPIO_57 <25>", 			"Memory",	0x8000003C,	4,	base=16,	bitRange=25	;1 
+sfr = "PAD_HYST_EN   63-32 [3C].GPIO_58 <26>", 			"Memory",	0x8000003C,	4,	base=16,	bitRange=26	;1 
+sfr = "PAD_HYST_EN   63-32 [3C].GPIO_59 <27>", 			"Memory",	0x8000003C,	4,	base=16,	bitRange=27	;1 
+sfr = "PAD_HYST_EN   63-32 [3C].GPIO_60 <28>", 			"Memory",	0x8000003C,	4,	base=16,	bitRange=28	;1 
+sfr = "PAD_HYST_EN   63-32 [3C].GPIO_61 <29>", 			"Memory",	0x8000003C,	4,	base=16,	bitRange=29	;1 
+sfr = "PAD_HYST_EN   63-32 [3C].GPIO_62 <30>", 			"Memory",	0x8000003C,	4,	base=16,	bitRange=30	;1 
+sfr = "PAD_HYST_EN   63-32 [3C].GPIO_63 <31>", 			"Memory",	0x8000003C,	4,	base=16,	bitRange=31	;1 
+sfr = "PULLUP_KEEP   31-00 [40]", 				"Memory",	0x80000040,	4,	base=16 ;
+sfr = "PULLUP_KEEP   31-00 [40].GPIO_0 <0>", 			"Memory",	0x80000040,	4,	base=16,	bitRange=0	;1 
+sfr = "PULLUP_KEEP   31-00 [40].GPIO_1 <1>", 			"Memory",	0x80000040,	4,	base=16,	bitRange=1	;1 
+sfr = "PULLUP_KEEP   31-00 [40].GPIO_2 <2>", 			"Memory",	0x80000040,	4,	base=16,	bitRange=2	;1 
+sfr = "PULLUP_KEEP   31-00 [40].GPIO_3 <3>", 			"Memory",	0x80000040,	4,	base=16,	bitRange=3	;1 
+sfr = "PULLUP_KEEP   31-00 [40].GPIO_4 <4>", 			"Memory",	0x80000040,	4,	base=16,	bitRange=4	;1 
+sfr = "PULLUP_KEEP   31-00 [40].GPIO_5 <5>", 			"Memory",	0x80000040,	4,	base=16,	bitRange=5	;1 
+sfr = "PULLUP_KEEP   31-00 [40].GPIO_6 <6>", 			"Memory",	0x80000040,	4,	base=16,	bitRange=6	;1 
+sfr = "PULLUP_KEEP   31-00 [40].GPIO_7 <7>", 			"Memory",	0x80000040,	4,	base=16,	bitRange=7	;1 
+sfr = "PULLUP_KEEP   31-00 [40].GPIO_8 <8>", 			"Memory",	0x80000040,	4,	base=16,	bitRange=8	;1 
+sfr = "PULLUP_KEEP   31-00 [40].GPIO_9 <9>", 			"Memory",	0x80000040,	4,	base=16,	bitRange=9	;1 
+sfr = "PULLUP_KEEP   31-00 [40].GPIO_10 <10>", 			"Memory",	0x80000040,	4,	base=16,	bitRange=10	;1 
+sfr = "PULLUP_KEEP   31-00 [40].GPIO_11 <11>", 			"Memory",	0x80000040,	4,	base=16,	bitRange=11	;1 
+sfr = "PULLUP_KEEP   31-00 [40].GPIO_12 <12>", 			"Memory",	0x80000040,	4,	base=16,	bitRange=12	;1 
+sfr = "PULLUP_KEEP   31-00 [40].GPIO_13 <13>", 			"Memory",	0x80000040,	4,	base=16,	bitRange=13	;1 
+sfr = "PULLUP_KEEP   31-00 [40].GPIO_14 <14>", 			"Memory",	0x80000040,	4,	base=16,	bitRange=14	;1 
+sfr = "PULLUP_KEEP   31-00 [40].GPIO_15 <15>", 			"Memory",	0x80000040,	4,	base=16,	bitRange=15	;1 
+sfr = "PULLUP_KEEP   31-00 [40].GPIO_16 <16>", 			"Memory",	0x80000040,	4,	base=16,	bitRange=16	;1 
+sfr = "PULLUP_KEEP   31-00 [40].GPIO_17 <17>", 			"Memory",	0x80000040,	4,	base=16,	bitRange=17	;1 
+sfr = "PULLUP_KEEP   31-00 [40].GPIO_18 <18>", 			"Memory",	0x80000040,	4,	base=16,	bitRange=18	;1 
+sfr = "PULLUP_KEEP   31-00 [40].GPIO_19 <19>", 			"Memory",	0x80000040,	4,	base=16,	bitRange=19	;1 
+sfr = "PULLUP_KEEP   31-00 [40].GPIO_20 <20>", 			"Memory",	0x80000040,	4,	base=16,	bitRange=20	;1 
+sfr = "PULLUP_KEEP   31-00 [40].GPIO_21 <21>", 			"Memory",	0x80000040,	4,	base=16,	bitRange=21	;1 
+sfr = "PULLUP_KEEP   31-00 [40].GPIO_22 <22>", 			"Memory",	0x80000040,	4,	base=16,	bitRange=22	;1 
+sfr = "PULLUP_KEEP   31-00 [40].GPIO_23 <23>", 			"Memory",	0x80000040,	4,	base=16,	bitRange=23	;1 
+sfr = "PULLUP_KEEP   31-00 [40].GPIO_24 <24>", 			"Memory",	0x80000040,	4,	base=16,	bitRange=24	;1 
+sfr = "PULLUP_KEEP   31-00 [40].GPIO_25 <25>", 			"Memory",	0x80000040,	4,	base=16,	bitRange=25	;1 
+sfr = "PULLUP_KEEP   31-00 [40].GPIO_26 <26>", 			"Memory",	0x80000040,	4,	base=16,	bitRange=26	;1 
+sfr = "PULLUP_KEEP   31-00 [40].GPIO_27 <27>", 			"Memory",	0x80000040,	4,	base=16,	bitRange=27	;1 
+sfr = "PULLUP_KEEP   31-00 [40].GPIO_28 <28>", 			"Memory",	0x80000040,	4,	base=16,	bitRange=28	;1 
+sfr = "PULLUP_KEEP   31-00 [40].GPIO_29 <29>", 			"Memory",	0x80000040,	4,	base=16,	bitRange=29	;1 
+sfr = "PULLUP_KEEP   31-00 [40].GPIO_30 <30>", 			"Memory",	0x80000040,	4,	base=16,	bitRange=30	;1 
+sfr = "PULLUP_KEEP   31-00 [40].GPIO_31 <31>", 			"Memory",	0x80000040,	4,	base=16,	bitRange=31	;1 
+sfr = "PULLUP_KEEP   63-32 [44]", 				"Memory",	0x80000044,	4,	base=16 ;
+sfr = "PULLUP_KEEP   63-32 [44].GPIO_32 <0>", 			"Memory",	0x80000044,	4,	base=16,	bitRange=0	;1 
+sfr = "PULLUP_KEEP   63-32 [44].GPIO_33 <1>", 			"Memory",	0x80000044,	4,	base=16,	bitRange=1	;1 
+sfr = "PULLUP_KEEP   63-32 [44].GPIO_34 <2>", 			"Memory",	0x80000044,	4,	base=16,	bitRange=2	;1 
+sfr = "PULLUP_KEEP   63-32 [44].GPIO_35 <3>", 			"Memory",	0x80000044,	4,	base=16,	bitRange=3	;1 
+sfr = "PULLUP_KEEP   63-32 [44].GPIO_36 <4>", 			"Memory",	0x80000044,	4,	base=16,	bitRange=4	;1 
+sfr = "PULLUP_KEEP   63-32 [44].GPIO_37 <5>", 			"Memory",	0x80000044,	4,	base=16,	bitRange=5	;1 
+sfr = "PULLUP_KEEP   63-32 [44].GPIO_38 <6>", 			"Memory",	0x80000044,	4,	base=16,	bitRange=6	;1 
+sfr = "PULLUP_KEEP   63-32 [44].GPIO_39 <7>", 			"Memory",	0x80000044,	4,	base=16,	bitRange=7	;1 
+sfr = "PULLUP_KEEP   63-32 [44].GPIO_40 <8>", 			"Memory",	0x80000044,	4,	base=16,	bitRange=8	;1 
+sfr = "PULLUP_KEEP   63-32 [44].GPIO_41 <9>", 			"Memory",	0x80000044,	4,	base=16,	bitRange=9	;1 
+sfr = "PULLUP_KEEP   63-32 [44].GPIO_42 <10>", 			"Memory",	0x80000044,	4,	base=16,	bitRange=10	;1 
+sfr = "PULLUP_KEEP   63-32 [44].GPIO_43 <11>", 			"Memory",	0x80000044,	4,	base=16,	bitRange=11	;1 
+sfr = "PULLUP_KEEP   63-32 [44].GPIO_44 <12>", 			"Memory",	0x80000044,	4,	base=16,	bitRange=12	;1 
+sfr = "PULLUP_KEEP   63-32 [44].GPIO_45 <13>", 			"Memory",	0x80000044,	4,	base=16,	bitRange=13	;1 
+sfr = "PULLUP_KEEP   63-32 [44].GPIO_46 <14>", 			"Memory",	0x80000044,	4,	base=16,	bitRange=14	;1 
+sfr = "PULLUP_KEEP   63-32 [44].GPIO_47 <15>", 			"Memory",	0x80000044,	4,	base=16,	bitRange=15	;1 
+sfr = "PULLUP_KEEP   63-32 [44].GPIO_48 <16>", 			"Memory",	0x80000044,	4,	base=16,	bitRange=16	;1 
+sfr = "PULLUP_KEEP   63-32 [44].GPIO_49 <17>", 			"Memory",	0x80000044,	4,	base=16,	bitRange=17	;1 
+sfr = "PULLUP_KEEP   63-32 [44].GPIO_50 <18>", 			"Memory",	0x80000044,	4,	base=16,	bitRange=18	;1 
+sfr = "PULLUP_KEEP   63-32 [44].GPIO_51 <19>", 			"Memory",	0x80000044,	4,	base=16,	bitRange=19	;1 
+sfr = "PULLUP_KEEP   63-32 [44].GPIO_52 <20>", 			"Memory",	0x80000044,	4,	base=16,	bitRange=20	;1 
+sfr = "PULLUP_KEEP   63-32 [44].GPIO_53 <21>", 			"Memory",	0x80000044,	4,	base=16,	bitRange=21	;1 
+sfr = "PULLUP_KEEP   63-32 [44].GPIO_54 <22>", 			"Memory",	0x80000044,	4,	base=16,	bitRange=22	;1 
+sfr = "PULLUP_KEEP   63-32 [44].GPIO_55 <23>", 			"Memory",	0x80000044,	4,	base=16,	bitRange=23	;1 
+sfr = "PULLUP_KEEP   63-32 [44].GPIO_56 <24>", 			"Memory",	0x80000044,	4,	base=16,	bitRange=24	;1 
+sfr = "PULLUP_KEEP   63-32 [44].GPIO_57 <25>", 			"Memory",	0x80000044,	4,	base=16,	bitRange=25	;1 
+sfr = "PULLUP_KEEP   63-32 [44].GPIO_58 <26>", 			"Memory",	0x80000044,	4,	base=16,	bitRange=26	;1 
+sfr = "PULLUP_KEEP   63-32 [44].GPIO_59 <27>", 			"Memory",	0x80000044,	4,	base=16,	bitRange=27	;1 
+sfr = "PULLUP_KEEP   63-32 [44].GPIO_60 <28>", 			"Memory",	0x80000044,	4,	base=16,	bitRange=28	;1 
+sfr = "PULLUP_KEEP   63-32 [44].GPIO_61 <29>", 			"Memory",	0x80000044,	4,	base=16,	bitRange=29	;1 
+sfr = "PULLUP_KEEP   63-32 [44].GPIO_62 <30>", 			"Memory",	0x80000044,	4,	base=16,	bitRange=30	;1 
+sfr = "PULLUP_KEEP   63-32 [44].GPIO_63 <31>", 			"Memory",	0x80000044,	4,	base=16,	bitRange=31	;1 
+sfr = "DATA_SET      31-00 [48]", 				"Memory",	0x80000048,	4,	base=16 ;
+sfr = "DATA_SET      31-00 [48].GPIO_0 <0>", 			"Memory",	0x80000048,	4,	base=16,	bitRange=0	;1 
+sfr = "DATA_SET      31-00 [48].GPIO_1 <1>", 			"Memory",	0x80000048,	4,	base=16,	bitRange=1	;1 
+sfr = "DATA_SET      31-00 [48].GPIO_2 <2>", 			"Memory",	0x80000048,	4,	base=16,	bitRange=2	;1 
+sfr = "DATA_SET      31-00 [48].GPIO_3 <3>", 			"Memory",	0x80000048,	4,	base=16,	bitRange=3	;1 
+sfr = "DATA_SET      31-00 [48].GPIO_4 <4>", 			"Memory",	0x80000048,	4,	base=16,	bitRange=4	;1 
+sfr = "DATA_SET      31-00 [48].GPIO_5 <5>", 			"Memory",	0x80000048,	4,	base=16,	bitRange=5	;1 
+sfr = "DATA_SET      31-00 [48].GPIO_6 <6>", 			"Memory",	0x80000048,	4,	base=16,	bitRange=6	;1 
+sfr = "DATA_SET      31-00 [48].GPIO_7 <7>", 			"Memory",	0x80000048,	4,	base=16,	bitRange=7	;1 
+sfr = "DATA_SET      31-00 [48].GPIO_8 <8>", 			"Memory",	0x80000048,	4,	base=16,	bitRange=8	;1 
+sfr = "DATA_SET      31-00 [48].GPIO_9 <9>", 			"Memory",	0x80000048,	4,	base=16,	bitRange=9	;1 
+sfr = "DATA_SET      31-00 [48].GPIO_10 <10>", 			"Memory",	0x80000048,	4,	base=16,	bitRange=10	;1 
+sfr = "DATA_SET      31-00 [48].GPIO_11 <11>", 			"Memory",	0x80000048,	4,	base=16,	bitRange=11	;1 
+sfr = "DATA_SET      31-00 [48].GPIO_12 <12>", 			"Memory",	0x80000048,	4,	base=16,	bitRange=12	;1 
+sfr = "DATA_SET      31-00 [48].GPIO_13 <13>", 			"Memory",	0x80000048,	4,	base=16,	bitRange=13	;1 
+sfr = "DATA_SET      31-00 [48].GPIO_14 <14>", 			"Memory",	0x80000048,	4,	base=16,	bitRange=14	;1 
+sfr = "DATA_SET      31-00 [48].GPIO_15 <15>", 			"Memory",	0x80000048,	4,	base=16,	bitRange=15	;1 
+sfr = "DATA_SET      31-00 [48].GPIO_16 <16>", 			"Memory",	0x80000048,	4,	base=16,	bitRange=16	;1 
+sfr = "DATA_SET      31-00 [48].GPIO_17 <17>", 			"Memory",	0x80000048,	4,	base=16,	bitRange=17	;1 
+sfr = "DATA_SET      31-00 [48].GPIO_18 <18>", 			"Memory",	0x80000048,	4,	base=16,	bitRange=18	;1 
+sfr = "DATA_SET      31-00 [48].GPIO_19 <19>", 			"Memory",	0x80000048,	4,	base=16,	bitRange=19	;1 
+sfr = "DATA_SET      31-00 [48].GPIO_20 <20>", 			"Memory",	0x80000048,	4,	base=16,	bitRange=20	;1 
+sfr = "DATA_SET      31-00 [48].GPIO_21 <21>", 			"Memory",	0x80000048,	4,	base=16,	bitRange=21	;1 
+sfr = "DATA_SET      31-00 [48].GPIO_22 <22>", 			"Memory",	0x80000048,	4,	base=16,	bitRange=22	;1 
+sfr = "DATA_SET      31-00 [48].GPIO_23 <23>", 			"Memory",	0x80000048,	4,	base=16,	bitRange=23	;1 
+sfr = "DATA_SET      31-00 [48].GPIO_24 <24>", 			"Memory",	0x80000048,	4,	base=16,	bitRange=24	;1 
+sfr = "DATA_SET      31-00 [48].GPIO_25 <25>", 			"Memory",	0x80000048,	4,	base=16,	bitRange=25	;1 
+sfr = "DATA_SET      31-00 [48].GPIO_26 <26>", 			"Memory",	0x80000048,	4,	base=16,	bitRange=26	;1 
+sfr = "DATA_SET      31-00 [48].GPIO_27 <27>", 			"Memory",	0x80000048,	4,	base=16,	bitRange=27	;1 
+sfr = "DATA_SET      31-00 [48].GPIO_28 <28>", 			"Memory",	0x80000048,	4,	base=16,	bitRange=28	;1 
+sfr = "DATA_SET      31-00 [48].GPIO_29 <29>", 			"Memory",	0x80000048,	4,	base=16,	bitRange=29	;1 
+sfr = "DATA_SET      31-00 [48].GPIO_30 <30>", 			"Memory",	0x80000048,	4,	base=16,	bitRange=30	;1 
+sfr = "DATA_SET      31-00 [48].GPIO_31 <31>", 			"Memory",	0x80000048,	4,	base=16,	bitRange=31	;1 
+sfr = "DATA_SET      63-32 [4C]", 				"Memory",	0x8000004C,	4,	base=16 ;
+sfr = "DATA_SET      63-32 [4C].GPIO_32 <0>", 			"Memory",	0x8000004C,	4,	base=16,	bitRange=0	;1 
+sfr = "DATA_SET      63-32 [4C].GPIO_33 <1>", 			"Memory",	0x8000004C,	4,	base=16,	bitRange=1	;1 
+sfr = "DATA_SET      63-32 [4C].GPIO_34 <2>", 			"Memory",	0x8000004C,	4,	base=16,	bitRange=2	;1 
+sfr = "DATA_SET      63-32 [4C].GPIO_35 <3>", 			"Memory",	0x8000004C,	4,	base=16,	bitRange=3	;1 
+sfr = "DATA_SET      63-32 [4C].GPIO_36 <4>", 			"Memory",	0x8000004C,	4,	base=16,	bitRange=4	;1 
+sfr = "DATA_SET      63-32 [4C].GPIO_37 <5>", 			"Memory",	0x8000004C,	4,	base=16,	bitRange=5	;1 
+sfr = "DATA_SET      63-32 [4C].GPIO_38 <6>", 			"Memory",	0x8000004C,	4,	base=16,	bitRange=6	;1 
+sfr = "DATA_SET      63-32 [4C].GPIO_39 <7>", 			"Memory",	0x8000004C,	4,	base=16,	bitRange=7	;1 
+sfr = "DATA_SET      63-32 [4C].GPIO_40 <8>", 			"Memory",	0x8000004C,	4,	base=16,	bitRange=8	;1 
+sfr = "DATA_SET      63-32 [4C].GPIO_41 <9>", 			"Memory",	0x8000004C,	4,	base=16,	bitRange=9	;1 
+sfr = "DATA_SET      63-32 [4C].GPIO_42 <10>", 			"Memory",	0x8000004C,	4,	base=16,	bitRange=10	;1 
+sfr = "DATA_SET      63-32 [4C].GPIO_43 <11>", 			"Memory",	0x8000004C,	4,	base=16,	bitRange=11	;1 
+sfr = "DATA_SET      63-32 [4C].GPIO_44 <12>", 			"Memory",	0x8000004C,	4,	base=16,	bitRange=12	;1 
+sfr = "DATA_SET      63-32 [4C].GPIO_45 <13>", 			"Memory",	0x8000004C,	4,	base=16,	bitRange=13	;1 
+sfr = "DATA_SET      63-32 [4C].GPIO_46 <14>", 			"Memory",	0x8000004C,	4,	base=16,	bitRange=14	;1 
+sfr = "DATA_SET      63-32 [4C].GPIO_47 <15>", 			"Memory",	0x8000004C,	4,	base=16,	bitRange=15	;1 
+sfr = "DATA_SET      63-32 [4C].GPIO_48 <16>", 			"Memory",	0x8000004C,	4,	base=16,	bitRange=16	;1 
+sfr = "DATA_SET      63-32 [4C].GPIO_49 <17>", 			"Memory",	0x8000004C,	4,	base=16,	bitRange=17	;1 
+sfr = "DATA_SET      63-32 [4C].GPIO_50 <18>", 			"Memory",	0x8000004C,	4,	base=16,	bitRange=18	;1 
+sfr = "DATA_SET      63-32 [4C].GPIO_51 <19>", 			"Memory",	0x8000004C,	4,	base=16,	bitRange=19	;1 
+sfr = "DATA_SET      63-32 [4C].GPIO_52 <20>", 			"Memory",	0x8000004C,	4,	base=16,	bitRange=20	;1 
+sfr = "DATA_SET      63-32 [4C].GPIO_53 <21>", 			"Memory",	0x8000004C,	4,	base=16,	bitRange=21	;1 
+sfr = "DATA_SET      63-32 [4C].GPIO_54 <22>", 			"Memory",	0x8000004C,	4,	base=16,	bitRange=22	;1 
+sfr = "DATA_SET      63-32 [4C].GPIO_55 <23>", 			"Memory",	0x8000004C,	4,	base=16,	bitRange=23	;1 
+sfr = "DATA_SET      63-32 [4C].GPIO_56 <24>", 			"Memory",	0x8000004C,	4,	base=16,	bitRange=24	;1 
+sfr = "DATA_SET      63-32 [4C].GPIO_57 <25>", 			"Memory",	0x8000004C,	4,	base=16,	bitRange=25	;1 
+sfr = "DATA_SET      63-32 [4C].GPIO_58 <26>", 			"Memory",	0x8000004C,	4,	base=16,	bitRange=26	;1 
+sfr = "DATA_SET      63-32 [4C].GPIO_59 <27>", 			"Memory",	0x8000004C,	4,	base=16,	bitRange=27	;1 
+sfr = "DATA_SET      63-32 [4C].GPIO_60 <28>", 			"Memory",	0x8000004C,	4,	base=16,	bitRange=28	;1 
+sfr = "DATA_SET      63-32 [4C].GPIO_61 <29>", 			"Memory",	0x8000004C,	4,	base=16,	bitRange=29	;1 
+sfr = "DATA_SET      63-32 [4C].GPIO_62 <30>", 			"Memory",	0x8000004C,	4,	base=16,	bitRange=30	;1 
+sfr = "DATA_SET      63-32 [4C].GPIO_63 <31>", 			"Memory",	0x8000004C,	4,	base=16,	bitRange=31	;1 
+sfr = "DATA_RESET    31-00 [50]", 				"Memory",	0x80000050,	4,	base=16 ;
+sfr = "DATA_RESET    31-00 [50].GPIO_0 <0>", 			"Memory",	0x80000050,	4,	base=16,	bitRange=0	;1 
+sfr = "DATA_RESET    31-00 [50].GPIO_1 <1>", 			"Memory",	0x80000050,	4,	base=16,	bitRange=1	;1 
+sfr = "DATA_RESET    31-00 [50].GPIO_2 <2>", 			"Memory",	0x80000050,	4,	base=16,	bitRange=2	;1 
+sfr = "DATA_RESET    31-00 [50].GPIO_3 <3>", 			"Memory",	0x80000050,	4,	base=16,	bitRange=3	;1 
+sfr = "DATA_RESET    31-00 [50].GPIO_4 <4>", 			"Memory",	0x80000050,	4,	base=16,	bitRange=4	;1 
+sfr = "DATA_RESET    31-00 [50].GPIO_5 <5>", 			"Memory",	0x80000050,	4,	base=16,	bitRange=5	;1 
+sfr = "DATA_RESET    31-00 [50].GPIO_6 <6>", 			"Memory",	0x80000050,	4,	base=16,	bitRange=6	;1 
+sfr = "DATA_RESET    31-00 [50].GPIO_7 <7>", 			"Memory",	0x80000050,	4,	base=16,	bitRange=7	;1 
+sfr = "DATA_RESET    31-00 [50].GPIO_8 <8>", 			"Memory",	0x80000050,	4,	base=16,	bitRange=8	;1 
+sfr = "DATA_RESET    31-00 [50].GPIO_9 <9>", 			"Memory",	0x80000050,	4,	base=16,	bitRange=9	;1 
+sfr = "DATA_RESET    31-00 [50].GPIO_10 <10>", 			"Memory",	0x80000050,	4,	base=16,	bitRange=10	;1 
+sfr = "DATA_RESET    31-00 [50].GPIO_11 <11>", 			"Memory",	0x80000050,	4,	base=16,	bitRange=11	;1 
+sfr = "DATA_RESET    31-00 [50].GPIO_12 <12>", 			"Memory",	0x80000050,	4,	base=16,	bitRange=12	;1 
+sfr = "DATA_RESET    31-00 [50].GPIO_13 <13>", 			"Memory",	0x80000050,	4,	base=16,	bitRange=13	;1 
+sfr = "DATA_RESET    31-00 [50].GPIO_14 <14>", 			"Memory",	0x80000050,	4,	base=16,	bitRange=14	;1 
+sfr = "DATA_RESET    31-00 [50].GPIO_15 <15>", 			"Memory",	0x80000050,	4,	base=16,	bitRange=15	;1 
+sfr = "DATA_RESET    31-00 [50].GPIO_16 <16>", 			"Memory",	0x80000050,	4,	base=16,	bitRange=16	;1 
+sfr = "DATA_RESET    31-00 [50].GPIO_17 <17>", 			"Memory",	0x80000050,	4,	base=16,	bitRange=17	;1 
+sfr = "DATA_RESET    31-00 [50].GPIO_18 <18>", 			"Memory",	0x80000050,	4,	base=16,	bitRange=18	;1 
+sfr = "DATA_RESET    31-00 [50].GPIO_19 <19>", 			"Memory",	0x80000050,	4,	base=16,	bitRange=19	;1 
+sfr = "DATA_RESET    31-00 [50].GPIO_20 <20>", 			"Memory",	0x80000050,	4,	base=16,	bitRange=20	;1 
+sfr = "DATA_RESET    31-00 [50].GPIO_21 <21>", 			"Memory",	0x80000050,	4,	base=16,	bitRange=21	;1 
+sfr = "DATA_RESET    31-00 [50].GPIO_22 <22>", 			"Memory",	0x80000050,	4,	base=16,	bitRange=22	;1 
+sfr = "DATA_RESET    31-00 [50].GPIO_23 <23>", 			"Memory",	0x80000050,	4,	base=16,	bitRange=23	;1 
+sfr = "DATA_RESET    31-00 [50].GPIO_24 <24>", 			"Memory",	0x80000050,	4,	base=16,	bitRange=24	;1 
+sfr = "DATA_RESET    31-00 [50].GPIO_25 <25>", 			"Memory",	0x80000050,	4,	base=16,	bitRange=25	;1 
+sfr = "DATA_RESET    31-00 [50].GPIO_26 <26>", 			"Memory",	0x80000050,	4,	base=16,	bitRange=26	;1 
+sfr = "DATA_RESET    31-00 [50].GPIO_27 <27>", 			"Memory",	0x80000050,	4,	base=16,	bitRange=27	;1 
+sfr = "DATA_RESET    31-00 [50].GPIO_28 <28>", 			"Memory",	0x80000050,	4,	base=16,	bitRange=28	;1 
+sfr = "DATA_RESET    31-00 [50].GPIO_29 <29>", 			"Memory",	0x80000050,	4,	base=16,	bitRange=29	;1 
+sfr = "DATA_RESET    31-00 [50].GPIO_30 <30>", 			"Memory",	0x80000050,	4,	base=16,	bitRange=30	;1 
+sfr = "DATA_RESET    31-00 [50].GPIO_31 <31>", 			"Memory",	0x80000050,	4,	base=16,	bitRange=31	;1 
+sfr = "DATA_RESET    63-32 [54]", 				"Memory",	0x80000054,	4,	base=16 ;
+sfr = "DATA_RESET    63-32 [54].GPIO_32 <0>", 			"Memory",	0x80000054,	4,	base=16,	bitRange=0	;1 
+sfr = "DATA_RESET    63-32 [54].GPIO_33 <1>", 			"Memory",	0x80000054,	4,	base=16,	bitRange=1	;1 
+sfr = "DATA_RESET    63-32 [54].GPIO_34 <2>", 			"Memory",	0x80000054,	4,	base=16,	bitRange=2	;1 
+sfr = "DATA_RESET    63-32 [54].GPIO_35 <3>", 			"Memory",	0x80000054,	4,	base=16,	bitRange=3	;1 
+sfr = "DATA_RESET    63-32 [54].GPIO_36 <4>", 			"Memory",	0x80000054,	4,	base=16,	bitRange=4	;1 
+sfr = "DATA_RESET    63-32 [54].GPIO_37 <5>", 			"Memory",	0x80000054,	4,	base=16,	bitRange=5	;1 
+sfr = "DATA_RESET    63-32 [54].GPIO_38 <6>", 			"Memory",	0x80000054,	4,	base=16,	bitRange=6	;1 
+sfr = "DATA_RESET    63-32 [54].GPIO_39 <7>", 			"Memory",	0x80000054,	4,	base=16,	bitRange=7	;1 
+sfr = "DATA_RESET    63-32 [54].GPIO_40 <8>", 			"Memory",	0x80000054,	4,	base=16,	bitRange=8	;1 
+sfr = "DATA_RESET    63-32 [54].GPIO_41 <9>", 			"Memory",	0x80000054,	4,	base=16,	bitRange=9	;1 
+sfr = "DATA_RESET    63-32 [54].GPIO_42 <10>", 			"Memory",	0x80000054,	4,	base=16,	bitRange=10	;1 
+sfr = "DATA_RESET    63-32 [54].GPIO_43 <11>", 			"Memory",	0x80000054,	4,	base=16,	bitRange=11	;1 
+sfr = "DATA_RESET    63-32 [54].GPIO_44 <12>", 			"Memory",	0x80000054,	4,	base=16,	bitRange=12	;1 
+sfr = "DATA_RESET    63-32 [54].GPIO_45 <13>", 			"Memory",	0x80000054,	4,	base=16,	bitRange=13	;1 
+sfr = "DATA_RESET    63-32 [54].GPIO_46 <14>", 			"Memory",	0x80000054,	4,	base=16,	bitRange=14	;1 
+sfr = "DATA_RESET    63-32 [54].GPIO_47 <15>", 			"Memory",	0x80000054,	4,	base=16,	bitRange=15	;1 
+sfr = "DATA_RESET    63-32 [54].GPIO_48 <16>", 			"Memory",	0x80000054,	4,	base=16,	bitRange=16	;1 
+sfr = "DATA_RESET    63-32 [54].GPIO_49 <17>", 			"Memory",	0x80000054,	4,	base=16,	bitRange=17	;1 
+sfr = "DATA_RESET    63-32 [54].GPIO_50 <18>", 			"Memory",	0x80000054,	4,	base=16,	bitRange=18	;1 
+sfr = "DATA_RESET    63-32 [54].GPIO_51 <19>", 			"Memory",	0x80000054,	4,	base=16,	bitRange=19	;1 
+sfr = "DATA_RESET    63-32 [54].GPIO_52 <20>", 			"Memory",	0x80000054,	4,	base=16,	bitRange=20	;1 
+sfr = "DATA_RESET    63-32 [54].GPIO_53 <21>", 			"Memory",	0x80000054,	4,	base=16,	bitRange=21	;1 
+sfr = "DATA_RESET    63-32 [54].GPIO_54 <22>", 			"Memory",	0x80000054,	4,	base=16,	bitRange=22	;1 
+sfr = "DATA_RESET    63-32 [54].GPIO_55 <23>", 			"Memory",	0x80000054,	4,	base=16,	bitRange=23	;1 
+sfr = "DATA_RESET    63-32 [54].GPIO_56 <24>", 			"Memory",	0x80000054,	4,	base=16,	bitRange=24	;1 
+sfr = "DATA_RESET    63-32 [54].GPIO_57 <25>", 			"Memory",	0x80000054,	4,	base=16,	bitRange=25	;1 
+sfr = "DATA_RESET    63-32 [54].GPIO_58 <26>", 			"Memory",	0x80000054,	4,	base=16,	bitRange=26	;1 
+sfr = "DATA_RESET    63-32 [54].GPIO_59 <27>", 			"Memory",	0x80000054,	4,	base=16,	bitRange=27	;1 
+sfr = "DATA_RESET    63-32 [54].GPIO_60 <28>", 			"Memory",	0x80000054,	4,	base=16,	bitRange=28	;1 
+sfr = "DATA_RESET    63-32 [54].GPIO_61 <29>", 			"Memory",	0x80000054,	4,	base=16,	bitRange=29	;1 
+sfr = "DATA_RESET    63-32 [54].GPIO_62 <30>", 			"Memory",	0x80000054,	4,	base=16,	bitRange=30	;1 
+sfr = "DATA_RESET    63-32 [54].GPIO_63 <31>", 			"Memory",	0x80000054,	4,	base=16,	bitRange=31	;1 
+sfr = "DATA_DIR_SET  31-00 [58]", 				"Memory",	0x80000058,	4,	base=16 ;
+sfr = "DATA_DIR_SET  31-00 [58].GPIO_0 <0>", 			"Memory",	0x80000058,	4,	base=16,	bitRange=0	;1 
+sfr = "DATA_DIR_SET  31-00 [58].GPIO_1 <1>", 			"Memory",	0x80000058,	4,	base=16,	bitRange=1	;1 
+sfr = "DATA_DIR_SET  31-00 [58].GPIO_2 <2>", 			"Memory",	0x80000058,	4,	base=16,	bitRange=2	;1 
+sfr = "DATA_DIR_SET  31-00 [58].GPIO_3 <3>", 			"Memory",	0x80000058,	4,	base=16,	bitRange=3	;1 
+sfr = "DATA_DIR_SET  31-00 [58].GPIO_4 <4>", 			"Memory",	0x80000058,	4,	base=16,	bitRange=4	;1 
+sfr = "DATA_DIR_SET  31-00 [58].GPIO_5 <5>", 			"Memory",	0x80000058,	4,	base=16,	bitRange=5	;1 
+sfr = "DATA_DIR_SET  31-00 [58].GPIO_6 <6>", 			"Memory",	0x80000058,	4,	base=16,	bitRange=6	;1 
+sfr = "DATA_DIR_SET  31-00 [58].GPIO_7 <7>", 			"Memory",	0x80000058,	4,	base=16,	bitRange=7	;1 
+sfr = "DATA_DIR_SET  31-00 [58].GPIO_8 <8>", 			"Memory",	0x80000058,	4,	base=16,	bitRange=8	;1 
+sfr = "DATA_DIR_SET  31-00 [58].GPIO_9 <9>", 			"Memory",	0x80000058,	4,	base=16,	bitRange=9	;1 
+sfr = "DATA_DIR_SET  31-00 [58].GPIO_10 <10>", 			"Memory",	0x80000058,	4,	base=16,	bitRange=10	;1 
+sfr = "DATA_DIR_SET  31-00 [58].GPIO_11 <11>", 			"Memory",	0x80000058,	4,	base=16,	bitRange=11	;1 
+sfr = "DATA_DIR_SET  31-00 [58].GPIO_12 <12>", 			"Memory",	0x80000058,	4,	base=16,	bitRange=12	;1 
+sfr = "DATA_DIR_SET  31-00 [58].GPIO_13 <13>", 			"Memory",	0x80000058,	4,	base=16,	bitRange=13	;1 
+sfr = "DATA_DIR_SET  31-00 [58].GPIO_14 <14>", 			"Memory",	0x80000058,	4,	base=16,	bitRange=14	;1 
+sfr = "DATA_DIR_SET  31-00 [58].GPIO_15 <15>", 			"Memory",	0x80000058,	4,	base=16,	bitRange=15	;1 
+sfr = "DATA_DIR_SET  31-00 [58].GPIO_16 <16>", 			"Memory",	0x80000058,	4,	base=16,	bitRange=16	;1 
+sfr = "DATA_DIR_SET  31-00 [58].GPIO_17 <17>", 			"Memory",	0x80000058,	4,	base=16,	bitRange=17	;1 
+sfr = "DATA_DIR_SET  31-00 [58].GPIO_18 <18>", 			"Memory",	0x80000058,	4,	base=16,	bitRange=18	;1 
+sfr = "DATA_DIR_SET  31-00 [58].GPIO_19 <19>", 			"Memory",	0x80000058,	4,	base=16,	bitRange=19	;1 
+sfr = "DATA_DIR_SET  31-00 [58].GPIO_20 <20>", 			"Memory",	0x80000058,	4,	base=16,	bitRange=20	;1 
+sfr = "DATA_DIR_SET  31-00 [58].GPIO_21 <21>", 			"Memory",	0x80000058,	4,	base=16,	bitRange=21	;1 
+sfr = "DATA_DIR_SET  31-00 [58].GPIO_22 <22>", 			"Memory",	0x80000058,	4,	base=16,	bitRange=22	;1 
+sfr = "DATA_DIR_SET  31-00 [58].GPIO_23 <23>", 			"Memory",	0x80000058,	4,	base=16,	bitRange=23	;1 
+sfr = "DATA_DIR_SET  31-00 [58].GPIO_24 <24>", 			"Memory",	0x80000058,	4,	base=16,	bitRange=24	;1 
+sfr = "DATA_DIR_SET  31-00 [58].GPIO_25 <25>", 			"Memory",	0x80000058,	4,	base=16,	bitRange=25	;1 
+sfr = "DATA_DIR_SET  31-00 [58].GPIO_26 <26>", 			"Memory",	0x80000058,	4,	base=16,	bitRange=26	;1 
+sfr = "DATA_DIR_SET  31-00 [58].GPIO_27 <27>", 			"Memory",	0x80000058,	4,	base=16,	bitRange=27	;1 
+sfr = "DATA_DIR_SET  31-00 [58].GPIO_28 <28>", 			"Memory",	0x80000058,	4,	base=16,	bitRange=28	;1 
+sfr = "DATA_DIR_SET  31-00 [58].GPIO_29 <29>", 			"Memory",	0x80000058,	4,	base=16,	bitRange=29	;1 
+sfr = "DATA_DIR_SET  31-00 [58].GPIO_30 <30>", 			"Memory",	0x80000058,	4,	base=16,	bitRange=30	;1 
+sfr = "DATA_DIR_SET  31-00 [58].GPIO_31 <31>", 			"Memory",	0x80000058,	4,	base=16,	bitRange=31	;1 
+sfr = "DATA_DIR_SET  63-32 [5C]", 				"Memory",	0x8000005C,	4,	base=16 ;
+sfr = "DATA_DIR_SET  63-32 [5C].GPIO_32 <0>", 			"Memory",	0x8000005C,	4,	base=16,	bitRange=0	;1 
+sfr = "DATA_DIR_SET  63-32 [5C].GPIO_33 <1>", 			"Memory",	0x8000005C,	4,	base=16,	bitRange=1	;1 
+sfr = "DATA_DIR_SET  63-32 [5C].GPIO_34 <2>", 			"Memory",	0x8000005C,	4,	base=16,	bitRange=2	;1 
+sfr = "DATA_DIR_SET  63-32 [5C].GPIO_35 <3>", 			"Memory",	0x8000005C,	4,	base=16,	bitRange=3	;1 
+sfr = "DATA_DIR_SET  63-32 [5C].GPIO_36 <4>", 			"Memory",	0x8000005C,	4,	base=16,	bitRange=4	;1 
+sfr = "DATA_DIR_SET  63-32 [5C].GPIO_37 <5>", 			"Memory",	0x8000005C,	4,	base=16,	bitRange=5	;1 
+sfr = "DATA_DIR_SET  63-32 [5C].GPIO_38 <6>", 			"Memory",	0x8000005C,	4,	base=16,	bitRange=6	;1 
+sfr = "DATA_DIR_SET  63-32 [5C].GPIO_39 <7>", 			"Memory",	0x8000005C,	4,	base=16,	bitRange=7	;1 
+sfr = "DATA_DIR_SET  63-32 [5C].GPIO_40 <8>", 			"Memory",	0x8000005C,	4,	base=16,	bitRange=8	;1 
+sfr = "DATA_DIR_SET  63-32 [5C].GPIO_41 <9>", 			"Memory",	0x8000005C,	4,	base=16,	bitRange=9	;1 
+sfr = "DATA_DIR_SET  63-32 [5C].GPIO_42 <10>", 			"Memory",	0x8000005C,	4,	base=16,	bitRange=10	;1 
+sfr = "DATA_DIR_SET  63-32 [5C].GPIO_43 <11>", 			"Memory",	0x8000005C,	4,	base=16,	bitRange=11	;1 
+sfr = "DATA_DIR_SET  63-32 [5C].GPIO_44 <12>", 			"Memory",	0x8000005C,	4,	base=16,	bitRange=12	;1 
+sfr = "DATA_DIR_SET  63-32 [5C].GPIO_45 <13>", 			"Memory",	0x8000005C,	4,	base=16,	bitRange=13	;1 
+sfr = "DATA_DIR_SET  63-32 [5C].GPIO_46 <14>", 			"Memory",	0x8000005C,	4,	base=16,	bitRange=14	;1 
+sfr = "DATA_DIR_SET  63-32 [5C].GPIO_47 <15>", 			"Memory",	0x8000005C,	4,	base=16,	bitRange=15	;1 
+sfr = "DATA_DIR_SET  63-32 [5C].GPIO_48 <16>", 			"Memory",	0x8000005C,	4,	base=16,	bitRange=16	;1 
+sfr = "DATA_DIR_SET  63-32 [5C].GPIO_49 <17>", 			"Memory",	0x8000005C,	4,	base=16,	bitRange=17	;1 
+sfr = "DATA_DIR_SET  63-32 [5C].GPIO_50 <18>", 			"Memory",	0x8000005C,	4,	base=16,	bitRange=18	;1 
+sfr = "DATA_DIR_SET  63-32 [5C].GPIO_51 <19>", 			"Memory",	0x8000005C,	4,	base=16,	bitRange=19	;1 
+sfr = "DATA_DIR_SET  63-32 [5C].GPIO_52 <20>", 			"Memory",	0x8000005C,	4,	base=16,	bitRange=20	;1 
+sfr = "DATA_DIR_SET  63-32 [5C].GPIO_53 <21>", 			"Memory",	0x8000005C,	4,	base=16,	bitRange=21	;1 
+sfr = "DATA_DIR_SET  63-32 [5C].GPIO_54 <22>", 			"Memory",	0x8000005C,	4,	base=16,	bitRange=22	;1 
+sfr = "DATA_DIR_SET  63-32 [5C].GPIO_55 <23>", 			"Memory",	0x8000005C,	4,	base=16,	bitRange=23	;1 
+sfr = "DATA_DIR_SET  63-32 [5C].GPIO_56 <24>", 			"Memory",	0x8000005C,	4,	base=16,	bitRange=24	;1 
+sfr = "DATA_DIR_SET  63-32 [5C].GPIO_57 <25>", 			"Memory",	0x8000005C,	4,	base=16,	bitRange=25	;1 
+sfr = "DATA_DIR_SET  63-32 [5C].GPIO_58 <26>", 			"Memory",	0x8000005C,	4,	base=16,	bitRange=26	;1 
+sfr = "DATA_DIR_SET  63-32 [5C].GPIO_59 <27>", 			"Memory",	0x8000005C,	4,	base=16,	bitRange=27	;1 
+sfr = "DATA_DIR_SET  63-32 [5C].GPIO_60 <28>", 			"Memory",	0x8000005C,	4,	base=16,	bitRange=28	;1 
+sfr = "DATA_DIR_SET  63-32 [5C].GPIO_61 <29>", 			"Memory",	0x8000005C,	4,	base=16,	bitRange=29	;1 
+sfr = "DATA_DIR_SET  63-32 [5C].GPIO_62 <30>", 			"Memory",	0x8000005C,	4,	base=16,	bitRange=30	;1 
+sfr = "DATA_DIR_SET  63-32 [5C].GPIO_63 <31>", 			"Memory",	0x8000005C,	4,	base=16,	bitRange=31	;1 
+sfr = "DATA_DIR_RST  31-00 [60]", 				"Memory",	0x80000060,	4,	base=16 ;
+sfr = "DATA_DIR_RST  31-00 [60].GPIO_0 <0>", 			"Memory",	0x80000060,	4,	base=16,	bitRange=0	;1 
+sfr = "DATA_DIR_RST  31-00 [60].GPIO_1 <1>", 			"Memory",	0x80000060,	4,	base=16,	bitRange=1	;1 
+sfr = "DATA_DIR_RST  31-00 [60].GPIO_2 <2>", 			"Memory",	0x80000060,	4,	base=16,	bitRange=2	;1 
+sfr = "DATA_DIR_RST  31-00 [60].GPIO_3 <3>", 			"Memory",	0x80000060,	4,	base=16,	bitRange=3	;1 
+sfr = "DATA_DIR_RST  31-00 [60].GPIO_4 <4>", 			"Memory",	0x80000060,	4,	base=16,	bitRange=4	;1 
+sfr = "DATA_DIR_RST  31-00 [60].GPIO_5 <5>", 			"Memory",	0x80000060,	4,	base=16,	bitRange=5	;1 
+sfr = "DATA_DIR_RST  31-00 [60].GPIO_6 <6>", 			"Memory",	0x80000060,	4,	base=16,	bitRange=6	;1 
+sfr = "DATA_DIR_RST  31-00 [60].GPIO_7 <7>", 			"Memory",	0x80000060,	4,	base=16,	bitRange=7	;1 
+sfr = "DATA_DIR_RST  31-00 [60].GPIO_8 <8>", 			"Memory",	0x80000060,	4,	base=16,	bitRange=8	;1 
+sfr = "DATA_DIR_RST  31-00 [60].GPIO_9 <9>", 			"Memory",	0x80000060,	4,	base=16,	bitRange=9	;1 
+sfr = "DATA_DIR_RST  31-00 [60].GPIO_10 <10>", 			"Memory",	0x80000060,	4,	base=16,	bitRange=10	;1 
+sfr = "DATA_DIR_RST  31-00 [60].GPIO_11 <11>", 			"Memory",	0x80000060,	4,	base=16,	bitRange=11	;1 
+sfr = "DATA_DIR_RST  31-00 [60].GPIO_12 <12>", 			"Memory",	0x80000060,	4,	base=16,	bitRange=12	;1 
+sfr = "DATA_DIR_RST  31-00 [60].GPIO_13 <13>", 			"Memory",	0x80000060,	4,	base=16,	bitRange=13	;1 
+sfr = "DATA_DIR_RST  31-00 [60].GPIO_14 <14>", 			"Memory",	0x80000060,	4,	base=16,	bitRange=14	;1 
+sfr = "DATA_DIR_RST  31-00 [60].GPIO_15 <15>", 			"Memory",	0x80000060,	4,	base=16,	bitRange=15	;1 
+sfr = "DATA_DIR_RST  31-00 [60].GPIO_16 <16>", 			"Memory",	0x80000060,	4,	base=16,	bitRange=16	;1 
+sfr = "DATA_DIR_RST  31-00 [60].GPIO_17 <17>", 			"Memory",	0x80000060,	4,	base=16,	bitRange=17	;1 
+sfr = "DATA_DIR_RST  31-00 [60].GPIO_18 <18>", 			"Memory",	0x80000060,	4,	base=16,	bitRange=18	;1 
+sfr = "DATA_DIR_RST  31-00 [60].GPIO_19 <19>", 			"Memory",	0x80000060,	4,	base=16,	bitRange=19	;1 
+sfr = "DATA_DIR_RST  31-00 [60].GPIO_20 <20>", 			"Memory",	0x80000060,	4,	base=16,	bitRange=20	;1 
+sfr = "DATA_DIR_RST  31-00 [60].GPIO_21 <21>", 			"Memory",	0x80000060,	4,	base=16,	bitRange=21	;1 
+sfr = "DATA_DIR_RST  31-00 [60].GPIO_22 <22>", 			"Memory",	0x80000060,	4,	base=16,	bitRange=22	;1 
+sfr = "DATA_DIR_RST  31-00 [60].GPIO_23 <23>", 			"Memory",	0x80000060,	4,	base=16,	bitRange=23	;1 
+sfr = "DATA_DIR_RST  31-00 [60].GPIO_24 <24>", 			"Memory",	0x80000060,	4,	base=16,	bitRange=24	;1 
+sfr = "DATA_DIR_RST  31-00 [60].GPIO_25 <25>", 			"Memory",	0x80000060,	4,	base=16,	bitRange=25	;1 
+sfr = "DATA_DIR_RST  31-00 [60].GPIO_26 <26>", 			"Memory",	0x80000060,	4,	base=16,	bitRange=26	;1 
+sfr = "DATA_DIR_RST  31-00 [60].GPIO_27 <27>", 			"Memory",	0x80000060,	4,	base=16,	bitRange=27	;1 
+sfr = "DATA_DIR_RST  31-00 [60].GPIO_28 <28>", 			"Memory",	0x80000060,	4,	base=16,	bitRange=28	;1 
+sfr = "DATA_DIR_RST  31-00 [60].GPIO_29 <29>", 			"Memory",	0x80000060,	4,	base=16,	bitRange=29	;1 
+sfr = "DATA_DIR_RST  31-00 [60].GPIO_30 <30>", 			"Memory",	0x80000060,	4,	base=16,	bitRange=30	;1 
+sfr = "DATA_DIR_RST  31-00 [60].GPIO_31 <31>", 			"Memory",	0x80000060,	4,	base=16,	bitRange=31	;1 
+sfr = "DATA_DIR_RST  63-32 [64]", 				"Memory",	0x80000064,	4,	base=16 ;
+sfr = "DATA_DIR_RST  63-32 [64].GPIO_32 <0>", 			"Memory",	0x80000064,	4,	base=16,	bitRange=0	;1 
+sfr = "DATA_DIR_RST  63-32 [64].GPIO_33 <1>", 			"Memory",	0x80000064,	4,	base=16,	bitRange=1	;1 
+sfr = "DATA_DIR_RST  63-32 [64].GPIO_34 <2>", 			"Memory",	0x80000064,	4,	base=16,	bitRange=2	;1 
+sfr = "DATA_DIR_RST  63-32 [64].GPIO_35 <3>", 			"Memory",	0x80000064,	4,	base=16,	bitRange=3	;1 
+sfr = "DATA_DIR_RST  63-32 [64].GPIO_36 <4>", 			"Memory",	0x80000064,	4,	base=16,	bitRange=4	;1 
+sfr = "DATA_DIR_RST  63-32 [64].GPIO_37 <5>", 			"Memory",	0x80000064,	4,	base=16,	bitRange=5	;1 
+sfr = "DATA_DIR_RST  63-32 [64].GPIO_38 <6>", 			"Memory",	0x80000064,	4,	base=16,	bitRange=6	;1 
+sfr = "DATA_DIR_RST  63-32 [64].GPIO_39 <7>", 			"Memory",	0x80000064,	4,	base=16,	bitRange=7	;1 
+sfr = "DATA_DIR_RST  63-32 [64].GPIO_40 <8>", 			"Memory",	0x80000064,	4,	base=16,	bitRange=8	;1 
+sfr = "DATA_DIR_RST  63-32 [64].GPIO_41 <9>", 			"Memory",	0x80000064,	4,	base=16,	bitRange=9	;1 
+sfr = "DATA_DIR_RST  63-32 [64].GPIO_42 <10>", 			"Memory",	0x80000064,	4,	base=16,	bitRange=10	;1 
+sfr = "DATA_DIR_RST  63-32 [64].GPIO_43 <11>", 			"Memory",	0x80000064,	4,	base=16,	bitRange=11	;1 
+sfr = "DATA_DIR_RST  63-32 [64].GPIO_44 <12>", 			"Memory",	0x80000064,	4,	base=16,	bitRange=12	;1 
+sfr = "DATA_DIR_RST  63-32 [64].GPIO_45 <13>", 			"Memory",	0x80000064,	4,	base=16,	bitRange=13	;1 
+sfr = "DATA_DIR_RST  63-32 [64].GPIO_46 <14>", 			"Memory",	0x80000064,	4,	base=16,	bitRange=14	;1 
+sfr = "DATA_DIR_RST  63-32 [64].GPIO_47 <15>", 			"Memory",	0x80000064,	4,	base=16,	bitRange=15	;1 
+sfr = "DATA_DIR_RST  63-32 [64].GPIO_48 <16>", 			"Memory",	0x80000064,	4,	base=16,	bitRange=16	;1 
+sfr = "DATA_DIR_RST  63-32 [64].GPIO_49 <17>", 			"Memory",	0x80000064,	4,	base=16,	bitRange=17	;1 
+sfr = "DATA_DIR_RST  63-32 [64].GPIO_50 <18>", 			"Memory",	0x80000064,	4,	base=16,	bitRange=18	;1 
+sfr = "DATA_DIR_RST  63-32 [64].GPIO_51 <19>", 			"Memory",	0x80000064,	4,	base=16,	bitRange=19	;1 
+sfr = "DATA_DIR_RST  63-32 [64].GPIO_52 <20>", 			"Memory",	0x80000064,	4,	base=16,	bitRange=20	;1 
+sfr = "DATA_DIR_RST  63-32 [64].GPIO_53 <21>", 			"Memory",	0x80000064,	4,	base=16,	bitRange=21	;1 
+sfr = "DATA_DIR_RST  63-32 [64].GPIO_54 <22>", 			"Memory",	0x80000064,	4,	base=16,	bitRange=22	;1 
+sfr = "DATA_DIR_RST  63-32 [64].GPIO_55 <23>", 			"Memory",	0x80000064,	4,	base=16,	bitRange=23	;1 
+sfr = "DATA_DIR_RST  63-32 [64].GPIO_56 <24>", 			"Memory",	0x80000064,	4,	base=16,	bitRange=24	;1 
+sfr = "DATA_DIR_RST  63-32 [64].GPIO_57 <25>", 			"Memory",	0x80000064,	4,	base=16,	bitRange=25	;1 
+sfr = "DATA_DIR_RST  63-32 [64].GPIO_58 <26>", 			"Memory",	0x80000064,	4,	base=16,	bitRange=26	;1 
+sfr = "DATA_DIR_RST  63-32 [64].GPIO_59 <27>", 			"Memory",	0x80000064,	4,	base=16,	bitRange=27	;1 
+sfr = "DATA_DIR_RST  63-32 [64].GPIO_60 <28>", 			"Memory",	0x80000064,	4,	base=16,	bitRange=28	;1 
+sfr = "DATA_DIR_RST  63-32 [64].GPIO_61 <29>", 			"Memory",	0x80000064,	4,	base=16,	bitRange=29	;1 
+sfr = "DATA_DIR_RST  63-32 [64].GPIO_62 <30>", 			"Memory",	0x80000064,	4,	base=16,	bitRange=30	;1 
+sfr = "DATA_DIR_RST  63-32 [64].GPIO_63 <31>", 			"Memory",	0x80000064,	4,	base=16,	bitRange=31	;1 
+
+sfr="STX [00]",							"Memory",	0x80001000,	4,	base=16
+sfr="SRX [08]",							"Memory",	0x80001008,	4,	base=16
+sfr="SCR1 [10]",						"Memory",	0x80001010,	4,	base=16
+sfr="SCR1 [10].SSIEN <0>",					"Memory",	0x80001010,	4,	base=16,	bitRange=0	;1 
+sfr="SCR1 [10].TE <1>",						"Memory",	0x80001010,	4,	base=16,	bitRange=1	;1 
+sfr="SCR1 [10].RE <2>",						"Memory",	0x80001010,	4,	base=16,	bitRange=2	;1 
+sfr="SCR1 [10].NET <3>",					"Memory",	0x80001010,	4,	base=16,	bitRange=3	;1 
+sfr="SCR1 [10].I2SMOD <6:5>",					"Memory",	0x80001010,	4,	base=16,	bitRange=5-6	;2 
+sfr="SCR1 [10].SYS_CLK_EN <7>",					"Memory",	0x80001010,	4,	base=16,	bitRange=7	;1 
+sfr="SCR1 [10].TCH_EN <8>",					"Memory",	0x80001010,	4,	base=16,	bitRange=8	;1 
+sfr="SCR1 [10].CLK_IST <9>",					"Memory",	0x80001010,	4,	base=16,	bitRange=9	;1 
+sfr="SCR1 [10].TFR_CLK_DIS <10>",				"Memory",	0x80001010,	4,	base=16,	bitRange=10	;1 
+sfr="SCR1 [10].RFR_CLK_DIS <11>",				"Memory",	0x80001010,	4,	base=16,	bitRange=11	;1 
+sfr="SISR1 [14]",						"Memory",	0x80001014,	4,	base=16
+sfr="SISR1 [14].TFE <0>",					"Memory",	0x80001014,	4,	base=16,	bitRange=0	;1 
+sfr="SISR1 [14].RFF <2>",					"Memory",	0x80001014,	4,	base=16,	bitRange=2	;1 
+sfr="SISR1 [14].RLS <4>",					"Memory",	0x80001014,	4,	base=16,	bitRange=4	;1 
+sfr="SISR1 [14].TLS <5>",					"Memory",	0x80001014,	4,	base=16,	bitRange=5	;1 
+sfr="SISR1 [14].RFS <6>",					"Memory",	0x80001014,	4,	base=16,	bitRange=6	;1 
+sfr="SISR1 [14].TFS <7>",					"Memory",	0x80001014,	4,	base=16,	bitRange=7	;1 
+sfr="SISR1 [14].TUE <8>",					"Memory",	0x80001014,	4,	base=16,	bitRange=8	;1 
+sfr="SISR1 [14].ROE <10>",					"Memory",	0x80001014,	4,	base=16,	bitRange=10	;1 
+sfr="SISR1 [14].TDE0 <12>",					"Memory",	0x80001014,	4,	base=16,	bitRange=12	;1 
+sfr="SISR1 [14].RDR <14>",					"Memory",	0x80001014,	4,	base=16,	bitRange=14	;1 
+sfr="SISR1 [14].TFRC <23>",					"Memory",	0x80001014,	4,	base=16,	bitRange=23	;1 
+sfr="SISR1 [14].RFRC <24>",					"Memory",	0x80001014,	4,	base=16,	bitRange=24	;1 
+sfr="SIER [18]",						"Memory",	0x80001018,	4,	base=16
+sfr="SIER [18].TFE_EN <0>",					"Memory",	0x80001018,	4,	base=16,	bitRange=0	;1 
+sfr="SIER [18].RFF_EN <2>",					"Memory",	0x80001018,	4,	base=16,	bitRange=2	;1 
+sfr="SIER [18].RLS_EN <4>",					"Memory",	0x80001018,	4,	base=16,	bitRange=4	;1 
+sfr="SIER [18].TLS_EN <5>",					"Memory",	0x80001018,	4,	base=16,	bitRange=5	;1 
+sfr="SIER [18].RFS_EN <6>",					"Memory",	0x80001018,	4,	base=16,	bitRange=6	;1 
+sfr="SIER [18].TFS_EN <7>",					"Memory",	0x80001018,	4,	base=16,	bitRange=7	;1 
+sfr="SIER [18].TUE_EN <8>",					"Memory",	0x80001018,	4,	base=16,	bitRange=8	;1 
+sfr="SIER [18].ROE_EN <10>",					"Memory",	0x80001018,	4,	base=16,	bitRange=10	;1 
+sfr="SIER [18].TDE_EN <12>",					"Memory",	0x80001018,	4,	base=16,	bitRange=12	;1 
+sfr="SIER [18].RDD_EN <14>",					"Memory",	0x80001018,	4,	base=16,	bitRange=14	;1 
+sfr="SIER [18].TIE <19>",					"Memory",	0x80001018,	4,	base=16,	bitRange=19	;1 
+sfr="SIER [18].RIE <21>",					"Memory",	0x80001018,	4,	base=16,	bitRange=21	;1 
+sfr="SIER [18].TFRC_EN <23>",					"Memory",	0x80001018,	4,	base=16,	bitRange=23	;1 
+sfr="SIER [18].RFRC_EN <24>",					"Memory",	0x80001018,	4,	base=16,	bitRange=24	;1 
+sfr="STCR [1C]",						"Memory",	0x8000101C,	4,	base=16
+sfr="STCR [1C].TEFS <0>",					"Memory",	0x8000101C,	4,	base=16,	bitRange=0	;1 
+sfr="STCR [1C].TFSL <1>",					"Memory",	0x8000101C,	4,	base=16,	bitRange=1	;1 
+sfr="STCR [1C].TFSI <2>",					"Memory",	0x8000101C,	4,	base=16,	bitRange=2	;1 
+sfr="STCR [1C].TSCKP <3>",					"Memory",	0x8000101C,	4,	base=16,	bitRange=3	;1 
+sfr="STCR [1C].TSHFD <4>",					"Memory",	0x8000101C,	4,	base=16,	bitRange=4	;1 
+sfr="STCR [1C].TXDIR <5>",					"Memory",	0x8000101C,	4,	base=16,	bitRange=5	;1 
+sfr="STCR [1C].TFDIR <6>",					"Memory",	0x8000101C,	4,	base=16,	bitRange=6	;1 
+sfr="STCR [1C].TFEN <7>",					"Memory",	0x8000101C,	4,	base=16,	bitRange=7	;1 
+sfr="STCR [1C].TXBIT0 <9>",					"Memory",	0x8000101C,	4,	base=16,	bitRange=9	;1 
+sfr="SRCR [20]",						"Memory",	0x80001020,	4,	base=16
+sfr="SRCR [20].REFS <0>",					"Memory",	0x80001020,	4,	base=16,	bitRange=0	;1 
+sfr="SRCR [20].RFSL <1>",					"Memory",	0x80001020,	4,	base=16,	bitRange=1	;1 
+sfr="SRCR [20].RFSI <2>",					"Memory",	0x80001020,	4,	base=16,	bitRange=2	;1 
+sfr="SRCR [20].RSCKP <3>",					"Memory",	0x80001020,	4,	base=16,	bitRange=3	;1 
+sfr="SRCR [20].RSHFD <4>",					"Memory",	0x80001020,	4,	base=16,	bitRange=4	;1 
+sfr="SRCR [20].RXDIR <5>",					"Memory",	0x80001020,	4,	base=16,	bitRange=5	;1 
+sfr="SRCR [20].RFDIR <6>",					"Memory",	0x80001020,	4,	base=16,	bitRange=6	;1 
+sfr="SRCR [20].RFEN <7>",					"Memory",	0x80001020,	4,	base=16,	bitRange=7	;1 
+sfr="SRCR [20].RXBIT0 <9>",					"Memory",	0x80001020,	4,	base=16,	bitRange=9	;1 
+sfr="SRCR [20].RXEXT <10>",					"Memory",	0x80001020,	4,	base=16,	bitRange=10	;1 
+sfr="STCCR [24]",						"Memory",	0x80001024,	4,	base=16
+sfr="STCCR [24].PM0 <0>",					"Memory",	0x80001024,	4,	base=16,	bitRange=0	;1 
+sfr="STCCR [24].PM1 <1>",					"Memory",	0x80001024,	4,	base=16,	bitRange=1	;1 
+sfr="STCCR [24].PM2 <2>",					"Memory",	0x80001024,	4,	base=16,	bitRange=2	;1 
+sfr="STCCR [24].PM3 <3>",					"Memory",	0x80001024,	4,	base=16,	bitRange=3	;1 
+sfr="STCCR [24].PM4 <4>",					"Memory",	0x80001024,	4,	base=16,	bitRange=4	;1 
+sfr="STCCR [24].PM5 <5>",					"Memory",	0x80001024,	4,	base=16,	bitRange=5	;1 
+sfr="STCCR [24].PM6 <6>",					"Memory",	0x80001024,	4,	base=16,	bitRange=6	;1 
+sfr="STCCR [24].PM7 <7>",					"Memory",	0x80001024,	4,	base=16,	bitRange=7	;1 
+sfr="STCCR [24].DC0 <8>",					"Memory",	0x80001024,	4,	base=16,	bitRange=8	;1 
+sfr="STCCR [24].DC1 <9>",					"Memory",	0x80001024,	4,	base=16,	bitRange=9	;1 
+sfr="STCCR [24].DC2 <10>",					"Memory",	0x80001024,	4,	base=16,	bitRange=10	;1 
+sfr="STCCR [24].DC3 <11>",					"Memory",	0x80001024,	4,	base=16,	bitRange=11	;1 
+sfr="STCCR [24].DC4 <12>",					"Memory",	0x80001024,	4,	base=16,	bitRange=12	;1 
+sfr="STCCR [24].WL0 <13>",					"Memory",	0x80001024,	4,	base=16,	bitRange=13	;1 
+sfr="STCCR [24].WL1 <14>",					"Memory",	0x80001024,	4,	base=16,	bitRange=14	;1 
+sfr="STCCR [24].WL2 <15>",					"Memory",	0x80001024,	4,	base=16,	bitRange=15	;1 
+sfr="STCCR [24].WL3 <16>",					"Memory",	0x80001024,	4,	base=16,	bitRange=16	;1 
+sfr="STCCR [24].PSR <17>",					"Memory",	0x80001024,	4,	base=16,	bitRange=17	;1 
+sfr="STCCR [24].DIV2 <18>",					"Memory",	0x80001024,	4,	base=16,	bitRange=18	;1 
+sfr="SFCSR [2C]",						"Memory",	0x8000102C,	4,	base=16
+sfr="SFCSR [2C].TFWM <3:0>",					"Memory",	0x8000102C,	4,	base=16,	bitRange=0-3	;4 
+sfr="SFCSR [2C].RFWM <7:4>",					"Memory",	0x8000102C,	4,	base=16,	bitRange=4-7	;4 
+sfr="SFCSR [2C].TFCNT <11:8>",					"Memory",	0x8000102C,	4,	base=16,	bitRange=8-11	;4 
+sfr="SFCSR [2C].RFCNT <15:12>",					"Memory",	0x8000102C,	4,	base=16,	bitRange=12-15	;4 
+sfr="STR [30]",							"Memory",	0x80001030,	4,	base=16
+sfr="STR [30].TXSTATE <4:0>",					"Memory",	0x80001030,	4,	base=16,	bitRange=0-4	;5 
+sfr="STR [30].TFS2RFS <5>",					"Memory",	0x80001030,	4,	base=16,	bitRange=5	;1 
+sfr="STR [30].TCK2RCK <6>",					"Memory",	0x80001030,	4,	base=16,	bitRange=6	;1 
+sfr="STR [30].TXD2RXD <7>",					"Memory",	0x80001030,	4,	base=16,	bitRange=7	;1 
+sfr="STR [30].RXSTATE <12:8>",					"Memory",	0x80001030,	4,	base=16,	bitRange=8-12	;5 
+sfr="STR [30].RFS2TFS <13>",					"Memory",	0x80001030,	4,	base=16,	bitRange=13	;1 
+sfr="STR [30].RCK2TCK <14>",					"Memory",	0x80001030,	4,	base=16,	bitRange=14	;1 
+sfr="STR [30].TEST <15>",					"Memory",	0x80001030,	4,	base=16,	bitRange=15	;1 
+sfr="SOR [34]",							"Memory",	0x80001034,	4,	base=16
+sfr="SOR [34].SYNRST <0>",					"Memory",	0x80001034,	4,	base=16,	bitRange=0	;1 
+sfr="SOR [34].INIT <3>",					"Memory",	0x80001034,	4,	base=16,	bitRange=3	;1 
+sfr="SOR [34].CLKOFF <6>",					"Memory",	0x80001034,	4,	base=16,	bitRange=6	;1 
+sfr="STMSK [48]",						"Memory",	0x80001048,	4,	base=16
+sfr="SRMSK [4C]",						"Memory",	0x8000104C,	4,	base=16
+
+sfr="SPI_TX_DATA [00]",						"Memory",	0X80002000,	4,	base=16 ;
+sfr="SPI_RX_DATA [04]",						"Memory",	0X80002004,	4,	base=16 ;
+sfr="SPI_CLK_CTRL [08]",					"Memory",	0X80002008,	4,	base=16 ;
+sfr="SPI_CLK_CTRL [08].SPI_DATA_LENGTH <6:0>",			"Memory",	0X80002008,	4,	base=16,	bitRange=0-6	;7 
+sfr="SPI_CLK_CTRL [08].SPI_START <7>",				"Memory",	0X80002008,	4,	base=16,	bitRange=7	;1 
+sfr="SPI_CLK_CTRL [08].SPI_SCK_COUNT <15:8>",			"Memory",	0X80002008,	4,	base=16,	bitRange=8-15	;8 
+sfr="SPI_SETUP [0C]",						"Memory",	0X8000200C,	4,	base=16 ;
+sfr="SPI_SETUP [0C].SPI_SS_SETUP <1:0>",			"Memory",	0X8000200C,	4,	base=16,	bitRange=0-1	;2 
+sfr="SPI_SETUP [0C].SPI_SS_DELAY <3:2>",			"Memory",	0X8000200C,	4,	base=16,	bitRange=2-3	;2 
+sfr="SPI_SETUP [0C].SPI_SDO_INACTIVE_ST <5:4>",			"Memory",	0X8000200C,	4,	base=16,	bitRange=4-5	;2 
+sfr="SPI_SETUP [0C].SPI_SCK_POL <8>",				"Memory",	0X8000200C,	4,	base=16,	bitRange=8	;1 
+sfr="SPI_SETUP [0C].SPI_SCK_PHASE <9>",				"Memory",	0X8000200C,	4,	base=16,	bitRange=9	;1 
+sfr="SPI_SETUP [0C].SPI_MISO_PHASE <10>",			"Memory",	0X8000200C,	4,	base=16,	bitRange=10	;1 
+sfr="SPI_SETUP [0C].SPI_SCK_FREQ <14:12>",			"Memory",	0X8000200C,	4,	base=16,	bitRange=12-14	;3 
+sfr="SPI_SETUP [0C].SPI_MODE <16>",				"Memory",	0X8000200C,	4,	base=16,	bitRange=16	;1 
+sfr="SPI_SETUP [0C].SPI_3WIRE <17>",				"Memory",	0X8000200C,	4,	base=16,	bitRange=17	;1 
+sfr="SPI_STATUS [10]",						"Memory",	0X80002010,	4,	base=16 ;
+sfr="SPI_STATUS [10].SPI_INT <0>",				"Memory",	0X80002010,	4,	base=16,	bitRange=0	;1 
+sfr="SPI_STATUS [10].SPI_OVERFLOW <4>",				"Memory",	0X80002010,	4,	base=16,	bitRange=4	;1 
+sfr="SPI_STATUS [10].SPI_FIRST_DATA <8>",			"Memory",	0X80002010,	4,	base=16,	bitRange=8	;1 
+
+sfr="SYS_CNTL [00]",						"Memory",	0X80003000,	4,	base=16 ;
+sfr="SYS_CNTL [00].PWR_SOURCE <1:0>",				"Memory",	0X80003000,	4,	base=16,	bitRange=0-1	;2 
+sfr="SYS_CNTL [00].PADS_1P8V_SEL <2>",				"Memory",	0X80003000,	4,	base=16,	bitRange=2	;1 
+sfr="SYS_CNTL [00].SPIF_1P8V_SEL <3>",				"Memory",	0X80003000,	4,	base=16,	bitRange=3	;1 
+sfr="SYS_CNTL [00].JTAG_SECU_OFF <4>",				"Memory",	0X80003000,	4,	base=16,	bitRange=4	;1 
+sfr="SYS_CNTL [00].XTAL32_EXISTS <5>",				"Memory",	0X80003000,	4,	base=16,	bitRange=5	;1 
+sfr="SYS_CNTL [00].XTAL_CLKDIV <13:8>",				"Memory",	0X80003000,	4,	base=16,	bitRange=8-13	;6 
+sfr="WU_CNTL [04]",						"Memory",	0X80003004,	4,	base=16 ;
+sfr="WU_CNTL [04].TIMER_WU_EN <0>",				"Memory",	0X80003004,	4,	base=16,	bitRange=0	;1 
+sfr="WU_CNTL [04].RTC_WU_EN <1>",				"Memory",	0X80003004,	4,	base=16,	bitRange=1	;1 
+sfr="WU_CNTL [04].HOST_WAKE <2>",				"Memory",	0X80003004,	4,	base=16,	bitRange=2	;1 
+sfr="WU_CNTL [04].AUTO_ADC <3>",				"Memory",	0X80003004,	4,	base=16,	bitRange=3	;1 
+sfr="WU_CNTL [04].EXT_WU_EN <7:4>",				"Memory",	0X80003004,	4,	base=16,	bitRange=4-7	;4 
+sfr="WU_CNTL [04].EXT_WU_EDGE <11:8>",				"Memory",	0X80003004,	4,	base=16,	bitRange=8-11	;4 
+sfr="WU_CNTL [04].EXT_WU_POL <15:12>",				"Memory",	0X80003004,	4,	base=16,	bitRange=12-15	;4 
+sfr="WU_CNTL [04].TIMER_WU_IEN <16>",				"Memory",	0X80003004,	4,	base=16,	bitRange=16	;1 
+sfr="WU_CNTL [04].RTC_WU_IEN <17>",				"Memory",	0X80003004,	4,	base=16,	bitRange=17	;1 
+sfr="WU_CNTL [04].EXT_WU_IEN <23:20>",				"Memory",	0X80003004,	4,	base=16,	bitRange=20-23	;4 
+sfr="WU_CNTL [04].EXT_OUT_POL <31:28>",				"Memory",	0X80003004,	4,	base=16,	bitRange=28-31	;4 
+sfr="SLEEP_CNTL [08]",						"Memory",	0X80003008,	4,	base=16 ;
+sfr="SLEEP_CNTL [08].HIB <0>",					"Memory",	0X80003008,	4,	base=16,	bitRange=0	;1 
+sfr="SLEEP_CNTL [08].DOZE <1>",					"Memory",	0X80003008,	4,	base=16,	bitRange=1	;1 
+sfr="SLEEP_CNTL [08].RAM_RET <5:4>",				"Memory",	0X80003008,	4,	base=16,	bitRange=4-5	;2 
+sfr="SLEEP_CNTL [08].MCU_RET <6>",				"Memory",	0X80003008,	4,	base=16,	bitRange=6	;1 
+sfr="SLEEP_CNTL [08].DIG_PAD_EN <7>",				"Memory",	0X80003008,	4,	base=16,	bitRange=7	;1 
+sfr="BS_CNTL [0C]",						"Memory",	0X8000300C,	4,	base=16 ;
+sfr="BS_CNTL [0C].BS_EN <0>",					"Memory",	0X8000300C,	4,	base=16,	bitRange=0	;1 
+sfr="BS_CNTL [0C].WAIT4IRQ <1>",				"Memory",	0X8000300C,	4,	base=16,	bitRange=1	;1 
+sfr="BS_CNTL [0C].BS_MAN_EN <2>",				"Memory",	0X8000300C,	4,	base=16,	bitRange=2	;1 
+sfr="BS_CNTL [0C].ARM_CLKG_EN <3>",				"Memory",	0X8000300C,	4,	base=16,	bitRange=3	;1 
+sfr="BS_CNTL [0C].ARM_OFF_TIME <13:8>",				"Memory",	0X8000300C,	4,	base=16,	bitRange=8-13	;6 
+sfr="COP_CNTL [10]",						"Memory",	0X80003010,	4,	base=16 ;
+sfr="COP_CNTL [10].COP_EN <0>",					"Memory",	0X80003010,	4,	base=16,	bitRange=0	;1 
+sfr="COP_CNTL [10].COP_OUT <1>",				"Memory",	0X80003010,	4,	base=16,	bitRange=1	;1 
+sfr="COP_CNTL [10].COP_WP <2>",					"Memory",	0X80003010,	4,	base=16,	bitRange=2	;1 
+sfr="COP_CNTL [10].COP_TIMEOUT <14:8>",				"Memory",	0X80003010,	4,	base=16,	bitRange=8-14	;7 
+sfr="COP_CNTL [10].COP_COUNT <22:16>",				"Memory",	0X80003010,	4,	base=16,	bitRange=16-22	;7 
+sfr="COP_SERVICE [14]",						"Memory",	0X80003014,	4,	base=16 ;
+sfr="CRM_STATUS [18]",						"Memory",	0X80003018,	4,	base=16 ;
+sfr="CRM_STATUS [18].SLEEP_SYNC <0>",				"Memory",	0X80003018,	4,	base=16,	bitRange=0	;1 
+sfr="CRM_STATUS [18].HIB_WU_EVT <1>",				"Memory",	0X80003018,	4,	base=16,	bitRange=1	;1 
+sfr="CRM_STATUS [18].DOZE_WU_EVT <2>",				"Memory",	0X80003018,	4,	base=16,	bitRange=2	;1 
+sfr="CRM_STATUS [18].RTC_WU_EVT <3>",				"Memory",	0X80003018,	4,	base=16,	bitRange=3	;1 
+sfr="CRM_STATUS [18].EXT_WU_EVT <7:4>",				"Memory",	0X80003018,	4,	base=16,	bitRange=4-7	;4 
+sfr="CRM_STATUS [18].XTAL32_RDY <8>",				"Memory",	0X80003018,	4,	base=16,	bitRange=8	;1 
+sfr="CRM_STATUS [18].CAL_DONE <9>",				"Memory",	0X80003018,	4,	base=16,	bitRange=9	;1 
+sfr="CRM_STATUS [18].COP_EVT <10>",				"Memory",	0X80003018,	4,	base=16,	bitRange=10	;1 
+sfr="CRM_STATUS [18].XTAL32_EXISTS <16>",			"Memory",	0X80003018,	4,	base=16,	bitRange=16	;1 
+sfr="CRM_STATUS [18].VREG_BUCK_RDY <17>",			"Memory",	0X80003018,	4,	base=16,	bitRange=17	;1 
+sfr="CRM_STATUS [18].VREG_1P8V_RDY <18>",			"Memory",	0X80003018,	4,	base=16,	bitRange=18	;1 
+sfr="CRM_STATUS [18].VREG_1P5V_RDY <19>",			"Memory",	0X80003018,	4,	base=16,	bitRange=19	;1 
+sfr="MOD_STATUS [1C]",						"Memory",	0X8000301C,	4,	base=16 ;
+sfr="MOD_STATUS [1C].ARM_EN <0>",				"Memory",	0X8000301C,	4,	base=16,	bitRange=0	;1 
+sfr="MOD_STATUS [1C].MACA_EN <1>",				"Memory",	0X8000301C,	4,	base=16,	bitRange=1	;1 
+sfr="MOD_STATUS [1C].ASM_EN <2>",				"Memory",	0X8000301C,	4,	base=16,	bitRange=2	;1 
+sfr="MOD_STATUS [1C].SPI_EN <3>",				"Memory",	0X8000301C,	4,	base=16,	bitRange=3	;1 
+sfr="MOD_STATUS [1C].GPIO_EN <4>",				"Memory",	0X8000301C,	4,	base=16,	bitRange=4	;1 
+sfr="MOD_STATUS [1C].UART1_EN <5>",				"Memory",	0X8000301C,	4,	base=16,	bitRange=5	;1 
+sfr="MOD_STATUS [1C].UART2_EN <6>",				"Memory",	0X8000301C,	4,	base=16,	bitRange=6	;1 
+sfr="MOD_STATUS [1C].TMR_EN <7>",				"Memory",	0X8000301C,	4,	base=16,	bitRange=7	;1 
+sfr="MOD_STATUS [1C].RIF_EN <8>",				"Memory",	0X8000301C,	4,	base=16,	bitRange=8	;1 
+sfr="MOD_STATUS [1C].I2C_EN <9>",				"Memory",	0X8000301C,	4,	base=16,	bitRange=9	;1 
+sfr="MOD_STATUS [1C].SSI_EN <10>",				"Memory",	0X8000301C,	4,	base=16,	bitRange=10	;1 
+sfr="MOD_STATUS [1C].SPIF_EN <11>",				"Memory",	0X8000301C,	4,	base=16,	bitRange=11	;1 
+sfr="MOD_STATUS [1C].ADC_EN <12>",				"Memory",	0X8000301C,	4,	base=16,	bitRange=12	;1 
+sfr="MOD_STATUS [1C].AHB_EN <13>",				"Memory",	0X8000301C,	4,	base=16,	bitRange=13	;1 
+sfr="MOD_STATUS [1C].JTA_EN <14>",				"Memory",	0X8000301C,	4,	base=16,	bitRange=14	;1 
+sfr="MOD_STATUS [1C].NEX_EN <15>",				"Memory",	0X8000301C,	4,	base=16,	bitRange=15	;1 
+sfr="MOD_STATUS [1C].TMX_EN <16>",				"Memory",	0X8000301C,	4,	base=16,	bitRange=16	;1 
+sfr="MOD_STATUS [1C].AIM_EN <17>",				"Memory",	0X8000301C,	4,	base=16,	bitRange=17	;1 
+sfr="WU_COUNT [20]",						"Memory",	0X80003020,	4,	base=16 ;
+sfr="WU_TIMEOUT [24]",						"Memory",	0X80003024,	4,	base=16 ;
+sfr="RTC_COUNT [28]",						"Memory",	0X80003028,	4,	base=16 ;
+sfr="RTC_TIMEOUT [2C]",						"Memory",	0X8000302C,	4,	base=16 ;
+sfr="CAL_CNTL [34]",						"Memory",	0X80003034,	4,	base=16 ;
+sfr="CAL_CNTL [34].CAL_TIMEOUT <15:0>",				"Memory",	0X80003034,	4,	base=16,	bitRange=0-15	;16 
+sfr="CAL_CNTL [34].CAL_EN <16>",				"Memory",	0X80003034,	4,	base=16,	bitRange=16	;1 
+sfr="CAL_CNTL [34].CAL_IEN <17>",				"Memory",	0X80003034,	4,	base=16,	bitRange=17	;1 
+sfr="CAL_COUNT [38]",						"Memory",	0X80003038,	4,	base=16 ;
+sfr="RINGOSC_CNTL [3C]",					"Memory",	0X8000303C,	4,	base=16 ;
+sfr="RINGOSC_CNTL [3C].ROSC_EN <0>",				"Memory",	0X8000303C,	4,	base=16,	bitRange=0	;1 
+sfr="RINGOSC_CNTL [3C].ROSC_BIAS_SEL <3:1>",			"Memory",	0X8000303C,	4,	base=16,	bitRange=1-3	;3 
+sfr="RINGOSC_CNTL [3C].ROSC_FTUNE <8:4>",			"Memory",	0X8000303C,	4,	base=16,	bitRange=4-8	;5 
+sfr="RINGOSC_CNTL [3C].ROSC_CTUNE <12:9>",			"Memory",	0X8000303C,	4,	base=16,	bitRange=9-12	;4 
+sfr="XTAL_CNTL [40]",						"Memory",	0X80003040,	4,	base=16 ;
+sfr="XTAL_CNTL [40].XTAL_WP <0>",				"Memory",	0X80003040,	4,	base=16,	bitRange=0	;1 
+sfr="XTAL_CNTL [40].XTAL_SMALL_SIG <1>",			"Memory",	0X80003040,	4,	base=16,	bitRange=1	;1 
+sfr="XTAL_CNTL [40].XTAL_BYPASS <2>",				"Memory",	0X80003040,	4,	base=16,	bitRange=2	;1 
+sfr="XTAL_CNTL [40].XTAL_TIME_SEL <6:4>",			"Memory",	0X80003040,	4,	base=16,	bitRange=4-6	;3 
+sfr="XTAL_CNTL [40].XTAL_IBIAS_SEL <11:8>",			"Memory",	0X80003040,	4,	base=16,	bitRange=8-11	;4 
+sfr="XTAL_CNTL [40].XTAL_FTUNE <20:16>",			"Memory",	0X80003040,	4,	base=16,	bitRange=16-20	;5 
+sfr="XTAL_CNTL [40].XTAL_CTUNE <25:21>",			"Memory",	0X80003040,	4,	base=16,	bitRange=21-25	;5 
+sfr="XTAL32_CNTL [44]",						"Memory",	0X80003044,	4,	base=16 ;
+sfr="XTAL32_CNTL [44].XTAL32_EN <0>",				"Memory",	0X80003044,	4,	base=16,	bitRange=0	;1 
+sfr="XTAL32_CNTL [44].XTAL32_RDY_IEN <1>",			"Memory",	0X80003044,	4,	base=16,	bitRange=1	;1 
+sfr="VREG_CNTL [48]",						"Memory",	0X80003048,	4,	base=16 ;
+sfr="VREG_CNTL [48].BUCK_EN <0>",				"Memory",	0X80003048,	4,	base=16,	bitRange=0	;1 
+sfr="VREG_CNTL [48].BUCK_SYNC_REC_EN <1>",			"Memory",	0X80003048,	4,	base=16,	bitRange=1	;1 
+sfr="VREG_CNTL [48].BUCK_BYPASS_EN <2>",			"Memory",	0X80003048,	4,	base=16,	bitRange=2	;1 
+sfr="VREG_CNTL [48].VREG_1P5V_EN <4:3>",			"Memory",	0X80003048,	4,	base=16,	bitRange=3-4	;2 
+sfr="VREG_CNTL [48].VREG_1P5V_SEL <6:5>",			"Memory",	0X80003048,	4,	base=16,	bitRange=5-6	;2 
+sfr="VREG_CNTL [48].VREG_1P8V_EN <7>",				"Memory",	0X80003048,	4,	base=16,	bitRange=7	;1 
+sfr="VREG_CNTL [48].BUCK_CLKDIV <11:8>",			"Memory",	0X80003048,	4,	base=16,	bitRange=8-11	;4 
+sfr="VREG_CNTL [48].VREG_BUCK_PASS_N <12>",			"Memory",	0X80003048,	4,	base=16,	bitRange=12	;1 
+sfr="VREG_TRIM [4C]",						"Memory",	0X8000304C,	4,	base=16 ;
+sfr="VREG_TRIM [4C].BGAP_BATT_TRIM <3:0>",			"Memory",	0X8000304C,	4,	base=16,	bitRange=0-3	;4 
+sfr="VREG_TRIM [4C].BGAP_1P8V_TRIM <7:4>",			"Memory",	0X8000304C,	4,	base=16,	bitRange=4-7	;4 
+sfr="VREG_TRIM [4C].VREG_0P9V_TRIM <11:8>",			"Memory",	0X8000304C,	4,	base=16,	bitRange=8-11	;4 
+sfr="VREG_TRIM [4C].VREG_0P9I_TRIM <15:12>",			"Memory",	0X8000304C,	4,	base=16,	bitRange=12-15	;4 
+sfr="VREG_TRIM [4C].VREG_XTAL_TRIM <19:16>",			"Memory",	0X8000304C,	4,	base=16,	bitRange=16-19	;4 
+sfr="VREG_TRIM [4C].VREG_ROSC_TRIM <23:20>",			"Memory",	0X8000304C,	4,	base=16,	bitRange=20-23	;4 
+sfr="SW_RST [50]",						"Memory",	0X80003050,	4,	base=16 ;
+sfr="MACA_VERSION [00]",					"Memory",	0X80004000,	4,	base=16 ;
+sfr="MACA_VERSION [00].MINOR <7:0>",				"Memory",	0X80004000,	4,	base=16,	bitRange=0-7	;8 
+sfr="MACA_VERSION [00].MAJOR <23:16>",				"Memory",	0X80004000,	4,	base=16,	bitRange=16-23	;8 
+sfr="MACA_RESET [04]",						"Memory",	0X80004004,	4,	base=16 ;
+sfr="MACA_RESET [04].RST <0>",					"Memory",	0X80004004,	4,	base=16,	bitRange=0	;1 
+sfr="MACA_RESET [04].CLK_ON <1>",				"Memory",	0X80004004,	4,	base=16,	bitRange=1	;1 
+sfr="MACA_RANDOM [08]",						"Memory",	0X80004008,	4,	base=16 ;
+sfr="MACA_CONTROL [0C]",					"Memory",	0X8000400C,	4,	base=16 ;
+sfr="MACA_CONTROL [0C].SEQUENCE <2:0>",				"Memory",	0X8000400C,	4,	base=16,	bitRange=0-2	;3 
+sfr="MACA_CONTROL [0C].MODE <4:3>",				"Memory",	0X8000400C,	4,	base=16,	bitRange=3-4	;2 
+sfr="MACA_CONTROL [0C].TM <5>",					"Memory",	0X8000400C,	4,	base=16,	bitRange=5	;1 
+sfr="MACA_CONTROL [0C].LFSR <6>",				"Memory",	0X8000400C,	4,	base=16,	bitRange=6	;1 
+sfr="MACA_CONTROL [0C].AUTO <7>",				"Memory",	0X8000400C,	4,	base=16,	bitRange=7	;1 
+sfr="MACA_CONTROL [0C].BCN <8>",				"Memory",	0X8000400C,	4,	base=16,	bitRange=8	;1 
+sfr="MACA_CONTROL [0C].ASAP <9>",				"Memory",	0X8000400C,	4,	base=16,	bitRange=9	;1 
+sfr="MACA_CONTROL [0C].REL <10>",				"Memory",	0X8000400C,	4,	base=16,	bitRange=10	;1 
+sfr="MACA_CONTROL [0C].PRM <11>",				"Memory",	0X8000400C,	4,	base=16,	bitRange=11	;1 
+sfr="MACA_CONTROL [0C].NOFC <12>",				"Memory",	0X8000400C,	4,	base=16,	bitRange=12	;1 
+sfr="MACA_CONTROL [0C].ROLE <13>",				"Memory",	0X8000400C,	4,	base=16,	bitRange=13	;1 
+sfr="MACA_CONTROL [0C].RSV <14>",				"Memory",	0X8000400C,	4,	base=16,	bitRange=14	;1 
+sfr="MACA_CONTROL [0C].RSTO <15>",				"Memory",	0X8000400C,	4,	base=16,	bitRange=15	;1 
+sfr="MACA_CONTROL [0C].PRE_COUNT <19:16>",			"Memory",	0X8000400C,	4,	base=16,	bitRange=16-19	;4 
+sfr="MACA_CONTROL [0C].ISM <20>",				"Memory",	0X8000400C,	4,	base=16,	bitRange=20	;1 
+sfr="MACA_STATUS [10]",						"Memory",	0X80004010,	4,	base=16 ;
+sfr="MACA_STATUS [10].COMPLETE_CODE <3:0>",			"Memory",	0X80004010,	4,	base=16,	bitRange=0-3	;4 
+sfr="MACA_STATUS [10].ZIGBEE <11>",				"Memory",	0X80004010,	4,	base=16,	bitRange=11	;1 
+sfr="MACA_STATUS [10].OVR <12>",				"Memory",	0X80004010,	4,	base=16,	bitRange=12	;1 
+sfr="MACA_STATUS [10].BUSY <13>",				"Memory",	0X80004010,	4,	base=16,	bitRange=13	;1 
+sfr="MACA_STATUS [10].CRC <14>",				"Memory",	0X80004010,	4,	base=16,	bitRange=14	;1 
+sfr="MACA_STATUS [10].TO <15>",					"Memory",	0X80004010,	4,	base=16,	bitRange=15	;1 
+sfr="MACA_FRAME_PENDING [14] <0>",				"Memory",	0X80004014,	4,	base=16,	bitRange=0	;1 
+sfr="MACA_FREQ_CHANNEL [18] <3:0>",				"Memory",	0X80004018,	4,	base=16,	bitRange=0-3	;4 
+sfr="MACA_ED_VALUE [1C]",					"Memory",	0X8000401C,	4,	base=16 ;
+sfr="MACA_TMREN [40]",						"Memory",	0X80004040,	4,	base=16 ;
+sfr="MACA_TMREN [40].STRT <0>",					"Memory",	0X80004040,	4,	base=16,	bitRange=0	;1 
+sfr="MACA_TMREN [40].CPL <1>",					"Memory",	0X80004040,	4,	base=16,	bitRange=1	;1 
+sfr="MACA_TMREN [40].SFT <2>",					"Memory",	0X80004040,	4,	base=16,	bitRange=2	;1 
+sfr="MACA_TMRDIS [44]",						"Memory",	0X80004044,	4,	base=16 ;
+sfr="MACA_TMRDIS [44].STRT <0>",				"Memory",	0X80004044,	4,	base=16,	bitRange=0	;1 
+sfr="MACA_TMRDIS [44].CPL <1>",					"Memory",	0X80004044,	4,	base=16,	bitRange=1	;1 
+sfr="MACA_TMRDIS [44].SFT <2>",					"Memory",	0X80004044,	4,	base=16,	bitRange=2	;1 
+sfr="MACA_TMRDIS [44].STRT_OFF <3>",				"Memory",	0X80004044,	4,	base=16,	bitRange=3	;1 
+sfr="MACA_TMRDIS [44].CPL_OFF <4>",				"Memory",	0X80004044,	4,	base=16,	bitRange=4	;1 
+sfr="MACA_TMRDIS [44].SFT_OFF <5>",				"Memory",	0X80004044,	4,	base=16,	bitRange=5	;1 
+sfr="MACA_CLK [48]",						"Memory",	0X80004048,	4,	base=16 ;
+sfr="MACA_STARTCLK [4C]",					"Memory",	0X8000404C,	4,	base=16 ;
+sfr="MACA_CPLCLK [50]",						"Memory",	0X80004050,	4,	base=16 ;
+sfr="MACA_SFTCLK [54]",						"Memory",	0X80004054,	4,	base=16 ;
+sfr="MACA_CLKOFFSET [58]",					"Memory",	0X80004058,	4,	base=16 ;
+sfr="MACA_RELCLK [5C]",						"Memory",	0X8000405C,	4,	base=16 ;
+sfr="MACA_CPLTIM [60]",						"Memory",	0X80004060,	4,	base=16 ;
+sfr="MACA_SLOTOFFSET [64]",					"Memory",	0X80004064,	4,	base=16 ;
+sfr="MACA_SLOTOFFSET [64].TX_SLOT_OFFSET <11:0>",		"Memory",	0X80004064,	4,	base=16,	bitRange=0-11	;12 
+sfr="MACA_SLOTOFFSET [64].RX_SLOT_OFFSET <27:16>",		"Memory",	0X80004064,	4,	base=16,	bitRange=16-27	;12 
+sfr="MACA_TIMESTAMP [68]",					"Memory",	0X80004068,	4,	base=16 ;
+sfr="MACA_DMA_RX [80]",						"Memory",	0X80004080,	4,	base=16 ;
+sfr="MACA_DMA_TX [84]",						"Memory",	0X80004084,	4,	base=16 ;
+sfr="MACA_DMA_POLL [88]",					"Memory",	0X80004088,	4,	base=16 ;
+sfr="MACA_TX_LEN [8C]",						"Memory",	0X8000408C,	4,	base=16 ;
+sfr="MACA_TX_LEN [8C].TX_LEN <14:0>",				"Memory",	0X8000408C,	4,	base=16,	bitRange=0-14	;15 
+sfr="MACA_TX_LEN [8C].RX_LEN <30:16>",				"Memory",	0X8000408C,	4,	base=16,	bitRange=16-30	;15 
+sfr="MACA_TX_SEQNR [90] <7:0>",					"Memory",	0X80004090,	4,	base=16,	bitRange=0-7	;8 
+sfr="MACA_SET_RX_FIFO_LVL [94] <15:0>",				"Memory",	0X80004094,	4,	base=16,	bitRange=0-15	;16 
+sfr="MACA_GET_RX_LVL_RECVBYTES [98] <15:0>",			"Memory",	0X80004098,	4,	base=16,	bitRange=0-15	;16 
+sfr="MACA_IRQ [C0]",						"Memory",	0X800040C0,	4,	base=16 ;
+sfr="MACA_IRQ [C0].ACPL <0>",					"Memory",	0X800040C0,	4,	base=16,	bitRange=0	;1 
+sfr="MACA_IRQ [C0].POLL <1>",					"Memory",	0X800040C0,	4,	base=16,	bitRange=1	;1 
+sfr="MACA_IRQ [C0].DI <2>",					"Memory",	0X800040C0,	4,	base=16,	bitRange=2	;1 
+sfr="MACA_IRQ [C0].WU <3>",					"Memory",	0X800040C0,	4,	base=16,	bitRange=3	;1 
+sfr="MACA_IRQ [C0].RST <4>",					"Memory",	0X800040C0,	4,	base=16,	bitRange=4	;1 
+sfr="MACA_IRQ [C0].LVL <9>",					"Memory",	0X800040C0,	4,	base=16,	bitRange=9	;1 
+sfr="MACA_IRQ [C0].SFT <10>",					"Memory",	0X800040C0,	4,	base=16,	bitRange=10	;1 
+sfr="MACA_IRQ [C0].FLT <11>",					"Memory",	0X800040C0,	4,	base=16,	bitRange=11	;1 
+sfr="MACA_IRQ [C0].CRC <12>",					"Memory",	0X800040C0,	4,	base=16,	bitRange=12	;1 
+sfr="MACA_IRQ [C0].CM <13>",					"Memory",	0X800040C0,	4,	base=16,	bitRange=13	;1 
+sfr="MACA_IRQ [C0].SYNC <14>",					"Memory",	0X800040C0,	4,	base=16,	bitRange=14	;1 
+sfr="MACA_IRQ [C0].STRT <15>",					"Memory",	0X800040C0,	4,	base=16,	bitRange=15	;1 
+sfr="MACA_CLRIRQ [C4]",						"Memory",	0X800040C4,	4,	base=16 ;
+sfr="MACA_CLRIRQ [C4].ACPL <0>",				"Memory",	0X800040C4,	4,	base=16,	bitRange=0	;1 
+sfr="MACA_CLRIRQ [C4].POLL <1>",				"Memory",	0X800040C4,	4,	base=16,	bitRange=1	;1 
+sfr="MACA_CLRIRQ [C4].DI <2>",					"Memory",	0X800040C4,	4,	base=16,	bitRange=2	;1 
+sfr="MACA_CLRIRQ [C4].WU <3>",					"Memory",	0X800040C4,	4,	base=16,	bitRange=3	;1 
+sfr="MACA_CLRIRQ [C4].RST <4>",					"Memory",	0X800040C4,	4,	base=16,	bitRange=4	;1 
+sfr="MACA_CLRIRQ [C4].LVL <9>",					"Memory",	0X800040C4,	4,	base=16,	bitRange=9	;1 
+sfr="MACA_CLRIRQ [C4].SFT <10>",				"Memory",	0X800040C4,	4,	base=16,	bitRange=10	;1 
+sfr="MACA_CLRIRQ [C4].FLT <11>",				"Memory",	0X800040C4,	4,	base=16,	bitRange=11	;1 
+sfr="MACA_CLRIRQ [C4].CRC <12>",				"Memory",	0X800040C4,	4,	base=16,	bitRange=12	;1 
+sfr="MACA_CLRIRQ [C4].CM <13>",					"Memory",	0X800040C4,	4,	base=16,	bitRange=13	;1 
+sfr="MACA_CLRIRQ [C4].SYNC <14>",				"Memory",	0X800040C4,	4,	base=16,	bitRange=14	;1 
+sfr="MACA_CLRIRQ [C4].STRT <15>",				"Memory",	0X800040C4,	4,	base=16,	bitRange=15	;1 
+sfr="MACA_SETIRQ [C8]",						"Memory",	0X800040C8,	4,	base=16 ;
+sfr="MACA_SETIRQ [C8].ACPL <0>",				"Memory",	0X800040C8,	4,	base=16,	bitRange=0	;1 
+sfr="MACA_SETIRQ [C8].POLL <1>",				"Memory",	0X800040C8,	4,	base=16,	bitRange=1	;1 
+sfr="MACA_SETIRQ [C8].DI <2>",					"Memory",	0X800040C8,	4,	base=16,	bitRange=2	;1 
+sfr="MACA_SETIRQ [C8].WU <3>",					"Memory",	0X800040C8,	4,	base=16,	bitRange=3	;1 
+sfr="MACA_SETIRQ [C8].RST <4>",					"Memory",	0X800040C8,	4,	base=16,	bitRange=4	;1 
+sfr="MACA_SETIRQ [C8].LVL <9>",					"Memory",	0X800040C8,	4,	base=16,	bitRange=9	;1 
+sfr="MACA_SETIRQ [C8].SFT <10>",				"Memory",	0X800040C8,	4,	base=16,	bitRange=10	;1 
+sfr="MACA_SETIRQ [C8].FLT <11>",				"Memory",	0X800040C8,	4,	base=16,	bitRange=11	;1 
+sfr="MACA_SETIRQ [C8].CRC <12>",				"Memory",	0X800040C8,	4,	base=16,	bitRange=12	;1 
+sfr="MACA_SETIRQ [C8].CM <13>",					"Memory",	0X800040C8,	4,	base=16,	bitRange=13	;1 
+sfr="MACA_SETIRQ [C8].SYNC <14>",				"Memory",	0X800040C8,	4,	base=16,	bitRange=14	;1 
+sfr="MACA_SETIRQ [C8].STRT <15>",				"Memory",	0X800040C8,	4,	base=16,	bitRange=15	;1 
+sfr="MACA_MASKIRQ [CC]",					"Memory",	0X800040CC,	4,	base=16 ;
+sfr="MACA_MASKIRQ [CC].ACPL <0>",				"Memory",	0X800040CC,	4,	base=16,	bitRange=0	;1 
+sfr="MACA_MASKIRQ [CC].POLL <1>",				"Memory",	0X800040CC,	4,	base=16,	bitRange=1	;1 
+sfr="MACA_MASKIRQ [CC].DI <2>",					"Memory",	0X800040CC,	4,	base=16,	bitRange=2	;1 
+sfr="MACA_MASKIRQ [CC].LVL <9>",				"Memory",	0X800040CC,	4,	base=16,	bitRange=9	;1 
+sfr="MACA_MASKIRQ [CC].SFT <10>",				"Memory",	0X800040CC,	4,	base=16,	bitRange=10	;1 
+sfr="MACA_MASKIRQ [CC].FLT <11>",				"Memory",	0X800040CC,	4,	base=16,	bitRange=11	;1 
+sfr="MACA_MASKIRQ [CC].CRC <12>",				"Memory",	0X800040CC,	4,	base=16,	bitRange=12	;1 
+sfr="MACA_MASKIRQ [CC].CM <13>",				"Memory",	0X800040CC,	4,	base=16,	bitRange=13	;1 
+sfr="MACA_MASKIRQ [CC].SYNC <14>",				"Memory",	0X800040CC,	4,	base=16,	bitRange=14	;1 
+sfr="MACA_MASKIRQ [CC].STRT <15>",				"Memory",	0X800040CC,	4,	base=16,	bitRange=15	;1 
+sfr="MACA_MACPANID [100] <15:0>"	,			"Memory",	0X80004100,	4,	base=16,	bitRange=0-15	;16 
+sfr="MACA_MAC16ADDR [104] <15:0>",				"Memory",	0X80004104,	4,	base=16,	bitRange=0-15	;16 
+sfr="MACA_MAC64HI [108]",					"Memory",	0X80004108,	4,	base=16 ;
+sfr="MACA_MAC64LO [10C]",					"Memory",	0X8000410C,	4,	base=16 ;
+sfr="MACA_FLTREJ [110]",					"Memory",	0X80004110,	4,	base=16 ;
+sfr="MACA_FLTREJ [110].BCN <0>",				"Memory",	0X80004110,	4,	base=16,	bitRange=0	;1 
+sfr="MACA_FLTREJ [110].DATA <1>",				"Memory",	0X80004110,	4,	base=16,	bitRange=1	;1 
+sfr="MACA_FLTREJ [110].ACK <2>",				"Memory",	0X80004110,	4,	base=16,	bitRange=2	;1 
+sfr="MACA_FLTREJ [110].CMD <3>",				"Memory",	0X80004110,	4,	base=16,	bitRange=3	;1 
+sfr="MACA_FLTREJ [110].POLL <8>",				"Memory",	0X80004110,	4,	base=16,	bitRange=8	;1 
+sfr="MACA_FLTREJ [110].FC_MASK <31:16>",			"Memory",	0X80004110,	4,	base=16,	bitRange=16-31	;16 
+sfr="MACA_CLK_DIV [114] <15:0>",				"Memory",	0X80004114,	4,	base=16,	bitRange=0-15	;16 
+sfr="MACA_WARMUP [118]",					"Memory",	0X80004118,	4,	base=16 ;
+sfr="MACA_WARMUP [118].RX_WARMUP <11:0>",			"Memory",	0X80004118,	4,	base=16,	bitRange=0-11	;12 
+sfr="MACA_WARMUP [118].TX_WARMUP <27:16>",			"Memory",	0X80004118,	4,	base=16,	bitRange=16-27	;12 
+sfr="MACA_PREAMBLE [11C]",					"Memory",	0X8000411C,	4,	base=16 ;
+sfr="MACA_WHITESEED [120]",					"Memory",	0X80004120,	4,	base=16 ;
+sfr="MACA_WHITESEED [120].SEED1 <6:0>",				"Memory",	0X80004120,	4,	base=16,	bitRange=0-6	;7 
+sfr="MACA_WHITESEED [120].SEED2 <14:8>",			"Memory",	0X80004120,	4,	base=16,	bitRange=8-14	;7 
+sfr="MACA_FRAMESYNC0 [124]",					"Memory",	0X80004124,	4,	base=16 ;
+sfr="MACA_FRAMESYNC1 [128]",					"Memory",	0X80004128,	4,	base=16 ;
+sfr="MACA_TX_ACK_DELAY [140]",					"Memory",	0X80004140,	4,	base=16 ;
+sfr="MACA_TX_ACK_DELAY [140].TXACKDELAY <11:0>",		"Memory",	0X80004140,	4,	base=16,	bitRange=0-11	;12 
+sfr="MACA_TXA_CK_DELAY [140].TXPOLLDELAY <27:16>",		"Memory",	0X80004140,	4,	base=16,	bitRange=16-27	;12 
+sfr="MACA_RX_ACK_DELAY [144]",					"Memory",	0X80004144,	4,	base=16 ;
+sfr="MACA_RX_ACK_DELAY [144].RXACKDELAY <11:0>",		"Memory",	0X80004144,	4,	base=16,	bitRange=0-11	;12 
+sfr="MACA_RX_ACK_DELAY [144].RXAUTODELAY <27:16>",		"Memory",	0X80004144,	4,	base=16,	bitRange=16-27	;12 
+sfr="MACA_EOF_DELAY [148] <11:0>",				"Memory",	0X80004148,	4,	base=16,	bitRange=0-11	;12 
+sfr="MACA_CCADELAY [14C]",					"Memory",	0X8000414C,	4,	base=16 ;
+sfr="MACA_CCADELAY [14C].CCADELAY <11:0>",			"Memory",	0X8000414C,	4,	base=16,	bitRange=0-11	;12 
+sfr="MACA_CCADELAY [14C].CCALENGTH <27:16>",			"Memory",	0X8000414C,	4,	base=16,	bitRange=16-27	;12 
+sfr="MACA_RXEND [150]",						"Memory",	0X80004150,	4,	base=16 ;
+sfr="MACA_RXEND [150].RXACK_END <11:0>",			"Memory",	0X80004150,	4,	base=16,	bitRange=0-11	;12 
+sfr="MACA_RXEND [150].RXSLOTTED_END <27:16>",			"Memory",	0X80004150,	4,	base=16,	bitRange=16-27	;12 
+sfr="MACA_TX_CCA_DELAY [154] <11:0>",				"Memory",	0X80004154,	4,	base=16,	bitRange=0-11	;12 
+sfr="MACA_KEY3 [158]",						"Memory",	0X80004158,	4,	base=16 ;
+sfr="MACA_KEY2 [15C]",						"Memory",	0X8000415C,	4,	base=16 ;
+sfr="MACA_KEY1 [160]",						"Memory",	0X80004160,	4,	base=16 ;
+sfr="MACA_KEY0 [164]",						"Memory",	0X80004164,	4,	base=16 ;
+sfr="MACA_OPTIONS [180]",					"Memory",	0X80004180,	4,	base=16 ;
+sfr="MACA_OPTIONS [180].POLL <0>",				"Memory",	0X80004180,	4,	base=16,	bitRange=0	;1 
+sfr="MACA_OPTIONS [180].PLL_TX <1>",				"Memory",	0X80004180,	4,	base=16,	bitRange=1	;1 
+sfr="MACA_OPTIONS [180].PLL_IGNORE <2>",			"Memory",	0X80004180,	4,	base=16,	bitRange=2	;1 
+sfr="MACA_OPTIONS [180].SEED_KEY <3>",				"Memory",	0X80004180,	4,	base=16,	bitRange=3	;1 
+
+sfr="UART1_CONTRL [00]",					"Memory",	0X80005000,	4,	base=16 ;
+sfr="UART1_CONTRL [00].TXE <0>",				"Memory",	0X80005000,	4,	base=16,	bitRange=0	;1 
+sfr="UART1_CONTRL [00].RXE <1>",				"Memory",	0X80005000,	4,	base=16,	bitRange=1	;1 
+sfr="UART1_CONTRL [00].PEN <2>",				"Memory",	0X80005000,	4,	base=16,	bitRange=2	;1 
+sfr="UART1_CONTRL [00].EP <3>",					"Memory",	0X80005000,	4,	base=16,	bitRange=3	;1 
+sfr="UART1_CONTRL [00].ST2 <4>",				"Memory",	0X80005000,	4,	base=16,	bitRange=4	;1 
+sfr="UART1_CONTRL [00].SB <5>",					"Memory",	0X80005000,	4,	base=16,	bitRange=5	;1 
+sfr="UART1_CONTRL [00].CONTX <6>",				"Memory",	0X80005000,	4,	base=16,	bitRange=6	;1 
+sfr="UART1_CONTRL [00].TX_OEN_B <7>",				"Memory",	0X80005000,	4,	base=16,	bitRange=7	;1 
+sfr="UART1_CONTRL [00].SEL <9>",				"Memory",	0X80005000,	4,	base=16,	bitRange=9	;1 
+sfr="UART1_CONTRL [00].XTIM <10>",				"Memory",	0X80005000,	4,	base=16,	bitRange=10	;1 
+sfr="UART1_CONTRL [00].FCP <11>",				"Memory",	0X80005000,	4,	base=16,	bitRange=11	;1 
+sfr="UART1_CONTRL [00].FCE <12>",				"Memory",	0X80005000,	4,	base=16,	bitRange=12	;1 
+sfr="UART1_CONTRL [00].MTXR <13>",				"Memory",	0X80005000,	4,	base=16,	bitRange=13	;1 
+sfr="UART1_CONTRL [00].MRXR <14>",				"Memory",	0X80005000,	4,	base=16,	bitRange=14	;1 
+sfr="UART1_CONTRL [00].TST <15>",				"Memory",	0X80005000,	4,	base=16,	bitRange=15	;1 
+sfr="UART1_STAT [04]",						"Memory",	0X80005004,	4,	base=16;
+sfr="UART1_STAT [04].SE <0>",					"Memory",	0X80005004,	4,	base=16,	bitRange=0	;1 
+sfr="UART1_STAT [04].PE <1>",					"Memory",	0X80005004,	4,	base=16,	bitRange=1	;1 
+sfr="UART1_STAT [04].FE <2>",					"Memory",	0X80005004,	4,	base=16,	bitRange=2	;1 
+sfr="UART1_STAT [04].TOE <3>",					"Memory",	0X80005004,	4,	base=16,	bitRange=3	;1 
+sfr="UART1_STAT [04].ROE <4>",					"Memory",	0X80005004,	4,	base=16,	bitRange=4	;1 
+sfr="UART1_STAT [04].RUE <5>",					"Memory",	0X80005004,	4,	base=16,	bitRange=5	;1 
+sfr="UART1_STAT [04].RXRDY <6>",				"Memory",	0X80005004,	4,	base=16,	bitRange=6	;1 
+sfr="UART1_STAT [04].TXRDY <7>",				"Memory",	0X80005004,	4,	base=16,	bitRange=7	;1 
+sfr="UART1_TRX_DATA [08] <7:0>",				"Memory",	0X80005008,	4,	base=16,	bitRange=0-7	;8 
+sfr="UART1_RXLEVEL [0C] <5:0>",					"Memory",	0X8000500C,	4,	base=16,	bitRange=0-5	;6 
+sfr="UART1_TXLEVEL [10] <5:0>",					"Memory",	0X80005010,	4,	base=16,	bitRange=0-5	;6 
+sfr="UART1_CTS_LEVEL [14] <4:0>",				"Memory",	0X80005014,	4,	base=16,	bitRange=0-4	;5 
+sfr="UART1_BAUD_RATE_DIV [18]",					"Memory",	0X80005018,	4,	base=16 ;
+sfr="UART1_BAUD_RATE_DIV [18].UBRMOD <15:0>",			"Memory",	0X80005018,	4,	base=16,	bitRange=0-15	;16 
+sfr="UART1_BAUD_RATE_DIV [18].UBRINC <31:16>",			"Memory",	0X80005018,	4,	base=16,	bitRange=16-31	;16 
+
+sfr="I2C_ADDRESS [00] <7:1>",					"Memory",	0X80006000,	4,	base=16,	bitRange=1-7	;7 
+sfr="I2C_FREQ_DIV [04] <5:0>",					"Memory",	0X80006004,	4,	base=16,	bitRange=0-5	;6 
+sfr="I2C_CONTROL [08]",						"Memory",	0X80006008,	4,	base=16 ;
+sfr="I2C_CONTROL [08].BCST <0>",				"Memory",	0X80006008,	4,	base=16,	bitRange=0	;1 
+sfr="I2C_CONTROL [08].RSTA <2>",				"Memory",	0X80006008,	4,	base=16,	bitRange=2	;1 
+sfr="I2C_CONTROL [08].TXAK <3>",				"Memory",	0X80006008,	4,	base=16,	bitRange=3	;1 
+sfr="I2C_CONTROL [08].MTX <4>",					"Memory",	0X80006008,	4,	base=16,	bitRange=4	;1 
+sfr="I2C_CONTROL [08].MSTA <5>",				"Memory",	0X80006008,	4,	base=16,	bitRange=5	;1 
+sfr="I2C_CONTROL [08].MIEN <6>",				"Memory",	0X80006008,	4,	base=16,	bitRange=6	;1 
+sfr="I2C_CONTROL [08].MEN <7>",					"Memory",	0X80006008,	4,	base=16,	bitRange=7	;1 
+sfr="I2C_STATUS [0C]",						"Memory",	0X8000600C,	4,	base=16 ;
+sfr="I2C_STATUS [0C].RXAK <0>",					"Memory",	0X8000600C,	4,	base=16,	bitRange=0	;1 
+sfr="I2C_STATUS [0C].MIF <1>",					"Memory",	0X8000600C,	4,	base=16,	bitRange=1	;1 
+sfr="I2C_STATUS [0C].SRW <2>",					"Memory",	0X8000600C,	4,	base=16,	bitRange=2	;1 
+sfr="I2C_STATUS [0C].BCSTM <3>",				"Memory",	0X8000600C,	4,	base=16,	bitRange=3	;1 
+sfr="I2C_STATUS [0C].MAL <4>",					"Memory",	0X8000600C,	4,	base=16,	bitRange=4	;1 
+sfr="I2C_STATUS [0C].MBB <5>",					"Memory",	0X8000600C,	4,	base=16,	bitRange=5	;1 
+sfr="I2C_STATUS [0C].MAAS <6>",					"Memory",	0X8000600C,	4,	base=16,	bitRange=6	;1 
+sfr="I2C_STATUS [0C].MCF <7>",					"Memory",	0X8000600C,	4,	base=16,	bitRange=7	;1 
+sfr="I2C_DATA [10] <7:0>",					"Memory",	0X80006010,	4,	base=16,	bitRange=0-7	;8 
+sfr="I2C_DIG_FILTER_SMPL_RATE [14] <5:0>",			"Memory",	0X80006014,	4,	base=16,	bitRange=0-5	;6 
+sfr="I2C_CLOCK_EN [18] <0>",					"Memory",	0X80006018,	4,	base=16,	bitRange=0	;1 
+
+sfr="TMR0_COMPARISON_VALUE_1 [00] <15:0>",			"Memory",	0X80007000,	2,	base=16,	bitRange=0-15	;16 
+sfr="TMR0_COMPARISON_VALUE_2 [02] <15:0>",			"Memory",	0X80007002,	2,	base=16,	bitRange=0-15	;16 
+sfr="TMR0_CAPTURE_VALUE [04] <15:0>",				"Memory",	0X80007004,	2,	base=16,	bitRange=0-15	;16 
+sfr="TMR0_LOAD_VALUE [06] <15:0>",				"Memory",	0X80007006,	2,	base=16,	bitRange=0-15	;16 
+sfr="TMR0_HOLD_VALUE [08] <15:0>",				"Memory",	0X80007008,	2,	base=16,	bitRange=0-15	;16 
+sfr="TMR0_COUNTER [0A] <15:0>",					"Memory",	0X8000700A,	2,	base=16,	bitRange=0-15	;16 
+sfr="TMR0_CTRL [0C]",						"Memory",	0X8000700C,	2,	base=16 ;
+sfr="TMR0_CTRL [0C].OUTPUT_MODE <2:0>",				"Memory",	0X8000700C,	2,	base=16,	bitRange=0-2	;3 
+sfr="TMR0_CTRL [0C].COINT <3>",					"Memory",	0X8000700C,	2,	base=16,	bitRange=3	;1 
+sfr="TMR0_CTRL [0C].DIR <4>",					"Memory",	0X8000700C,	2,	base=16,	bitRange=4	;1 
+sfr="TMR0_CTRL [0C].LENGTH <5>",				"Memory",	0X8000700C,	2,	base=16,	bitRange=5	;1 
+sfr="TMR0_CTRL [0C].ONCE <6>",					"Memory",	0X8000700C,	2,	base=16,	bitRange=6	;1 
+sfr="TMR0_CTRL [0C].SECONDARYSOURCEINIT <8:7>",			"Memory",	0X8000700C,	2,	base=16,	bitRange=7-8	;2 
+sfr="TMR0_CTRL [0C].PRIMARYCOUNTSOURCEMODE <12:9>",		"Memory",	0X8000700C,	2,	base=16,	bitRange=9-12	;4 
+sfr="TMR0_CTRL [0C].COUNT <15:13>",				"Memory",	0X8000700C,	2,	base=16,	bitRange=13-15	;3 
+sfr="TMR0_SCTRL [0E]",						"Memory",	0X8000700E,	2,	base=16 ;
+sfr="TMR0_SCTRL [0E].OEN <0>",					"Memory",	0X8000700E,	2,	base=16,	bitRange=0	;1 
+sfr="TMR0_SCTRL [0E].OPS <1>",					"Memory",	0X8000700E,	2,	base=16,	bitRange=1	;1 
+sfr="TMR0_SCTRL [0E].FORCE <2>",				"Memory",	0X8000700E,	2,	base=16,	bitRange=2	;1 
+sfr="TMR0_SCTRL [0E].VAL <3>",					"Memory",	0X8000700E,	2,	base=16,	bitRange=3	;1 
+sfr="TMR0_SCTRL [0E].EEOF <4>",					"Memory",	0X8000700E,	2,	base=16,	bitRange=4	;1 
+sfr="TMR0_SCTRL [0E].MSTR <5>",					"Memory",	0X8000700E,	2,	base=16,	bitRange=5	;1 
+sfr="TMR0_SCTRL [0E].CAPTUREMODE <7:6>",			"Memory",	0X8000700E,	2,	base=16,	bitRange=6-7	;2 
+sfr="TMR0_SCTRL [0E].INPUT <8>",				"Memory",	0X8000700E,	2,	base=16,	bitRange=8	;1 
+sfr="TMR0_SCTRL [0E].IPS <9>",					"Memory",	0X8000700E,	2,	base=16,	bitRange=9	;1 
+sfr="TMR0_SCTRL [0E].IEFIE <10>",				"Memory",	0X8000700E,	2,	base=16,	bitRange=10	;1 
+sfr="TMR0_SCTRL [0E].IEF <11>",					"Memory",	0X8000700E,	2,	base=16,	bitRange=11	;1 
+sfr="TMR0_SCTRL [0E].TOFIE <12>",				"Memory",	0X8000700E,	2,	base=16,	bitRange=12	;1 
+sfr="TMR0_SCTRL [0E].TOF <13>",					"Memory",	0X8000700E,	2,	base=16,	bitRange=13	;1 
+sfr="TMR0_SCTRL [0E].TCFIE <14>",				"Memory",	0X8000700E,	2,	base=16,	bitRange=14	;1 
+sfr="TMR0_SCTRL [0E].TCF <15>",					"Memory",	0X8000700E,	2,	base=16,	bitRange=15	;1 
+sfr="TMR0_COMPARATOR_LOAD_1 [10] <15:0>",			"Memory",	0X80007010,	2,	base=16,	bitRange=0-15	;16 
+sfr="TMR0_COMPARATOR_LOAD_2 [12] <15:0>",			"Memory",	0X80007012,	2,	base=16,	bitRange=0-15	;16 
+sfr="TMR0_CSCTRL [14]",						"Memory",	0X80007014,	2,	base=16 ;
+sfr="TMR0_CSCTRL [14].CL1 <1:0>",				"Memory",	0X80007014,	2,	base=16,	bitRange=0-1	;2 
+sfr="TMR0_CSCTRL [14].CL2 <3:2>",				"Memory",	0X80007014,	2,	base=16,	bitRange=2-3	;2 
+sfr="TMR0_CSCTRL [14].TCF1 <4>",				"Memory",	0X80007014,	2,	base=16,	bitRange=4	;1 
+sfr="TMR0_CSCTRL [14].TCF2 <5>",				"Memory",	0X80007014,	2,	base=16,	bitRange=5	;1 
+sfr="TMR0_CSCTRL [14].TCF1EN <6>",				"Memory",	0X80007014,	2,	base=16,	bitRange=6	;1 
+sfr="TMR0_CSCTRL [14].TCF2EN <7>",				"Memory",	0X80007014,	2,	base=16,	bitRange=7	;1 
+sfr="TMR0_CSCTRL [14].FILT_EN <13>",				"Memory",	0X80007014,	2,	base=16,	bitRange=13	;1 
+sfr="TMR0_CSCTRL [14].DBG_EN <15:14>",				"Memory",	0X80007014,	2,	base=16,	bitRange=14-15	;2 
+sfr="TMR1_COMPARISON_VALUE_1 [20] <15:0>",			"Memory",	0X80007020,	2,	base=16,	bitRange=0-15	;16 
+sfr="TMR1_COMPARISON_VALUE_2 [22] <15:0>",			"Memory",	0X80007022,	2,	base=16,	bitRange=0-15	;16 
+sfr="TMR1_CAPTURE_VALUE [24] <15:0>",				"Memory",	0X80007024,	2,	base=16,	bitRange=0-15	;16 
+sfr="TMR1_LOAD_VALUE [26] <15:0>",				"Memory",	0X80007026,	2,	base=16,	bitRange=0-15	;16 
+sfr="TMR1_HOLD_VALUE [28] <15:0>",				"Memory",	0X80007028,	2,	base=16,	bitRange=0-15	;16 
+sfr="TMR1_COUNTER [2A] <15:0>",					"Memory",	0X8000702A,	2,	base=16,	bitRange=0-15	;16 
+sfr="TMR1_CTRL [2C]",						"Memory",	0X8000702C,	2,	base=16 ;
+sfr="TMR1_CTRL [2C].OUTPUT_MODE <2:0>",				"Memory",	0X8000702C,	2,	base=16,	bitRange=0-2	;3 
+sfr="TMR1_CTRL [2C].COINT <3>",					"Memory",	0X8000702C,	2,	base=16,	bitRange=3	;1 
+sfr="TMR1_CTRL [2C].DIR <4>",					"Memory",	0X8000702C,	2,	base=16,	bitRange=4	;1 
+sfr="TMR1_CTRL [2C].LENGTH <5>",				"Memory",	0X8000702C,	2,	base=16,	bitRange=5	;1 
+sfr="TMR1_CTRL [2C].ONCE <6>",					"Memory",	0X8000702C,	2,	base=16,	bitRange=6	;1 
+sfr="TMR1_CTRL [2C].SECONDARYSOURCEINIT <8:7>",			"Memory",	0X8000702C,	2,	base=16,	bitRange=7-8	;2 
+sfr="TMR1_CTRL [2C].PRIMARYCOUNTSOURCEMODE <12:9>",		"Memory",	0X8000702C,	2,	base=16,	bitRange=9-12	;4 
+sfr="TMR1_CTRL [2C].COUNT <15:13>",				"Memory",	0X8000702C,	2,	base=16,	bitRange=13-15	;3 
+sfr="TMR1_SCTRL [2E]",						"Memory",	0X8000702E,	2,	base=16 ;
+sfr="TMR1_SCTRL [2E].OEN <0>",					"Memory",	0X8000702E,	2,	base=16,	bitRange=0	;1 
+sfr="TMR1_SCTRL [2E].OPS <1>",					"Memory",	0X8000702E,	2,	base=16,	bitRange=1	;1 
+sfr="TMR1_SCTRL [2E].FORCE <2>",				"Memory",	0X8000702E,	2,	base=16,	bitRange=2	;1 
+sfr="TMR1_SCTRL [2E].VAL <3>",					"Memory",	0X8000702E,	2,	base=16,	bitRange=3	;1 
+sfr="TMR1_SCTRL [2E].EEOF <4>",					"Memory",	0X8000702E,	2,	base=16,	bitRange=4	;1 
+sfr="TMR1_SCTRL [2E].MSTR <5>",					"Memory",	0X8000702E,	2,	base=16,	bitRange=5	;1 
+sfr="TMR1_SCTRL [2E].CAPTUREMODE <7:6>",			"Memory",	0X8000702E,	2,	base=16,	bitRange=6-7	;2 
+sfr="TMR1_SCTRL [2E].INPUT <8>",				"Memory",	0X8000702E,	2,	base=16,	bitRange=8	;1 
+sfr="TMR1_SCTRL [2E].IPS <9>",					"Memory",	0X8000702E,	2,	base=16,	bitRange=9	;1 
+sfr="TMR1_SCTRL [2E].IEFIE <10>",				"Memory",	0X8000702E,	2,	base=16,	bitRange=10	;1 
+sfr="TMR1_SCTRL [2E].IEF <11>",					"Memory",	0X8000702E,	2,	base=16,	bitRange=11	;1 
+sfr="TMR1_SCTRL [2E].TOFIE <12>",				"Memory",	0X8000702E,	2,	base=16,	bitRange=12	;1 
+sfr="TMR1_SCTRL [2E].TOF <13>",					"Memory",	0X8000702E,	2,	base=16,	bitRange=13	;1 
+sfr="TMR1_SCTRL [2E].TCFIE <14>",				"Memory",	0X8000702E,	2,	base=16,	bitRange=14	;1 
+sfr="TMR1_SCTRL [2E].TCF <15>",					"Memory",	0X8000702E,	2,	base=16,	bitRange=15	;1 
+sfr="TMR1_COMPARATOR_LOAD_1 [30] <15:0>",			"Memory",	0X80007030,	2,	base=16,	bitRange=0-15	;16 
+sfr="TMR1_COMPARATOR_LOAD_2 [32] <15:0>",			"Memory",	0X80007032,	2,	base=16,	bitRange=0-15	;16 
+sfr="TMR1_CSCTRL [34]",						"Memory",	0X80007034,	2,	base=16 ;
+sfr="TMR1_CSCTRL [34].CL1 <1:0>",				"Memory",	0X80007034,	2,	base=16,	bitRange=0-1	;2 
+sfr="TMR1_CSCTRL [34].CL2 <3:2>",				"Memory",	0X80007034,	2,	base=16,	bitRange=2-3	;2 
+sfr="TMR1_CSCTRL [34].TCF1 <4>",				"Memory",	0X80007034,	2,	base=16,	bitRange=4	;1 
+sfr="TMR1_CSCTRL [34].TCF2 <5>",				"Memory",	0X80007034,	2,	base=16,	bitRange=5	;1 
+sfr="TMR1_CSCTRL [34].TCF1EN <6>",				"Memory",	0X80007034,	2,	base=16,	bitRange=6	;1 
+sfr="TMR1_CSCTRL [34].TCF2EN <7>",				"Memory",	0X80007034,	2,	base=16,	bitRange=7	;1 
+sfr="TMR1_CSCTRL [34].FILT_EN <13>",				"Memory",	0X80007034,	2,	base=16,	bitRange=13	;1 
+sfr="TMR1_CSCTRL [34].DBG_EN <15:14>",				"Memory",	0X80007034,	2,	base=16,	bitRange=14-15	;2 
+
+sfr="TMR2_COMPARISON_VALUE_1 [40] <15:0>",			"Memory",	0X80007040,	2,	base=16,	bitRange=0-15	;16 
+sfr="TMR2_COMPARISON_VALUE_2 [42] <15:0>",			"Memory",	0X80007042,	2,	base=16,	bitRange=0-15	;16 
+sfr="TMR2_CAPTURE_VALUE [44] <15:0>",				"Memory",	0X80007044,	2,	base=16,	bitRange=0-15	;16 
+sfr="TMR2_LOAD_VALUE [46] <15:0>",				"Memory",	0X80007046,	2,	base=16,	bitRange=0-15	;16 
+sfr="TMR2_HOLD_VALUE [48] <15:0>",				"Memory",	0X80007048,	2,	base=16,	bitRange=0-15	;16 
+sfr="TMR2_COUNTER [4A] <15:0>",					"Memory",	0X8000704A,	2,	base=16,	bitRange=0-15	;16 
+sfr="TMR2_CTRL [4C]",						"Memory",	0X8000704C,	2,	base=16 ;
+sfr="TMR2_CTRL [4C].OUTPUT_MODE <2:0>",				"Memory",	0X8000704C,	2,	base=16,	bitRange=0-2	;3 
+sfr="TMR2_CTRL [4C].COINT <3>",					"Memory",	0X8000704C,	2,	base=16,	bitRange=3	;1 
+sfr="TMR2_CTRL [4C].DIR <4>",					"Memory",	0X8000704C,	2,	base=16,	bitRange=4	;1 
+sfr="TMR2_CTRL [4C].LENGTH <5>",				"Memory",	0X8000704C,	2,	base=16,	bitRange=5	;1 
+sfr="TMR2_CTRL [4C].ONCE <6>",					"Memory",	0X8000704C,	2,	base=16,	bitRange=6	;1 
+sfr="TMR2_CTRL [4C].SECONDARYSOURCEINIT <8:7>",			"Memory",	0X8000704C,	2,	base=16,	bitRange=7-8	;2 
+sfr="TMR2_CTRL [4C].PRIMARYCOUNTSOURCEMODE <12:9>",		"Memory",	0X8000704C,	2,	base=16,	bitRange=9-12	;4 
+sfr="TMR2_CTRL [4C].COUNT <15:13>",				"Memory",	0X8000704C,	2,	base=16,	bitRange=13-15	;3 
+sfr="TMR2_SCTRL [4E]",						"Memory",	0X8000704E,	2,	base=16 ;
+sfr="TMR2_SCTRL [4E].OEN <0>",					"Memory",	0X8000704E,	2,	base=16,	bitRange=0	;1 
+sfr="TMR2_SCTRL [4E].OPS <1>",					"Memory",	0X8000704E,	2,	base=16,	bitRange=1	;1 
+sfr="TMR2_SCTRL [4E].FORCE <2>",				"Memory",	0X8000704E,	2,	base=16,	bitRange=2	;1 
+sfr="TMR2_SCTRL [4E].VAL <3>",					"Memory",	0X8000704E,	2,	base=16,	bitRange=3	;1 
+sfr="TMR2_SCTRL [4E].EEOF <4>",					"Memory",	0X8000704E,	2,	base=16,	bitRange=4	;1 
+sfr="TMR2_SCTRL [4E].MSTR <5>",					"Memory",	0X8000704E,	2,	base=16,	bitRange=5	;1 
+sfr="TMR2_SCTRL [4E].CAPTUREMODE <7:6>",			"Memory",	0X8000704E,	2,	base=16,	bitRange=6-7	;2 
+sfr="TMR2_SCTRL [4E].INPUT <8>",				"Memory",	0X8000704E,	2,	base=16,	bitRange=8	;1 
+sfr="TMR2_SCTRL [4E].IPS <9>",					"Memory",	0X8000704E,	2,	base=16,	bitRange=9	;1 
+sfr="TMR2_SCTRL [4E].IEFIE <10>",				"Memory",	0X8000704E,	2,	base=16,	bitRange=10	;1 
+sfr="TMR2_SCTRL [4E].IEF <11>",					"Memory",	0X8000704E,	2,	base=16,	bitRange=11	;1 
+sfr="TMR2_SCTRL [4E].TOFIE <12>",				"Memory",	0X8000704E,	2,	base=16,	bitRange=12	;1 
+sfr="TMR2_SCTRL [4E].TOF <13>",					"Memory",	0X8000704E,	2,	base=16,	bitRange=13	;1 
+sfr="TMR2_SCTRL [4E].TCFIE <14>",				"Memory",	0X8000704E,	2,	base=16,	bitRange=14	;1 
+sfr="TMR2_SCTRL [4E].TCF <15>",					"Memory",	0X8000704E,	2,	base=16,	bitRange=15	;1 
+sfr="TMR2_COMPARATOR_LOAD_1 [50] <15:0>",			"Memory",	0X80007050,	2,	base=16,	bitRange=0-15	;16 
+sfr="TMR2_COMPARATOR_LOAD_2 [52] <15:0>",			"Memory",	0X80007052,	2,	base=16,	bitRange=0-15	;16 
+sfr="TMR2_CSCTRL [54]",						"Memory",	0X80007054,	2,	base=16 ;
+sfr="TMR2_CSCTRL [54].CL1 <1:0>",				"Memory",	0X80007054,	2,	base=16,	bitRange=0-1	;2 
+sfr="TMR2_CSCTRL [54].CL2 <3:2>",				"Memory",	0X80007054,	2,	base=16,	bitRange=2-3	;2 
+sfr="TMR2_CSCTRL [54].TCF1 <4>",				"Memory",	0X80007054,	2,	base=16,	bitRange=4	;1 
+sfr="TMR2_CSCTRL [54].TCF2 <5>",				"Memory",	0X80007054,	2,	base=16,	bitRange=5	;1 
+sfr="TMR2_CSCTRL [54].TCF1EN <6>",				"Memory",	0X80007054,	2,	base=16,	bitRange=6	;1 
+sfr="TMR2_CSCTRL [54].TCF2EN <7>",				"Memory",	0X80007054,	2,	base=16,	bitRange=7	;1 
+sfr="TMR2_CSCTRL [54].FILT_EN <13>",				"Memory",	0X80007054,	2,	base=16,	bitRange=13	;1 
+sfr="TMR2_CSCTRL [54].DBG_EN <15:14>",				"Memory",	0X80007054,	2,	base=16,	bitRange=14-15	;2 
+
+sfr="TMR3_COMPARISON_VALUE_1 [60] <15:0>",			"Memory",	0X80007060,	2,	base=16,	bitRange=0-15	;16 
+sfr="TMR3_COMPARISON_VALUE_2 [62] <15:0>",			"Memory",	0X80007062,	2,	base=16,	bitRange=0-15	;16 
+sfr="TMR3_CAPTURE_VALUE [64] <15:0>",				"Memory",	0X80007064,	2,	base=16,	bitRange=0-15	;16 
+sfr="TMR3_LOAD_VALUE [66] <15:0>",				"Memory",	0X80007066,	2,	base=16,	bitRange=0-15	;16 
+sfr="TMR3_HOLD_VALUE [68] <15:0>",				"Memory",	0X80007068,	2,	base=16,	bitRange=0-15	;16 
+sfr="TMR3_COUNTER [6A] <15:0>",					"Memory",	0X8000706A,	2,	base=16,	bitRange=0-15	;16 
+sfr="TMR3_CTRL [6C]",						"Memory",	0X8000706C,	2,	base=16 ;
+sfr="TMR3_CTRL [6C].OUTPUT_MODE <2:0>",				"Memory",	0X8000706C,	2,	base=16,	bitRange=0-2	;3 
+sfr="TMR3_CTRL [6C].COINT <3>",					"Memory",	0X8000706C,	2,	base=16,	bitRange=3	;1 
+sfr="TMR3_CTRL [6C].DIR <4>",					"Memory",	0X8000706C,	2,	base=16,	bitRange=4	;1 
+sfr="TMR3_CTRL [6C].LENGTH <5>",				"Memory",	0X8000706C,	2,	base=16,	bitRange=5	;1 
+sfr="TMR3_CTRL [6C].ONCE <6>",					"Memory",	0X8000706C,	2,	base=16,	bitRange=6	;1 
+sfr="TMR3_CTRL [6C].SECONDARYSOURCEINIT <8:7>",			"Memory",	0X8000706C,	2,	base=16,	bitRange=7-8	;2 
+sfr="TMR3_CTRL [6C].PRIMARYCOUNTSOURCEMODE <12:9>",		"Memory",	0X8000706C,	2,	base=16,	bitRange=9-12	;4 
+sfr="TMR3_CTRL [6C].COUNT <15:13>",				"Memory",	0X8000706C,	2,	base=16,	bitRange=13-15	;3 
+sfr="TMR3_SCTRL [6E]",						"Memory",	0X8000706E,	2,	base=16 ;
+sfr="TMR3_SCTRL [6E].OEN <0>",					"Memory",	0X8000706E,	2,	base=16,	bitRange=0	;1 
+sfr="TMR3_SCTRL [6E].OPS <1>",					"Memory",	0X8000706E,	2,	base=16,	bitRange=1	;1 
+sfr="TMR3_SCTRL [6E].FORCE <2>",				"Memory",	0X8000706E,	2,	base=16,	bitRange=2	;1 
+sfr="TMR3_SCTRL [6E].VAL <3>",					"Memory",	0X8000706E,	2,	base=16,	bitRange=3	;1 
+sfr="TMR3_SCTRL [6E].EEOF <4>",					"Memory",	0X8000706E,	2,	base=16,	bitRange=4	;1 
+sfr="TMR3_SCTRL [6E].MSTR <5>",					"Memory",	0X8000706E,	2,	base=16,	bitRange=5	;1 
+sfr="TMR3_SCTRL [6E].CAPTUREMODE <7:6>",			"Memory",	0X8000706E,	2,	base=16,	bitRange=6-7	;2 
+sfr="TMR3_SCTRL [6E].INPUT <8>",				"Memory",	0X8000706E,	2,	base=16,	bitRange=8	;1 
+sfr="TMR3_SCTRL [6E].IPS <9>",					"Memory",	0X8000706E,	2,	base=16,	bitRange=9	;1 
+sfr="TMR3_SCTRL [6E].IEFIE <10>",				"Memory",	0X8000706E,	2,	base=16,	bitRange=10	;1 
+sfr="TMR3_SCTRL [6E].IEF <11>",					"Memory",	0X8000706E,	2,	base=16,	bitRange=11	;1 
+sfr="TMR3_SCTRL [6E].TOFIE <12>",				"Memory",	0X8000706E,	2,	base=16,	bitRange=12	;1 
+sfr="TMR3_SCTRL [6E].TOF <13>",					"Memory",	0X8000706E,	2,	base=16,	bitRange=13	;1 
+sfr="TMR3_SCTRL [6E].TCFIE <14>",				"Memory",	0X8000706E,	2,	base=16,	bitRange=14	;1 
+sfr="TMR3_SCTRL [6E].TCF <15>",					"Memory",	0X8000706E,	2,	base=16,	bitRange=15	;1 
+sfr="TMR3_COMPARATOR_LOAD_1 [70] <15:0>",			"Memory",	0X80007070,	2,	base=16,	bitRange=0-15	;16 
+sfr="TMR3_COMPARATOR_LOAD_2 [72] <15:0>",			"Memory",	0X80007072,	2,	base=16,	bitRange=0-15	;16 
+sfr="TMR3_CSCTRL [74]",						"Memory",	0X80007074,	2,	base=16 ;
+sfr="TMR3_CSCTRL [74].CL1 <1:0>",				"Memory",	0X80007074,	2,	base=16,	bitRange=0-1	;2 
+sfr="TMR3_CSCTRL [74].CL2 <3:2>",				"Memory",	0X80007074,	2,	base=16,	bitRange=2-3	;2 
+sfr="TMR3_CSCTRL [74].TCF1 <4>",				"Memory",	0X80007074,	2,	base=16,	bitRange=4	;1 
+sfr="TMR3_CSCTRL [74].TCF2 <5>",				"Memory",	0X80007074,	2,	base=16,	bitRange=5	;1 
+sfr="TMR3_CSCTRL [74].TCF1EN <6>",				"Memory",	0X80007074,	2,	base=16,	bitRange=6	;1 
+sfr="TMR3_CSCTRL [74].TCF2EN <7>",				"Memory",	0X80007074,	2,	base=16,	bitRange=7	;1 
+sfr="TMR3_CSCTRL [74].FILT_EN <13>",				"Memory",	0X80007074,	2,	base=16,	bitRange=13	;1 
+sfr="TMR3_CSCTRL [74].DBG_EN <15:14>",				"Memory",	0X80007074,	2,	base=16,	bitRange=14-15	;2 
+
+sfr="ASM_KEY0 [00]",						"Memory",	0X80008000,	4,	base=16 ;
+sfr="ASM_KEY1 [04]",						"Memory",	0X80008004,	4,	base=16 ;
+sfr="ASM_KEY2 [08]",						"Memory",	0X80008008,	4,	base=16 ;
+sfr="ASM_KEY3 [0C]",						"Memory",	0X8000800C,	4,	base=16 ;
+sfr="ASM_DATA0 [10]",						"Memory",	0X80008010,	4,	base=16 ;
+sfr="ASM_DATA1 [14]",						"Memory",	0X80008014,	4,	base=16 ;
+sfr="ASM_DATA2 [18]",						"Memory",	0X80008018,	4,	base=16 ;
+sfr="ASM_DATA3 [1C]",						"Memory",	0X8000801C,	4,	base=16 ;
+sfr="ASM_CTR0 [20]",						"Memory",	0X80008020,	4,	base=16 ;
+sfr="ASM_CTR1 [24]",						"Memory",	0X80008024,	4,	base=16 ;
+sfr="ASM_CTR2 [28]",						"Memory",	0X80008028,	4,	base=16 ;
+sfr="ASM_CTR3 [2C]",						"Memory",	0X8000802C,	4,	base=16 ;
+sfr="ASM_CTR_RSLT_0 [30]",					"Memory",	0X80008030,	4,	base=16 ;
+sfr="ASM_CTR_RSLT_1 [34]",					"Memory",	0X80008034,	4,	base=16 ;
+sfr="ASM_CTR_RSLT_2 [38]",					"Memory",	0X80008038,	4,	base=16 ;
+sfr="ASM_CTR_RSLT_3 [3C]",					"Memory",	0X8000803C,	4,	base=16 ;
+sfr="ASM_CBC_RSLT_0 [40]",					"Memory",	0X80008040,	4,	base=16 ;
+sfr="ASM_CBC_RSLT_1 [44]",					"Memory",	0X80008044,	4,	base=16 ;
+sfr="ASM_CBC_RSLT_2 [48]",					"Memory",	0X80008048,	4,	base=16 ;
+sfr="ASM_CBC_RSLT_3 [4C]",					"Memory",	0X8000804C,	4,	base=16 ;
+sfr="ASM_CONTROL0 [50]",					"Memory",	0X80008050,	4,	base=16 ;
+sfr="ASM_CONTROL0 [50].START <24>",				"Memory",	0X80008050,	4,	base=16,	bitRange=24	;1 
+sfr="ASM_CONTROL0 [50].CLEAR <25>",				"Memory",	0X80008050,	4,	base=16,	bitRange=25	;1 
+sfr="ASM_CONTROL0 [50].LOAD_MAC <26>",				"Memory",	0X80008050,	4,	base=16,	bitRange=26	;1 
+sfr="ASM_CONTROL0 [50].CLEAR_IRQ <31>",				"Memory",	0X80008050,	4,	base=16,	bitRange=31	;1 
+sfr="ASM_CONTROL1 [54]",					"Memory",	0X80008054,	4,	base=16 ;
+sfr="ASM_CONTROL1 [54].ON <0>",					"Memory",	0X80008054,	4,	base=16,	bitRange=0	;1 
+sfr="ASM_CONTROL1 [54].MODE <1>",				"Memory",	0X80008054,	4,	base=16,	bitRange=1	;1 
+sfr="ASM_CONTROL1 [54].BYPASS <2>",				"Memory",	0X80008054,	4,	base=16,	bitRange=2	;1 
+sfr="ASM_CONTROL1 [54].CBC <24>",				"Memory",	0X80008054,	4,	base=16,	bitRange=24	;1 
+sfr="ASM_CONTROL1 [54].CTR <25>",				"Memory",	0X80008054,	4,	base=16,	bitRange=25	;1 
+sfr="ASM_CONTROL1 [54].SELFTEST <6>",				"Memory",	0X80008054,	4,	base=16,	bitRange=6	;1 
+sfr="ASM_CONTROL1 [54].MASK_IRQ <31>",				"Memory",	0X80008054,	4,	base=16,	bitRange=31	;1 
+sfr="ASM_STATUS [58]",						"Memory",	0X80008058,	4,	base=16 ;
+sfr="ASM_STATUS [58].DONE <24>",				"Memory",	0X80008058,	4,	base=16,	bitRange=24	;1 
+sfr="ASM_STATUS [58].TESTPASS <25>",				"Memory",	0X80008058,	4,	base=16,	bitRange=25	;1 
+sfr="ASM_MAC0 [60]",						"Memory",	0X80008060,	4,	base=16 ;
+sfr="ASM_MAC1 [64]",						"Memory",	0X80008064,	4,	base=16 ;
+sfr="ASM_MAC2 [68]",						"Memory",	0X80008068,	4,	base=16 ;
+sfr="ASM_MAC3 [6C]",						"Memory",	0X8000806C,	4,	base=16 ;
+
+sfr="UART2_CONTRL [00]",					"Memory",	0X8000B000,	4,	base=16 ;
+sfr="UART2_CONTRL [00].TXE <0>",				"Memory",	0X8000B000,	4,	base=16,	bitRange=0	;1 
+sfr="UART2_CONTRL [00].RXE <1>",				"Memory",	0X8000B000,	4,	base=16,	bitRange=1	;1 
+sfr="UART2_CONTRL [00].PEN <2>",				"Memory",	0X8000B000,	4,	base=16,	bitRange=2	;1 
+sfr="UART2_CONTRL [00].EP <3>",					"Memory",	0X8000B000,	4,	base=16,	bitRange=3	;1 
+sfr="UART2_CONTRL [00].ST2 <4>",				"Memory",	0X8000B000,	4,	base=16,	bitRange=4	;1 
+sfr="UART2_CONTRL [00].SB <5>",					"Memory",	0X8000B000,	4,	base=16,	bitRange=5	;1 
+sfr="UART2_CONTRL [00].CONTX <6>",				"Memory",	0X8000B000,	4,	base=16,	bitRange=6	;1 
+sfr="UART2_CONTRL [00].TX_OEN_B <7>",				"Memory",	0X8000B000,	4,	base=16,	bitRange=7	;1 
+sfr="UART2_CONTRL [00].SEL <9>",				"Memory",	0X8000B000,	4,	base=16,	bitRange=9	;1 
+sfr="UART2_CONTRL [00].XTIM <10>",				"Memory",	0X8000B000,	4,	base=16,	bitRange=10	;1 
+sfr="UART2_CONTRL [00].FCP <11>",				"Memory",	0X8000B000,	4,	base=16,	bitRange=11	;1 
+sfr="UART2_CONTRL [00].FCE <12>",				"Memory",	0X8000B000,	4,	base=16,	bitRange=12	;1 
+sfr="UART2_CONTRL [00].MTXR <13>",				"Memory",	0X8000B000,	4,	base=16,	bitRange=13	;1 
+sfr="UART2_CONTRL [00].MRXR <14>",				"Memory",	0X8000B000,	4,	base=16,	bitRange=14	;1 
+sfr="UART2_CONTRL [00].TST <15>",				"Memory",	0X8000B000,	4,	base=16,	bitRange=15	;1 
+sfr="UART2_STAT [04]",						"Memory",	0X8000B004,	4,	base=16 ;
+sfr="UART2_STAT [04].SE <0>",					"Memory",	0X8000B004,	4,	base=16,	bitRange=0	;1 
+sfr="UART2_STAT [04].PE <1>",					"Memory",	0X8000B004,	4,	base=16,	bitRange=1	;1 
+sfr="UART2_STAT [04].FE <2>",					"Memory",	0X8000B004,	4,	base=16,	bitRange=2	;1 
+sfr="UART2_STAT [04].TOE <3>",					"Memory",	0X8000B004,	4,	base=16,	bitRange=3	;1 
+sfr="UART2_STAT [04].ROE <4>",					"Memory",	0X8000B004,	4,	base=16,	bitRange=4	;1 
+sfr="UART2_STAT [04].RUE <5>",					"Memory",	0X8000B004,	4,	base=16,	bitRange=5	;1 
+sfr="UART2_STAT [04].RXRDY <6>",				"Memory",	0X8000B004,	4,	base=16,	bitRange=6	;1 
+sfr="UART2_STAT [04].TXRDY <7>",				"Memory",	0X8000B004,	4,	base=16,	bitRange=7	;1 
+sfr="UART2_TRX_DATA [08] <7:0>",				"Memory",	0X8000B008,	4,	base=16,	bitRange=0-7	;8 
+sfr="UART2_RXLEVEL [0C] <5:0>",					"Memory",	0X8000B00C,	4,	base=16,	bitRange=0-5	;6 
+sfr="UART2_TXLEVEL [10] <5:0>",					"Memory",	0X8000B010,	4,	base=16,	bitRange=0-5	;6 
+sfr="UART2_CTS_LEVEL [14] <4:0>",				"Memory",	0X8000B014,	4,	base=16,	bitRange=0-4	;5 
+sfr="UART2_BAUD_RATE_DIV [18]",					"Memory",	0X8000B018,	4,	base=16 ;
+sfr="UART2_BAUD_RATE_DIV [18].UBRMOD <15:0>",			"Memory",	0X8000B018,	4,	base=16,	bitRange=0-15	;16 
+sfr="UART2_BAUD_RATE_DIV [18].UBRINC <15:0>",			"Memory",	0X8000B018,	4,	base=16,	bitRange=0-15	;16 
+
+;==========================================================================================================================================;
+;===================================                             SPI FLASH		                 ===================================
+;==========================================================================================================================================
+
+sfr="SPIF_TX_DATA [00] <31:0>",					"Memory",	0X8000C000,	4,	base=16,	bitRange=0-31	;32 
+sfr="SPIF_RX_DATA [04] <31:0>",					"Memory",	0X8000C004,	4,	base=16,	bitRange=0-31	;32 
+sfr="SPIF_CLK_CTRL [08]",					"Memory",	0X8000C008,	4,	base=16 ;
+sfr="SPIF_CLK_CTRL [08].SPIF_DATA_LENGTH <6:0>",		"Memory",	0X8000C008,	4,	base=16,	bitRange=0-6	;7 
+sfr="SPIF_CLK_CTRL [08].SPIF_START <7>",			"Memory",	0X8000C008,	4,	base=16,	bitRange=7	;1 
+sfr="SPIF_CLK_CTRL [08].SPIF_SCK_COUNT <15:8>",			"Memory",	0X8000C008,	4,	base=16,	bitRange=8-15	;8 
+sfr="SPIF_SETUP [0C]",						"Memory",	0X8000C00C,	4,	base=16 ;
+sfr="SPIF_SETUP [0C].SPIF_SS_SETUP <1:0>",			"Memory",	0X8000C00C,	4,	base=16,	bitRange=0-1	;2 
+sfr="SPIF_SETUP [0C].SPIF_SS_DELAY <3:2>",			"Memory",	0X8000C00C,	4,	base=16,	bitRange=2-3	;2 
+sfr="SPIF_SETUP [0C].SPIF_SDO_INACTIVE_ST <5:4>",		"Memory",	0X8000C00C,	4,	base=16,	bitRange=4-5	;2 
+sfr="SPIF_SETUP [0C].SPIF_SCK_POL <8>",				"Memory",	0X8000C00C,	4,	base=16,	bitRange=8	;1 
+sfr="SPIF_SETUP [0C].SPIF_SCK_PHASE <9>",			"Memory",	0X8000C00C,	4,	base=16,	bitRange=9	;1 
+sfr="SPIF_SETUP [0C].SPIF_MISO_PHASE <10>",			"Memory",	0X8000C00C,	4,	base=16,	bitRange=10	;1 
+sfr="SPIF_SETUP [0C].SPIF_SCK_FREQ <14:12>",			"Memory",	0X8000C00C,	4,	base=16,	bitRange=12-14	;3 
+sfr="SPIF_SETUP [0C].SPIF_MODE <16>",				"Memory",	0X8000C00C,	4,	base=16,	bitRange=16	;1 
+sfr="SPIF_SETUP [0C].SPIF_3WIRE <17>",				"Memory",	0X8000C00C,	4,	base=16,	bitRange=17	;1 
+sfr="SPIF_STATUS [10]",						"Memory",	0X8000C010,	4,	base=16 ;
+sfr="SPIF_STATUS [10].SPIF_INT <0>",				"Memory",	0X8000C010,	4,	base=16,	bitRange=0	;1 
+sfr="SPIF_STATUS [10].SPIF_OVERFLOW <4>",			"Memory",	0X8000C010,	4,	base=16,	bitRange=4	;1 
+sfr="SPIF_STATUS [10].SPIF_FIRST_DATA <8>",			"Memory",	0X8000C010,	4,	base=16,	bitRange=8	;1 
+
+;==========================================================================================================================================;
+;===================================                             ADC                                      ===================================
+;==========================================================================================================================================
+
+
+sfr="ADC_COMP_0 [00]",						"Memory",	0X8000D000,	2,	base=16 ;
+sfr="ADC_COMP_0 [00].VALUE <11:0>",				"Memory",	0X8000D000,	2,	base=16,	bitRange=0-11	;12 
+sfr="ADC_COMP_0 [00].CHANNEL <14:12>",				"Memory",	0X8000D000,	2,	base=16,	bitRange=12-14	;3 
+sfr="ADC_COMP_0 [00].GL <15>",					"Memory",	0X8000D000,	2,	base=16,	bitRange=15	;1 
+sfr="ADC_COMP_1 [02]",						"Memory",	0X8000D002,	2,	base=16 ;
+sfr="ADC_COMP_1 [02].VALUE <11:0>",				"Memory",	0X8000D002,	2,	base=16,	bitRange=0-11	;12 
+sfr="ADC_COMP_1 [02].CHANNEL <14:12>",				"Memory",	0X8000D002,	2,	base=16,	bitRange=12-14	;3 
+sfr="ADC_COMP_1 [02].GL <15>",					"Memory",	0X8000D002,	2,	base=16,	bitRange=15	;1 
+sfr="ADC_COMP_2 [04]",						"Memory",	0X8000D004,	2,	base=16 ;
+sfr="ADC_COMP_2 [04].VALUE <11:0>",				"Memory",	0X8000D004,	2,	base=16,	bitRange=0-11	;12 
+sfr="ADC_COMP_2 [04].CHANNEL <14:12>",				"Memory",	0X8000D004,	2,	base=16,	bitRange=12-14	;3 
+sfr="ADC_COMP_2 [04].GL <15>",					"Memory",	0X8000D004,	2,	base=16,	bitRange=15	;1 
+sfr="ADC_COMP_3 [06]",						"Memory",	0X8000D006,	2,	base=16 ;
+sfr="ADC_COMP_3 [06].VALUE <11:0>",				"Memory",	0X8000D006,	2,	base=16,	bitRange=0-11	;12 
+sfr="ADC_COMP_3 [06].CHANNEL <14:12>",				"Memory",	0X8000D006,	2,	base=16,	bitRange=12-14	;3 
+sfr="ADC_COMP_3 [06].GL <15>",					"Memory",	0X8000D006,	2,	base=16,	bitRange=15	;1 
+sfr="ADC_COMP_4 [08]",						"Memory",	0X8000D008,	2,	base=16 ;
+sfr="ADC_COMP_4 [08].VALUE <11:0>",				"Memory",	0X8000D008,	2,	base=16,	bitRange=0-11	;12 
+sfr="ADC_COMP_4 [08].CHANNEL <14:12>",				"Memory",	0X8000D008,	2,	base=16,	bitRange=12-14	;3 
+sfr="ADC_COMP_4 [08].GL <15>",					"Memory",	0X8000D008,	2,	base=16,	bitRange=15	;1 
+sfr="ADC_COMP_5 [0A]",						"Memory",	0X8000D00A,	2,	base=16 ;
+sfr="ADC_COMP_5 [0A].VALUE <11:0>",				"Memory",	0X8000D00A,	2,	base=16,	bitRange=0-11	;12 
+sfr="ADC_COMP_5 [0A].CHANNEL <14:12>",				"Memory",	0X8000D00A,	2,	base=16,	bitRange=12-14	;3 
+sfr="ADC_COMP_5 [0A].GL <15>",					"Memory",	0X8000D00A,	2,	base=16,	bitRange=15	;1 
+sfr="ADC_COMP_6 [0C]",						"Memory",	0X8000D00C,	2,	base=16 ;
+sfr="ADC_COMP_6 [0C].VALUE <11:0>",				"Memory",	0X8000D00C,	2,	base=16,	bitRange=0-11	;12 
+sfr="ADC_COMP_6 [0C].CHANNEL <14:12>",				"Memory",	0X8000D00C,	2,	base=16,	bitRange=12-14	;3 
+sfr="ADC_COMP_6 [0C].GL <15>",					"Memory",	0X8000D00C,	2,	base=16,	bitRange=15	;1 
+sfr="ADC_COMP_7 [0E]",						"Memory",	0X8000D00E,	2,	base=16 ;
+sfr="ADC_COMP_7 [0E].VALUE <11:0>",				"Memory",	0X8000D00E,	2,	base=16,	bitRange=0-11	;12 
+sfr="ADC_COMP_7 [0E].CHANNEL <14:12>",				"Memory",	0X8000D00E,	2,	base=16,	bitRange=12-14	;3 
+sfr="ADC_COMP_7 [0E].GL <15>",					"Memory",	0X8000D00E,	2,	base=16,	bitRange=15	;1 
+sfr="ADC_BAT_COMP_OVER [10] <11:0>",				"Memory",	0X8000D010,	2,	base=16,	bitRange=0-11	;12 
+sfr="ADC_BAT_COM_UNDER [12] <11:0>",				"Memory",	0X8000D012,	2,	base=16,	bitRange=0-11	;12 
+sfr="ADC_SEQ_1 [14]",						"Memory",	0X8000D014,	2,	base=16 ;
+sfr="ADC_SEQ_1 [14].CH0 <0>",					"Memory",	0X8000D014,	2,	base=16,	bitRange=0	;1 
+sfr="ADC_SEQ_1 [14].CH1 <1>",					"Memory",	0X8000D014,	2,	base=16,	bitRange=1	;1 
+sfr="ADC_SEQ_1 [14].CH2 <2>",					"Memory",	0X8000D014,	2,	base=16,	bitRange=2	;1 
+sfr="ADC_SEQ_1 [14].CH3 <3>",					"Memory",	0X8000D014,	2,	base=16,	bitRange=3	;1 
+sfr="ADC_SEQ_1 [14].CH4 <4>",					"Memory",	0X8000D014,	2,	base=16,	bitRange=4	;1 
+sfr="ADC_SEQ_1 [14].CH5 <5>",					"Memory",	0X8000D014,	2,	base=16,	bitRange=5	;1 
+sfr="ADC_SEQ_1 [14].CH6 <6>",					"Memory",	0X8000D014,	2,	base=16,	bitRange=6	;1 
+sfr="ADC_SEQ_1 [14].CH7 <7>",					"Memory",	0X8000D014,	2,	base=16,	bitRange=7	;1 
+sfr="ADC_SEQ_1 [14].BATT <8>",					"Memory",	0X8000D014,	2,	base=16,	bitRange=8	;1 
+sfr="ADC_SEQ_1 [14].SEQ_MODE <15>",				"Memory",	0X8000D014,	2,	base=16,	bitRange=15	;1 
+sfr="ADC_SEQ_2 [16]",						"Memory",	0X8000D016,	2,	base=16 ;
+sfr="ADC_SEQ_2 [16].CH0 <0>",					"Memory",	0X8000D016,	2,	base=16,	bitRange=0	;1 
+sfr="ADC_SEQ_2 [16].CH1 <1>",					"Memory",	0X8000D016,	2,	base=16,	bitRange=1	;1 
+sfr="ADC_SEQ_2 [16].CH2 <2>",					"Memory",	0X8000D016,	2,	base=16,	bitRange=2	;1 
+sfr="ADC_SEQ_2 [16].CH3 <3>",					"Memory",	0X8000D016,	2,	base=16,	bitRange=3	;1 
+sfr="ADC_SEQ_2 [16].CH4 <4>",					"Memory",	0X8000D016,	2,	base=16,	bitRange=4	;1 
+sfr="ADC_SEQ_2 [16].CH5 <5>",					"Memory",	0X8000D016,	2,	base=16,	bitRange=5	;1 
+sfr="ADC_SEQ_2 [16].CH6 <6>",					"Memory",	0X8000D016,	2,	base=16,	bitRange=6	;1 
+sfr="ADC_SEQ_2 [16].CH7 <7>",					"Memory",	0X8000D016,	2,	base=16,	bitRange=7	;1 
+sfr="ADC_SEQ_2 [16].SEQ_MODE <15>",				"Memory",	0X8000D016,	2,	base=16,	bitRange=15	;1 
+sfr="ADC_CONTROL [18]",						"Memory",	0X8000D018,	2,	base=16 ;
+sfr="ADC_CONTROL [18].ON <0>",					"Memory",	0X8000D018,	2,	base=16,	bitRange=0	;1 
+sfr="ADC_CONTROL [18].TIMER1_ON <1>",				"Memory",	0X8000D018,	2,	base=16,	bitRange=1	;1 
+sfr="ADC_CONTROL [18].TIMER2_ON <2>",				"Memory",	0X8000D018,	2,	base=16,	bitRange=2	;1 
+sfr="ADC_CONTROL [18].SOFT_RESET <3>",				"Memory",	0X8000D018,	2,	base=16,	bitRange=3	;1 
+sfr="ADC_CONTROL [18].COMPARE_IRQ_MASK <12>",			"Memory",	0X8000D018,	2,	base=16,	bitRange=12	;1 
+sfr="ADC_CONTROL [18].SEQ1_IRQ_MASK <13>",			"Memory",	0X8000D018,	2,	base=16,	bitRange=13	;1 
+sfr="ADC_CONTROL [18].SEQ2_IRQ_MASK <14>",			"Memory",	0X8000D018,	2,	base=16,	bitRange=14	;1 
+sfr="ADC_CONTROL [18].FIFO_IRQ_MASK <15>",			"Memory",	0X8000D018,	2,	base=16,	bitRange=15	;1 
+sfr="ADC_TRIGGERS [1A]",					"Memory",	0X8000D01A,	2,	base=16 ;
+sfr="ADC_TRIGGERS [1A].CH0 <0>",				"Memory",	0X8000D01A,	2,	base=16,	bitRange=0	;1 
+sfr="ADC_TRIGGERS [1A].CH1 <1>",				"Memory",	0X8000D01A,	2,	base=16,	bitRange=1	;1 
+sfr="ADC_TRIGGERS [1A].CH2 <2>",				"Memory",	0X8000D01A,	2,	base=16,	bitRange=2	;1 
+sfr="ADC_TRIGGERS [1A].CH3 <3>",				"Memory",	0X8000D01A,	2,	base=16,	bitRange=3	;1 
+sfr="ADC_TRIGGERS [1A].CH4 <4>",				"Memory",	0X8000D01A,	2,	base=16,	bitRange=4	;1 
+sfr="ADC_TRIGGERS [1A].CH5 <5>",				"Memory",	0X8000D01A,	2,	base=16,	bitRange=5	;1 
+sfr="ADC_TRIGGERS [1A].CH6 <6>",				"Memory",	0X8000D01A,	2,	base=16,	bitRange=6	;1 
+sfr="ADC_TRIGGERS [1A].CH7 <7>",				"Memory",	0X8000D01A,	2,	base=16,	bitRange=7	;1 
+sfr="ADC_TRIGGERS [1A].BAT_UNDER <8>",				"Memory",	0X8000D01A,	2,	base=16,	bitRange=8	;1 
+sfr="ADC_TRIGGERS [1A].BAT_OVER <9>",				"Memory",	0X8000D01A,	2,	base=16,	bitRange=9	;1 
+sfr="ADC_PRESCALE [1C] <7:0>",					"Memory",	0X8000D01C,	2,	base=16,	bitRange=0-7	;8 
+sfr="ADC_FIFO_READ [20]",					"Memory",	0X8000D020,	2,	base=16 ;
+sfr="ADC_FIFO_READ [20].VALUE <11:0>",				"Memory",	0X8000D020,	2,	base=16,	bitRange=0-11	;12 
+sfr="ADC_FIFO_READ [20].CHANNEL <15:12>",			"Memory",	0X8000D020,	2,	base=16,	bitRange=12-15	;4 
+sfr="ADC_FIFO_CONTROL_LEVEL [22] <3:0>",			"Memory",	0X8000D022,	2,	base=16,	bitRange=0-3	;4 
+sfr="ADC_FIFO_STATUS [24]",					"Memory",	0X8000D024,	2,	base=16 ;
+sfr="ADC_FIFO_STATUS [24].LEVEL <3:0>",				"Memory",	0X8000D024,	2,	base=16,	bitRange=0-3	;4 
+sfr="ADC_FIFO_STATUS [24].FULL <4>",				"Memory",	0X8000D024,	2,	base=16,	bitRange=4	;1 
+sfr="ADC_FIFO_STATUS [24].EMPTY <5>",				"Memory",	0X8000D024,	2,	base=16,	bitRange=5	;1 
+sfr="ADC_SAMPLE_RATE_1_HIGH [30] <15:0>",			"Memory",	0X8000D030,	2,	base=16,	bitRange=0-15	;16 
+sfr="ADC_SAMPLE_RATE_1_LOW [32] <15:0>",			"Memory",	0X8000D032,	2,	base=16,	bitRange=0-15	;16 
+sfr="ADC_SAMPLE_RATE_2_HIGH [34] <15:0>",			"Memory",	0X8000D034,	2,	base=16,	bitRange=0-15	;16 
+sfr="ADC_SAMPLE_RATE_2_LOW [36] <15:0>",			"Memory",	0X8000D036,	2,	base=16,	bitRange=0-15	;16 
+sfr="ADC_ON_TIME [38] <15:0>",					"Memory",	0X8000D038,	2,	base=16,	bitRange=0-15	;16 
+sfr="ADC_CONVERT_TIME [3A] <15:0>",				"Memory",	0X8000D03A,	2,	base=16,	bitRange=0-15	;16 
+sfr="ADC_CLOCK_DIVIDER [3C] <7:0>",				"Memory",	0X8000D03C,	2,	base=16,	bitRange=0-7	;8 
+sfr="ADC_OVERRIDE [40]",					"Memory",	0X8000D040,	2,	base=16 ;
+sfr="ADC_OVERRIDE [40].MUX1 <3:0>",				"Memory",	0X8000D040,	2,	base=16,	bitRange=0-3	;4 
+sfr="ADC_OVERRIDE [40].MUX2 <7:4>",				"Memory",	0X8000D040,	2,	base=16,	bitRange=4-7	;4 
+sfr="ADC_OVERRIDE [40].AD1_ON <8>",				"Memory",	0X8000D040,	2,	base=16,	bitRange=8	;1 
+sfr="ADC_OVERRIDE [40].AD2_ON <9>",				"Memory",	0X8000D040,	2,	base=16,	bitRange=9	;1 
+sfr="ADC_IRQ [42]",						"Memory",	0X8000D042,	2,	base=16 ;
+sfr="ADC_IRQ [42].COMPARE <12>",				"Memory",	0X8000D042,	2,	base=16,	bitRange=12	;1 
+sfr="ADC_IRQ [42].SEQ1 <13>",					"Memory",	0X8000D042,	2,	base=16,	bitRange=13	;1 
+sfr="ADC_IRQ [42].SEQ2 <14>",					"Memory",	0X8000D042,	2,	base=16,	bitRange=14	;1 
+sfr="ADC_IRQ [42].FIFO <15>",					"Memory",	0X8000D042,	2,	base=16,	bitRange=15	;1 
+sfr="ADC_MODE_OVERRIDE [44] <0>",				"Memory",	0X8000D044,	2,	base=16,	bitRange=0	;1 
+sfr="ADC_AD1_RESULT [46] <11:0>",				"Memory",	0X8000D046,	2,	base=16,	bitRange=0-11	;12 
+sfr="ADC_AD2_RESULT [48] <11:0>",				"Memory",	0X8000D048,	2,	base=16,	bitRange=0-11	;12 
+
+;==========================================================================================================================================;
+;===================================                              INTERRUPT MODULE                        ===================================
+;==========================================================================================================================================
+
+
+sfr="INT_CNTL [00]",						"Memory",	0X80020000,	4,	base=16 ;
+sfr="INT_CNTL [00].FIAD <19>",					"Memory",	0X80020000,	4,	base=16,	bitRange=19	;1 
+sfr="INT_CNTL [00].NIAD <20>",					"Memory",	0X80020000,	4,	base=16,	bitRange=20	;1 
+sfr="INT_NORMAL_MASK [04] <4:0>",				"Memory",	0X80020004,	4,	base=16,	bitRange=0-4	;5 
+sfr="INT_ENABLE_NUMBER [08] <3:0>",				"Memory",	0X80020008,	4,	base=16,	bitRange=0-3	;4 
+sfr="INT_DISABLE_NUMBER [0C] <3:0>",				"Memory",	0X8002000C,	4,	base=16,	bitRange=0-3	;4 
+sfr="INT_ENABLE [10] <15:0>",					"Memory",	0X80020010,	4,	base=16,	bitRange=0-15	;16 
+sfr="INT_TYPE [14] <15:0>",					"Memory",	0X80020014,	4,	base=16,	bitRange=0-15	;16 
+sfr="INT_NORMAL_VECTOR [28] <31:0>",				"Memory",	0X80020028,	4,	base=16,	bitRange=0-31	;32 
+sfr="INT_FAST_VECTOR [2C] <31:0>",				"Memory",	0X8002002C,	4,	base=16,	bitRange=0-31	;32 
+sfr="INT_SOURCE [30] <15:0>",					"Memory",	0X80020030,	4,	base=16,	bitRange=0-15	;16 
+sfr="INT_FORCE [34] <15:0>",					"Memory",	0X80020034,	4,	base=16,	bitRange=0-15	;16 
+sfr="INT_NORMAL_INT_PENDING [38] <15:0>",			"Memory",	0X80020038,	4,	base=16,	bitRange=0-15	;16 
+sfr="INT_FAST_INT_PENDING [3C] <15:0>",				"Memory",	0X8002003C,	4,	base=16,	bitRange=0-15	;16 
+
+
+;=======================================================================================================================
+
+
+[SfrGroupInfo]
+
+group = "GPIO     800000[00]", "PAD_DIR       31-00 [00]","PAD_DIR       63-32 [04]","DATA          31-00 [08]", "DATA          63-32 [0C]","PAD_PU_EN     31-00 [10]","PAD_PU_EN     63-32 [14]","FUNC_SEL      15-00 [18]","FUNC_SEL      31-16 [1C]","FUNC_SEL      32-47 [20]","FUNC_SEL      48-63 [24]","IP_DATA_SEL   31-00 [28]","IP_DATA_SEL   63-32 [2C]","PAD_PULUP_SEL 31-00 [30]","PAD_PULUP_SEL 63-32 [34]","PAD_HYST_EN   31-00 [38]","PAD_HYST_EN   63-32 [3C]","PULLUP_KEEP   31-00 [40]","PULLUP_KEEP   63-32 [44]","DATA_SET      31-00 [48]","DATA_SET      63-32 [4C]","DATA_RESET    31-00 [50]","DATA_RESET    63-32 [54]","DATA_DIR_SET  31-00 [58]","DATA_DIR_SET  63-32 [5C]","DATA_DIR_RST  31-00 [60]","DATA_DIR_RST  63-32 [64]"
+group = "SSI        800010[00]", "STX [00]","SRX [08]","SCR1 [10]","SISR1 [14]","SIER [18]","STCR [1C]","SRCR [20]","STCCR [24]","SFCSR [2C]","STR [30]","SOR [34]","STMSK [48]","SRMSK [4C]"
+group = "SPI        800020[00]", "SPI_TX_DATA [00]","SPI_RX_DATA [04]","SPI_CLK_CTRL [08]","SPI_SETUP [0C]","SPI_STATUS [10]"
+group = "CRM      800030[00]", "SYS_CNTL [00]","WU_CNTL [04]","SLEEP_CNTL [08]","BS_CNTL [0C]","COP_CNTL [10]","COP_SERVICE [14]","CRM_STATUS [18]","MOD_STATUS [1C]","WU_COUNT [20]","WU_TIMEOUT [24]","RTC_COUNT [28]","RTC_TIMEOUT [2C]","CAL_CNTL [34]","CAL_COUNT [38]","RINGOSC_CNTL [3C]","XTAL_CNTL [40]","XTAL32_CNTL [44]","VREG_CNTL [48]","VREG_TRIM [4C]","SW_RST [50]","TEST_RIPPLE [54] <0>","XTAL_TEST [58]","VREG_TEST [5C]"
+group = "MAC      800040[00]", "MACA_VERSION [00]","MACA_RESET [04]","MACA_RANDOM [08]","MACA_CONTROL [0C]","MACA_STATUS [10]","MACA_FRAME_PENDING [14] <0>","MACA_FREQ_CHANNEL [18] <3:0>","MACA_ED_VALUE [1C]","MACA_TMREN [40]","MACA_TMRDIS [44]","MACA_CLK [48]","MACA_STARTCLK [4C]","MACA_CPLCLK [50]","MACA_SFTCLK [54]","MACA_CLKOFFSET [58]","MACA_RELCLK [5C]","MACA_CPLTIM [60]","MACA_SLOTOFFSET [64]","MACA_TIMESTAMP [68]","MACA_DMA_RX [80]","MACA_DMA_TX [84]","MACA_DMA_POLL [88]","MACA_TX_LEN [8C]","MACA_TX_SEQNR [90] <7:0>","MACA_SET_RX_FIFO_LVL [94] <15:0>","MACA_GET_RX_LVL_RECVBYTES [98] <15:0>","MACA_IRQ [C0]","MACA_CLRIRQ [C4]","MACA_SETIRQ [C8]","MACA_MASKIRQ [CC]","MACA_MACPANID [100] <15:0>","MACA_MAC16ADDR [104] <15:0>","MACA_MAC64HI [108]","MACA_MAC64LO [10C]","MACA_FLTREJ [110]","MACA_CLK_DIV [114] <15:0>","MACA_WARMUP [118]","MACA_PREAMBLE [11C]","MACA_WHITESEED [120]","MACA_FRAMESYNC0 [124]","MACA_FRAMESYNC1 [128]","MACA_TX_ACK_DELAY [140]","MACA_RX_ACK_DELAY [144]","MACA_EOF_DELAY [148] <11:0>","MACA_CCADELAY [14C]","MACA_RXEND [150]","MACA_TX_CCA_DELAY [154] <11:0>","MACA_KEY3 [158]","MACA_KEY2 [15C]","MACA_KEY1 [160]","MACA_KEY0 [164]","MACA_OPTIONS [180]"
+group = "UART1  800050[00]", "UART1_CONTRL [00]","UART1_STAT [04]","UART1_TRX_DATA [08] <7:0>","UART1_RXLEVEL [0C] <5:0>","UART1_CTS_LEVEL [14] <4:0>","UART1_BAUD_RATE_DIV [18]"
+group = "I2C         800060[00]", "I2C_ADDRESS [00] <7:1>","I2C_FREQ_DIV [04] <5:0>","I2C_CONTROL [08]","I2C_STATUS [0C]","I2C_DATA [10] <7:0>","I2C_DIG_FILTER_SMPL_RATE [14] <5:0>","I2C_CLOCK_EN [18] <0>"
+group = "TMR0    800070[00]", "TMR0_COMPARISON_VALUE_1 [00] <15:0>","TMR0_COMPARISON_VALUE_2 [02] <15:0>","TMR0_CAPTURE_VALUE [04] <15:0>","TMR0_LOAD_VALUE [06] <15:0>","TMR0_HOLD_VALUE [08] <15:0>","TMR0_COUNTER [0A] <15:0>","TMR0_CTRL [0C]","TMR0_SCTRL [0E]","TMR0_COMPARATOR_LOAD_1 [10] <15:0>","TMR0_COMPARATOR_LOAD_2 [12] <15:0>","TMR0_CSCTRL [14]"
+group = "TMR1    800070[20]", "TMR1_COMPARISON_VALUE_1 [20] <15:0>","TMR1_COMPARISON_VALUE_2 [22] <15:0>","TMR1_CAPTURE_VALUE [24] <15:0>","TMR1_LOAD_VALUE [26] <15:0>","TMR1_HOLD_VALUE [28] <15:0>","TMR1_COUNTER [2A] <15:0>","TMR1_CTRL [2C]","TMR1_SCTRL [2E]","TMR1_COMPARATOR_LOAD_1 [30] <15:0>","TMR1_COMPARATOR_LOAD_2 [32] <15:0>","TMR1_CSCTRL [34]"
+group = "TMR2    800070[40]", "TMR2_COMPARISON_VALUE_1 [40] <15:0>","TMR2_COMPARISON_VALUE_2 [42] <15:0>","TMR2_CAPTURE_VALUE [44] <15:0>","TMR2_LOAD_VALUE [46] <15:0>","TMR2_HOLD_VALUE [48] <15:0>","TMR2_COUNTER [4A] <15:0>","TMR2_CTRL [4C]","TMR2_SCTRL [4E]","TMR2_COMPARATOR_LOAD_1 [50] <15:0>","TMR2_COMPARATOR_LOAD_2 [52] <15:0>","TMR2_CSCTRL [54]"
+group = "TMR3    800070[60]", "TMR3_COMPARISON_VALUE_1 [60] <15:0>","TMR3_COMPARISON_VALUE_2 [62] <15:0>","TMR3_CAPTURE_VALUE [64] <15:0>","TMR3_LOAD_VALUE [66] <15:0>","TMR3_HOLD_VALUE [68] <15:0>","TMR3_COUNTER [6A] <15:0>","TMR3_CTRL [6C]","TMR3_SCTRL [6E]","TMR3_COMPARATOR_LOAD_1 [70] <15:0>","TMR3_COMPARATOR_LOAD_2 [72] <15:0>","TMR3_CSCTRL [74]"
+group = "ASM      800080[00]", "ASM_KEY0 [00]","ASM_KEY1 [04]","ASM_KEY2 [08]","ASM_KEY3 [0C]","ASM_DATA0 [10]","ASM_DATA1 [14]","ASM_DATA2 [18]","ASM_DATA3 [1C]","ASM_CTR0 [20]","ASM_CTR1 [24]","ASM_CTR2 [28]","ASM_CTR3 [2C]","ASM_CTR_RSLT_0 [30]","ASM_CTR_RSLT_1 [34]","ASM_CTR_RSLT_2 [38]","ASM_CTR_RSLT_3 [3C]","ASM_CBC_RSLT_0 [40]","ASM_CBC_RSLT_1 [44]","ASM_CBC_RSLT_2 [48]","ASM_CBC_RSLT_3 [4C]","ASM_CONTROL0 [50]","ASM_CONTROL1 [54]","ASM_STATUS [58]","ASM_MAC0 [60]","ASM_MAC1 [64]","ASM_MAC2 [68]","ASM_MAC3 [6C]"
+group = "UART2  8000B0[00]", "UART2_CONTRL [00]","UART2_STAT [04]","UART2_TRX_DATA [08] <7:0>","UART2_RXLEVEL [0C] <5:0>","UART2_TXLEVEL [10] <5:0>","UART2_CTS_LEVEL [14] <4:0>","UART2_BAUD_RATE_DIV [18]"
+group = "SPIF      8000C0[00]", "SPIF_TX_DATA [00] <31:0>","SPIF_RX_DATA [04] <31:0>","SPIF_CLK_CTRL [08]","SPIF_SETUP [0C]","SPIF_STATUS [10]"
+group = "ADC      8000D0[00]", "ADC_COMP_0 [00]","ADC_COMP_1 [02]","ADC_COMP_2 [04]","ADC_COMP_3 [06]","ADC_COMP_4 [08]","ADC_COMP_5 [0A]","ADC_COMP_6 [0C]","ADC_COMP_7 [0E]","ADC_BAT_COMP_OVER [10] <11:0>","ADC_BAT_COM_UNDER [12] <11:0>","ADC_SEQ_1 [14]","ADC_SEQ_2 [16]","ADC_CONTROL [18]","ADC_TRIGGERS [1A]","ADC_PRESCALE [1C] <7:0>","ADC_FIFO_READ [20]","ADC_FIFO_CONTROL_LEVEL [22] <3:0>","ADC_FIFO_STATUS [24]","ADC_SAMPLE_RATE_1_HIGH [30] <15:0>","ADC_SAMPLE_RATE_1_LOW [32] <15:0>","ADC_SAMPLE_RATE_2_HIGH [34] <15:0>","ADC_SAMPLE_RATE_2_LOW [36] <15:0>","ADC_ON_TIME [38] <15:0>","ADC_CONVERT_TIME [3A] <15:0>","ADC_CLOCK_DIVIDER [3C] <7:0>","ADC_OVERRIDE [40]","ADC_IRQ [42]","ADC_MODE_OVERRIDE [44] <0>","ADC_AD1_RESULT [46] <11:0>","ADC_AD2_RESULT [48] <11:0>"
+group = "INT        800200[00]", "INT_CNTL [00]","INT_NORMAL_MASK [04] <4:0>","INT_ENABLE_NUMBER [08] <3:0>","INT_DISABLE_NUMBER [0C] <3:0>","INT_ENABLE [10] <15:0>","INT_TYPE [14] <15:0>","INT_NORMAL_VECTOR [28] <31:0>","INT_FAST_VECTOR [2C] <31:0>","INT_SOURCE [30] <15:0>","INT_FORCE [34] <15:0>","INT_NORMAL_INT_PENDING [38] <15:0>","INT_FAST_INT_PENDING [3C] <15:0>"
